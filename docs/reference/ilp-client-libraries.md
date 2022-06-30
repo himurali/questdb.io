@@ -17,5 +17,10 @@ We have client libraries for a growing number of languages to facilitate the imp
 - **Golang**:
   [https://github.com/questdb/go-questdb-client](https://github.com/questdb/go-questdb-client)
 
+- **.NET**:
+  [https://github.com/questdb/net-questdb-client](https://github.com/questdb/net-questdb-client)
+  
+<!--TBD nodejs client -->
+
 - For other languages, we have examples and a
   [protocol reference](/docs/reference/api/ilp/overview).
