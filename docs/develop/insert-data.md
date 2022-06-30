@@ -92,7 +92,11 @@ find additional details on the message format, ports and authentication.
 The [Telegraf guide](/docs/third-party-tools/telegraf) helps you configure a
 Telegraf agent to collect and send metrics to QuestDB via ILP.
 
+:::tip
+
 The [ILP client libraries](/docs/reference/ilp-client-libraries) provide more user-friendly ILP clients for a growing number of languages.
+
+:::
 
 ### Examples
 
