@@ -64,7 +64,8 @@ const FeatureTabs = () => {
             "text--center",
           )}
         >
-          Why Active Mobility ?
+        WORK WITH US
+
         </h2>
 
         <div
@@ -106,13 +107,20 @@ const FeatureTabs = () => {
                 [meCss["menu__panel--active"]]: opened === "digital",
               })}
             >
-              <p className={prCss.property}>Query with SQL</p>
-              <p className={prCss.property}>Deploy via Docker or binaries</p>
-              <p className={prCss.property}>Interactive web console</p>
+              <p className={prCss.property}>Do research with us </p>
+              <p className={prCss.property}>Volunteer for events</p>
+              <p className={prCss.property}>Talk about us in your community</p>
               <p className={prCss.property}>
-                Postgres and InfluxDB line protocols
+                Host us for a talk in your community
               </p>
-              <p className={prCss.property}>Cloud-native or on-premises</p>
+              <p className={prCss.property}>Donate and support us</p>
+
+              <Button
+                className={meCss.menu__cta}
+                to="https://github.com/questdb/questdb#try-questdb"
+              >
+                Join us  &gt;
+              </Button>
             </div>
 
             <div
@@ -120,11 +128,19 @@ const FeatureTabs = () => {
                 [meCss["menu__panel--active"]]: opened === "realtime",
               })}
             >
-              <p className={prCss.property}>High-throughput ingestion</p>
-              <p className={prCss.property}>Optimized SQL queries</p>
-              <p className={prCss.property}>Real-time streaming</p>
-              <p className={prCss.property}>Lower infrastructure costs</p>
-              <p className={prCss.property}>Less operational complexity</p>
+              <p className={prCss.property}>Active Mobility Workshops</p>
+              <p className={prCss.property}>Active Mobility Planning</p>
+              <p className={prCss.property}>Active Mobility System Design </p>
+              <p className={prCss.property}>Active Mobility Roadmap - Enabling Cycling for the state</p>
+              <p className={prCss.property}>Active Mobility Tourism - Cycle City </p>
+
+              <Button
+                className={meCss.menu__cta}
+                to="https://github.com/questdb/questdb#try-questdb"
+              >
+                Talk to us today &gt;
+              </Button>
+
             </div>
 
             <div
@@ -132,19 +148,21 @@ const FeatureTabs = () => {
                 [meCss["menu__panel--active"]]: opened === "integration",
               })}
             >
-              <p className={prCss.property}>Apache License 2.0</p>
-              <p className={prCss.property}>Thriving developer community</p>
-              <p className={prCss.property}>Transparent development</p>
-              <p className={prCss.property}>Popular open source integrations</p>
-              <p className={prCss.property}>Embedded in Java applications</p>
+              <p className={prCss.property}>Support a Program </p>
+              <p className={prCss.property}>Organize Group Bicycle Ride </p>
+              <p className={prCss.property}>Organize Wellness Sessions for Employees</p>
+              <p className={prCss.property}>Involve in R&D for Acctive Mobility Innovation </p>
+              <p className={prCss.property}>Enable Active Mobility in Your Campus or Around Your Campus</p>
+
+              <Button
+                className={meCss.menu__cta}
+                to="https://github.com/questdb/questdb#try-questdb"
+              >
+                Lets move  &gt;
+              </Button>
             </div>
 
-            <Button
-              className={meCss.menu__cta}
-              to="https://github.com/questdb/questdb#try-questdb"
-            >
-              Get Started &gt;
-            </Button>
+
           </div>
         </div>
       </div>
@@ -157,16 +175,18 @@ const integrations: Array<{
   image: React.ElementType
   title: string
 }> = [
-  { image: PgLogo, title: "Postgres logo", label: "Postgres" },
-  { image: GrafanaLogo, title: "Grafana logo", label: "Grafana" },
-  { image: KafkaLogo, title: "Kafka logo", label: "Kafka" },
-  { image: PythonLogo, title: "Python logo", label: "Python" },
-  { image: PandasLogo, title: "Pandas logo", label: "Pandas" },
-  { image: InfluxdataLogo, title: "Telegraf logo", label: "Telegraf" },
-  { image: TableauLogo, title: "Tableau logo", label: "Tableau" },
-  { image: MindsdbLogo, title: "MindsDB logo", label: "MindsDB" },
-  { image: CubeLogo, title: "Cube logo", label: "Cube" },
-  { image: PlotlyLogo, title: "PlotlyLogo logo", label: "Plotly" },
+  { image: TableauLogo, title: "BBMP logo", label: "BBMP" },
+  { image: GrafanaLogo, title: "Karnataka Tourism logo", label: "Karnataka Tourism" },
+  { image: KafkaLogo, title: "DULT logo", label: "DULT" },
+  { image: PythonLogo, title: "Sports Dept logo", label: "Sports Dept" },
+  { image: PandasLogo, title: "Accenture logo", label: "Accenture" },
+  { image: InfluxdataLogo, title: "CISCO logo", label: "CISCO" },
+  { image: PgLogo, title: "Decathlon logo", label: "Decathlon" },
+  { image: MindsdbLogo, title: "India Post logo", label: "India Post" },
+  { image: CubeLogo, title: "VMWARE logo", label: "VMWARE" },
+  { image: PlotlyLogo, title: "Discovery Village logo", label: "Discovery Village" },
+
+
 ]
 
 const Integration = () => (
@@ -262,9 +282,32 @@ const Top = () => {
 }
 
 const Usp = () => (
+
+
   <section className={clsx(seCss.section, seCss["section--odd"])}>
+<br/><br/>
+
+  <h1
+    className={clsx(
+      seCss.section__title,
+      seCss["section__title--wide"],
+      "text--center",
+    )}
+
+  >               {"\n"}  Our Programs
+
+  </h1>
+
+<p   className={clsx(
+
+    "text--center",
+  )}>  We are a section 8 non profit company working in the space of Sustainability and Innovation We have pioneered many movements in the space of Active Mobility and Sustainability.
+</p>
+
     <div className={seCss["section--inner"]}>
+
       <div className={usCss.usp}>
+
         <div className={usCss.usp__inner}>
           <img
             alt="Speedometer"
@@ -274,13 +317,23 @@ const Usp = () => (
             width={176}
           />
 
-          <h2 className={usCss.usp__title}>Innovation </h2>
+          <h2 className={usCss.usp__title}>Bharath Open Bike </h2>
 
           <p className={usCss.usp__description}>Community Bicycle Sharing </p>
           <p className={usCss.usp__description}>B-Well</p>
           <p className={usCss.usp__description}>Vectorized query execution</p>
           <p className={usCss.usp__description}>Tiny memory footprint</p>
           <p className={usCss.usp__description}>C++ and zero-GC Java</p>
+            <p> </p>
+
+          <Button
+            className={meCss.menu__button}
+
+            size="small"
+          >
+            Innovate Now
+          </Button>
+
         </div>
       </div>
 
@@ -291,10 +344,10 @@ const Usp = () => (
             className={usCss.usp__illustration}
             height={113}
             src="https://images.unsplash.com/photo-1585822797375-2a38044b8499?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
-            width={205}
+            width={176}
           />
 
-          <h2 className={usCss.usp__title}>Community Bicycle Sharing</h2>
+          <h2 className={usCss.usp__title}>B Well - Theory of Wellbeing -</h2>
 
           <p className={usCss.usp__description}>
             Relational model for time series
@@ -305,7 +358,19 @@ const Usp = () => (
           <p className={usCss.usp__description}>Time partitioned</p>
           <p className={usCss.usp__description}>Immediate consistency</p>
           <p className={usCss.usp__description}>Fast InfluxDB line protocol</p>
+          <p> </p>
+
+          <Button
+            className={meCss.menu__button}
+
+            size="small"
+          >
+            Wellbeing Now
+          </Button>
+
         </div>
+
+
       </div>
 
       <div className={usCss.usp}>
@@ -315,10 +380,10 @@ const Usp = () => (
             className={usCss.usp__illustration}
             height={113}
             src="https://images.unsplash.com/photo-1541625602330-2277a4c46182?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-            width={205}
+            width={176}
           />
 
-          <h2 className={usCss.usp__title}>Bicycle Wellness </h2>
+          <h2 className={usCss.usp__title}>Lead Bengaluru Ride  </h2>
 
           <p className={usCss.usp__description}>
             Time series and relational joins
@@ -329,8 +394,18 @@ const Usp = () => (
           </p>
           <p className={usCss.usp__description}>Unlimited sub-queries</p>
           <p className={usCss.usp__description}>Built-in SQL optimizer</p>
+          <p> </p>
+
+          <Button
+            className={meCss.menu__button}
+
+            size="small"
+          >
+            Lead Now
+          </Button>
         </div>
       </div>
+
     </div>
   </section>
 )
@@ -345,7 +420,7 @@ const Cards = () => (
           "text--center",
         )}
       >
-        Why time series?
+        Our Purpose
       </h3>
 
       <div
@@ -356,56 +431,52 @@ const Cards = () => (
       >
         <div className={feCss.feature}>
           <h3 className={feCss.feature__header}>
-            DevOps, monitoring and observability
+          Be an awesome partner for the public, private sector and communities to enable active mobility missions.
           </h3>
           <p className={feCss.feature__content}>
-            Collect CPU, memory and storage metrics from your infrastructure and
-            get real-time visibility into your entire stack.
+          We aim to bring  a transformational experience in Active Mobility  ; With a decade of experience we understand the challenges and opportunities that lie ahead for active mobility in developing countries.
+
           </p>
         </div>
 
         <div className={feCss.feature}>
-          <h3 className={feCss.feature__header}>Financial market data</h3>
+          <h3 className={feCss.feature__header}>Revolutionize the Bicycle industry by Innovation
+</h3>
           <p className={feCss.feature__content}>
-            Store market tick data to identify historical trends, find
-            correlations and analyze trades in real-time. Build aggregated views
-            across multiple venues and efficiently compute live order books.
+          We are working with the best of the design and manufacturing leaders to enable democratization of manufacturing of Active Mobility Vehicles. We are designing the stack for building the best of the products in India through Open Innovation and Collaboration.
           </p>
         </div>
 
         <div className={feCss.feature}>
-          <h3 className={feCss.feature__header}>Network traffic analysis</h3>
+          <h3 className={feCss.feature__header}>Amplify positive social change
+</h3>
           <p className={feCss.feature__content}>
-            Collect sFlow or other network traffic metadata to run analytics and
-            detect anomalies in real-time.
+            We use public mobilization and storytelling to help the leading organizations, activists, businesses, and philanthropies in Active Mobility initiatives that can shift policies and change public narratives when it matters most.
           </p>
         </div>
 
         <div className={feCss.feature}>
-          <h3 className={feCss.feature__header}>Connected devices</h3>
+          <h3 className={feCss.feature__header}>Advocate for an equitable Active Mobility future
+</h3>
           <p className={feCss.feature__content}>
-            Capture, store and respond to sensor data and telemetry at any
-            resolution in industrial or machine-to-machine applications.
+          NNCF works toward a future where the needs of vulnerable populations with limited mobility (low-income, the underprivileged, minorities, the disability community, seniors, and youth) are central in transportation planning.
+.
           </p>
         </div>
 
         <div className={feCss.feature}>
-          <h3 className={feCss.feature__header}>Application metrics</h3>
+          <h3 className={feCss.feature__header}>Foster a vibrant community of passionate cyclists
+</h3>
           <p className={feCss.feature__content}>
-            Empower application developers and UX teams to track and visualize
-            user behavior data, API calls, data latency, and other application
-            events in real-time.
+            Committed to   advocacy and community-led approaches for creating sustainable change.
           </p>
         </div>
 
         <div className={feCss.feature}>
           <h3 className={feCss.feature__header}>
-            Machine learning with time-series data
-          </h3>
+Achieve enduring Active Mobility success and sustained growth          </h3>
           <p className={feCss.feature__content}>
-            Use QuestDB with popular Python frameworks and tools for leveraging
-            anomaly detection algorithms, machine learning libraries,
-            statistical analysis with Pandas, or Jupyter notebooks.
+            We want to be a “Bicycle ” force for that creates sustainable future.
           </p>
         </div>
       </div>
@@ -472,7 +543,7 @@ const getTopByIndex = (m: number[], index: 1 | 2 | 3 | 4): number => {
   return scale[index] ?? 0
 }
 
-const searchQuery = `SELECT timestamp, tempC
+const searchQuery = `sssss sssss timestamp, tempC
 FROM sensors
 WHERE timestamp IN '2021-05-14;1M';`
 
@@ -543,7 +614,7 @@ const QueryScroller = () => {
           "text--center",
         )}
       >
-        Augmented SQL for time series
+        How we deliver value and create impact ?
       </h2>
 
       <p
@@ -553,8 +624,7 @@ const QueryScroller = () => {
           "text--center",
         )}
       >
-        QuestDB enhances ANSI SQL with time series extensions to manipulate time
-        stamped data
+        We are a purpose driven organization that is having a process and also focus on the impact.
       </p>
 
       <div className={shCss.showcase}>
@@ -606,7 +676,7 @@ const QueryScroller = () => {
                   image={<SearchTimeIcon className={shCss.showcase__icon} />}
                   title="Magnifying glass icon"
                 />
-                Search Time
+                Empathy & System Thinking
               </h3>
               <p className={shCss.showcase__description}>
                 Filter and search for specific timestamps with “WHERE”
@@ -624,7 +694,7 @@ const QueryScroller = () => {
                   image={<SliceTimeIcon className={shCss.showcase__icon} />}
                   title="Knife icon"
                 />
-                Slice Time
+                Define Goals &
               </h3>
               <p className={shCss.showcase__description}>
                 Create time buckets and aggregate by intervals with “SAMPLE BY”
@@ -642,7 +712,7 @@ const QueryScroller = () => {
                   image={<NavigateTimeIcon className={shCss.showcase__icon} />}
                   title="Indication arrow icon"
                 />
-                Navigate Time
+                Strategy & Action Plan
               </h3>
               <p className={shCss.showcase__description}>
                 Search time series from most recent values to oldest with
@@ -660,7 +730,7 @@ const QueryScroller = () => {
                   image={<MergeTimeIcon className={shCss.showcase__icon} />}
                   title="Two overlapping squares"
                 />
-                Merge Time
+                Execute & Impact
               </h3>
               <p className={shCss.showcase__description}>
                 Join two tables based on timestamp where timestamps do not
@@ -683,6 +753,7 @@ const Home = () => (
   >
     <Top />
     <Customers nbElements={6} />
+
     <Usp />
     <Integration />
     <FeatureTabs />

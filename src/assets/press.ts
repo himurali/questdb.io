@@ -7,42 +7,63 @@ export type PressRelease = {
 const pressReleases: PressRelease[] = [
   {
     title:
-      "QuestDB gets $12M Series A funding amid growing interest in time series databases",
+      "BBMP's Bengaluru Plog Run set to enter the Guinness World Records",
     url:
-      "https://siliconangle.com/2021/11/03/questdb-gets-12m-series-funding-amid-growing-interest-time-series-databases/",
-    author: "SiliconANGLE & theCUBE",
+      "https://www.ibtimes.co.in/bbmps-bengaluru-plog-run-set-enter-guinness-world-records-782121",
+    author: "By Immanuel Jotham ",
   },
   {
-    title: "QuestDB grows time series database with $12M funding round",
+    title: "World Cycle Day june 3 2022 ",
     url:
-      "https://searchdatamanagement.techtarget.com/news/252508994/QuestDB-grows-time-series-database-with-12M-fund-raise",
-    author: "TechTarget",
+      "https://www.thehindu.com/news/national/karnataka/world-bicycle-day-to-promote-fitness-sustainable-development/article65484260.ece",
+    author: "Murali",
   },
   {
     title:
-      "QuestDB has built a lightning-fast time series database. Can it build a business to match?",
+      "More Cycle station at Cubbon Park?",
     url:
-      "https://www.techrepublic.com/article/questdb-has-built-a-lightning-fast-time-series-database-can-it-build-a-business-to-match/",
+      "https://bangaloremirror.indiatimes.com/bangalore/others/more-cycle-stations-at-cubbon-park-all-in-favour/articleshow/91970607.cms",
     author: "TechRepublic",
   },
   {
     title:
-      "Q&A with Nicolas Hourcard of QuestDB: the advantages of a time series database",
+      " Bengaluru Hire A Cycle See Heritage Structures ",
     url:
-      "https://developer-tech.com/news/2020/dec/03/qa-nicolas-hourcard-questdb-advantages-time-series-database/",
+      "https://www.deccanchronicle.com/nation/current-affairs/271217/bengaluru-hire-a-cycle-see-heritage-structures.html",
     author: "Developer Tech News",
   },
   {
-    title: "QuestDB snares $12M Series A with hosted version coming soon",
-    url:
-      "https://techcrunch.com/2021/11/03/questdb-snares-12m-series-a-with-hosted-version-on-the-horizon/",
-    author: "TechCrunch",
+    title: "  Cyclists pedal around heritage sites",
+    url:  "https://www.thehansindia.com/karnataka/bengaluru-cyclists-pedal-around-heritage-sites-678185",
+    author: "Hans News Servic",
   },
   {
-    title: "The New Stack - Why performance matters in time-series Data",
-    url: "https://thenewstack.io/why-performance-matters-in-time-series-data/",
-    author: "The New Stack",
+    title: "Hundreds of children take part in heritage bicycle ride",
+    url: "https://citytoday.news/hundreds-of-children-take-part-in-heritage-bicycle-ride/",
+    author: "CT Bureau KK",
   },
+
+  {
+    title: "From tree hugs to epic recycling: seven eco-friendly records",
+    url: "https://www.guinnessworldrecords.com/news/2021/11/tree-hugs-and-epic-recycling-seven-eco-friendly-records-681459",
+    author: " Eleonora Pilastro 10 November 2021",
+  },
+  {
+    url: "https://www.financialexpress.com/industry/how-entrepreneurs-government-officials-private-players-adopt-cycling-culture-in-india/938767/",
+    title: " How entrepreneurs, government officials, private players adopt cycling culture in India",
+    author: "  Gaurab Dasgupta 19 November 2017",
+  },
+  {
+    title: "Nandi Habba in pics: Celebrating rich biodiversity and heritage of the iconic hills",
+    url: "https://www.thenewsminute.com/article/nandi-habba-pics-celebrating-rich-biodiversity-and-heritage-iconic-hills-77421",
+    author: " Staff Reporter 05 March 2018",
+  },
+  {
+    title: "52 KSRP men to cycle across State ",
+    url: "https://www.thehindu.com/news/national/karnataka/52-ksrp-men-to-cycle-across-state/article19242397.ece",
+    author: " Staff Reporter July 08, 2017  ",
+  },
+  //
 ]
 
 export default pressReleases
