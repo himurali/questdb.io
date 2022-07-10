@@ -177,7 +177,7 @@ const Top = () => {
             seCss["section__title--accent"],
           )}
         >
-          QuestDB Cloud
+          Innovation
         </h1>
 
         <p
@@ -188,8 +188,9 @@ const Top = () => {
             "text--center",
           )}
         >
-          The fastest open source time series database fully managed on the
-          cloud, now available on AWS
+        To explore the potential of Active Mobility Vehicles in the Developing World context,
+        the AM Innovation Ecosystem is being  created by us.We aim to activate an Unique innovation ecosystem for development,
+demonstration and assessment of Active Mobility Vehicles. We are redesigning the (DFM) Design for Manufacturability Stack for Active Mobility vehicles - how these vehicles are designed and manufactured in Asia
         </p>
 
         <Subscribe
@@ -209,7 +210,7 @@ const Top = () => {
 
         <div className={hlCss.highlights}>
           <div className={flCss.flashy}>
-            <h3 className={flCss.flashy__title}>Open source</h3>
+            <h3 className={flCss.flashy__title}>Open source design</h3>
             <ul className={style.card__list}>
               <li className={clsx(prCss.property, style.card__item)}>
                 Apache 2.0
@@ -229,7 +230,7 @@ const Top = () => {
             </Button>
           </div>
           <div className={flCss.flashy}>
-            <h3 className={flCss.flashy__title}>Cloud</h3>
+            <h3 className={flCss.flashy__title}>Distributed Manufacturing</h3>
             <ul className={style.card__list}>
               <li className={clsx(prCss.property, style.card__item)}>
                 Database-as-a-service
@@ -314,7 +315,7 @@ const CloudPage = () => {
       image="/img/pages/cloud/screens-thumb.png"
     >
       <Top />
-      <CompareFeatures />
+
       <Footer />
     </Layout>
   )

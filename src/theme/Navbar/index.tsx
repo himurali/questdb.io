@@ -151,14 +151,14 @@ function Navbar(): JSX.Element {
             to="/get-questdb/"
             variant="secondary"
           >
-            Get QuestDB
+            Join Community
           </Button>
           <Button
             className={clsx(styles.ctaButton, styles.benchmarkButton)}
             size="xsmall"
             to="/time-series-benchmark-suite/"
           >
-            Benchmark
+            Donate
           </Button>
         </div>
       </div>

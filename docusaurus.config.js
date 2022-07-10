@@ -33,8 +33,8 @@ function variable() {
 }
 
 const config = {
-  title: "QuestDB: the database for time series",
-  tagline: "QuestDB is the fastest open source time series database",
+  title: "Namma Nimma Cycle fOudation",
+  tagline: "Thought and Action leader in Active Mobility",
   url: `https://${consts.domain}`,
   baseUrl: "/",
   baseUrlIssueBanner: false,
@@ -86,7 +86,7 @@ const config = {
         ],
       },
     ],
-    [ 
+    [
       require.resolve('./plugins/blog'),
       {
         remarkPlugins: [variable, math],
@@ -105,8 +105,8 @@ const config = {
       id: "github-star",
     },
     colorMode: {
-      defaultMode: "dark",
-      disableSwitch: false,
+      defaultMode: "light",
+      disableSwitch: true,
       respectPrefersColorScheme: false,
     },
     image: "/img/og.gif",
@@ -141,23 +141,30 @@ const config = {
       },
       items: [
         {
-          label: "Product",
+          label: "What We Do",
           position: "left",
           items: [
             {
-              label: "QuestDB Cloud",
+              label: "Active Mobility  Innovation",
               to: "/cloud",
             },
             {
-              label: "QuestDB Enterprise",
+              label: "Urban Design",
               to: "/enterprise",
             },
+
             {
-              label: "Use Cases",
+              label: "Active Mobility Success",
+              to: "/amsuccess",
+            },
+
+
+            {
+              label: "B-Well",
               to: "/use-cases",
             },
             {
-              label: "Customers",
+              label: "Active Tourism",
               to: "/customers",
             },
             {
@@ -321,7 +328,7 @@ const config = {
           rehypePlugins: [katex],
           sidebarPath: require.resolve("./sidebars.js"),
         },
-        
+
         sitemap: {
           // Removed: https://github.com/ekalinin/sitemap.js/blob/master/CHANGELOG.md#50-breaking-changes
           // cacheTime: 600 * 1000, // 600 sec - cache purge period

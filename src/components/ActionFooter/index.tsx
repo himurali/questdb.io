@@ -11,7 +11,7 @@ export const ActionFooter = () => (
     <ActionCard
       icon={<FossIcon />}
       title="Join our developer community"
-      description="QuestDB is open source. Follow us on Twitter, star our GitHub repo, and join our developer community on Slack!"
+      description="NNCF Design is open source. Follow us on Twitter, star our GitHub repo, and join our designer and developer community on Slack!"
     >
       <a
         className={footerCss.card__link}
@@ -28,7 +28,7 @@ export const ActionFooter = () => (
 
     <ActionCard
       title="Subscribe to our newsletter"
-      description="Stay up to date with all things QuestDB"
+      description="Stay up to date with all things Active Mobility"
       icon={<SubscribeIcon />}
       skin="primary"
     >

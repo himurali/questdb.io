@@ -1,3 +1,4 @@
+/* eslint-disable */
 import clsx from "clsx"
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
 import Highlight from "../components/Highlight"
@@ -33,7 +34,7 @@ import TableauLogo from "../assets/img/pages/index/integrations/tableau.svg"
 import PlotlyLogo from "../assets/img/pages/index/integrations/plotly.svg"
 import MindsdbLogo from "../assets/img/pages/index/integrations/mindsdb.svg"
 import CubeLogo from "../assets/img/pages/index/integrations/cube.svg"
-import DockerLogo from "../assets/img/pages/index/docker.svg"
+// import DockerLogo from "../assets/img/pages/index/docker.svg"
 import SearchTimeIcon from "../assets/img/pages/index/searchTime.svg"
 import SliceTimeIcon from "../assets/img/pages/index/sliceTime.svg"
 import NavigateTimeIcon from "../assets/img/pages/index/navigateTime.svg"
@@ -63,7 +64,7 @@ const FeatureTabs = () => {
             "text--center",
           )}
         >
-          Why QuestDB?
+          Why Active Mobility ?
         </h2>
 
         <div
@@ -79,7 +80,7 @@ const FeatureTabs = () => {
               size="small"
               variant={opened === "digital" ? "primary" : "tertiary"}
             >
-              Simplicity
+              Individual
             </Button>
             <Button
               className={meCss.menu__button}
@@ -87,7 +88,7 @@ const FeatureTabs = () => {
               size="small"
               variant={opened === "realtime" ? "primary" : "tertiary"}
             >
-              Performance
+              Government
             </Button>
             <Button
               className={meCss.menu__button}
@@ -95,7 +96,7 @@ const FeatureTabs = () => {
               size="small"
               variant={opened === "integration" ? "primary" : "tertiary"}
             >
-              Open Source
+              Private Sector
             </Button>
           </div>
 
@@ -183,7 +184,7 @@ const Integration = () => (
         "text--center",
       )}
     >
-      Integration with the tools you love
+      We have worked with the following
     </h2>
 
     <div className={inCss.integration}>
@@ -215,7 +216,8 @@ const Top = () => {
             seCss["section__title--accent"],
           )}
         >
-          Fast SQL for time series
+        Transform the Culture and Future of Mobility.
+
         </h1>
 
         <p
@@ -230,7 +232,7 @@ const Top = () => {
 
         <div className={juCss.jumbotron__cta}>
           <Button className={juCss.jumbotron__link} href={customFields.demoUrl}>
-            Live Demo
+            Donate
           </Button>
           <Button
             className={clsx(
@@ -250,28 +252,11 @@ const Top = () => {
           </Button>
         </div>
         <p className={juCss.jumbotron__description}>
-          Query our demo dataset with 1.6 billion rows in milliseconds
+          Join with any of the initiatives we are taking to make Active Mobility Success in India.
         </p>
       </div>
 
-      <div className={doCss.docker}>
-        <pre className={doCss.docker__inner}>
-          <code className={doCss.docker__code}>
-            {`docker pull questdb/questdb
-docker run -p 9000:9000 questdb/questdb`}
-          </code>
-          <a
-            href={customFields.dockerUrl}
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <SvgImage
-              image={<DockerLogo className={doCss.docker__icon} />}
-              title="Docker"
-            />
-          </a>
-        </pre>
-      </div>
+      <div className={doCss.docker}> S</div>
     </section>
   )
 }
@@ -285,14 +270,14 @@ const Usp = () => (
             alt="Speedometer"
             className={usCss.usp__illustration}
             height={113}
-            src="/img/pages/index/rawPower.svg"
+            src="https://images.unsplash.com/photo-1496147539180-13929f8aa03a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
             width={176}
           />
 
-          <h2 className={usCss.usp__title}>Built for performance</h2>
+          <h2 className={usCss.usp__title}>Innovation </h2>
 
-          <p className={usCss.usp__description}>SIMD-optimized analytics</p>
-          <p className={usCss.usp__description}>Row- and column-based access</p>
+          <p className={usCss.usp__description}>Community Bicycle Sharing </p>
+          <p className={usCss.usp__description}>B-Well</p>
           <p className={usCss.usp__description}>Vectorized query execution</p>
           <p className={usCss.usp__description}>Tiny memory footprint</p>
           <p className={usCss.usp__description}>C++ and zero-GC Java</p>
@@ -305,11 +290,11 @@ const Usp = () => (
             alt="A code editor with a chart that shows the result of the query"
             className={usCss.usp__illustration}
             height={113}
-            src="/img/pages/index/easyToUse.svg"
+            src="https://images.unsplash.com/photo-1585822797375-2a38044b8499?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
             width={205}
           />
 
-          <h2 className={usCss.usp__title}>Optimized for time series</h2>
+          <h2 className={usCss.usp__title}>Community Bicycle Sharing</h2>
 
           <p className={usCss.usp__description}>
             Relational model for time series
@@ -329,11 +314,11 @@ const Usp = () => (
             alt="A code editor containing a SQL statement"
             className={usCss.usp__illustration}
             height={113}
-            src="/img/pages/index/featureRich.svg"
-            width={176}
+            src="https://images.unsplash.com/photo-1541625602330-2277a4c46182?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            width={205}
           />
 
-          <h2 className={usCss.usp__title}>Implemented with SQL</h2>
+          <h2 className={usCss.usp__title}>Bicycle Wellness </h2>
 
           <p className={usCss.usp__description}>
             Time series and relational joins
@@ -693,7 +678,7 @@ const Home = () => (
   <Layout
     canonical=""
     description={customFields.description}
-    title="QuestDB | Time series data, faster"
+    title="NNCF | Change the Future of Mobility"
     replaceTitle
   >
     <Top />

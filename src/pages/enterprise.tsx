@@ -80,7 +80,7 @@ const Bullet = ({ index, onClick, page, viewportSize }: BulletProps) => {
 const QUOTE_WIDTH = 350
 
 const Enterprise = () => {
-  const title = "QuestDB Enterprise"
+  const title = "Urban Design"
   const description =
     "The fastest open source time-series database for organizations, on premise or on the cloud."
 
@@ -117,7 +117,7 @@ const Enterprise = () => {
               seCss["section__title--accent"],
             )}
           >
-            QuestDB Enterprise
+            Urban Design & Active Mobility
           </h1>
 
           <p
@@ -127,8 +127,7 @@ const Enterprise = () => {
               "text--center",
             )}
           >
-            The fastest open source time-series database for organizations, on
-            premise or on the cloud.
+            Understanding the link between health, safety, community with Active Mobility for Urban Areas.
           </p>
 
           <Subscribe
@@ -153,9 +152,7 @@ const Enterprise = () => {
               "text--center",
             )}
           >
-            QuestDB Enterprise is the best way to run QuestDB on your own
-            infrastructure at any scale. The software can be deployed on-premise
-            or in the cloud on AWS, GCP or Azure.
+            Active Mobility enables quick wins for everyone - both the private sector and public sector.
           </p>
 
           <div className={clsx(clCss.cloud)}>
@@ -311,7 +308,7 @@ const Enterprise = () => {
       <section
         className={clsx(seCss["section--inner"], seCss["section--column"])}
       >
-        <h2 className={quCss.title}>The word on QuestDB</h2>
+        <h2 className={quCss.title}>Active Mobility for Cities - Design Principles</h2>
 
         <div className={quCss.carousel} ref={ref}>
           <TransitionGroup component={null}>

@@ -61,8 +61,8 @@ const Footer = () => {
           <img
             alt="QuestDB logo"
             className={footerStyles.footer__logo}
-            height={27}
-            src="/img/footer/questdb.svg"
+          
+            src="https://res.cloudinary.com/dsmfsfyci/image/upload/c_scale,r_4,w_266/v1596014425/nncfcycleinfra/logo_j8pcys.jpg"
             title="QuestDB - Fastest open source database for time series and analytics"
             width={108}
           />
@@ -75,7 +75,7 @@ const Footer = () => {
               <img
                 alt="GitHub logo"
                 height={22}
-                src="/img/github.svg"
+                src="https://res.cloudinary.com/dsmfsfyci/image/upload/c_scale,r_4,w_266/v1596014425/nncfcycleinfra/logo_j8pcys.jpg"
                 title="GitHub"
                 width={22}
               />

@@ -41,7 +41,7 @@ const Heading = () => (
       <h1
         className={clsx(seCss.section__title, seCss["section__title--accent"])}
       >
-        Design Total Wellness with Bicycles
+      Active Mobility Success
       </h1>
 
       <p
@@ -51,8 +51,8 @@ const Heading = () => (
           "text--center",
         )}
       >
-      BWell - our program designed and developed helps discovering new ways to deliver health, happpiness and wellness by focussing on Active Mobility.
-      Adopt BWell Today with five building blocks that enable flourishing – Positive Emotion, Engagement, Relationships, Meaning, and Accomplishment.
+        QuestDB offers high throughput ingestion and real-time SQL queries for
+        applications in a wide range of use cases and industries
       </p>
     </div>
     <img

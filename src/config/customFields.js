@@ -2,7 +2,7 @@ const consts = require("./consts")
 
 module.exports = {
   artifactHubUrl: "https://artifacthub.io/packages/helm/questdb/questdb",
-  copyright: `Copyright © ${new Date().getFullYear()} QuestDB`,
+  copyright: `Copyright © ${new Date().getFullYear()} NNCF`,
   crunchbaseUrl: "https://www.crunchbase.com/organization/quest-db",
   demoUrl: `https://demo.${consts.domain}`,
   description:
