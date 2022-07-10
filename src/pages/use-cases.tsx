@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react"
 import Layout from "../theme/Layout"
 
@@ -43,17 +44,19 @@ const Heading = () => (
       >
         Design Total Wellness with Bicycles
       </h1>
-
       <p
         className={clsx(
           seCss.section__subtitle,
+          seCss["section__subtitle--jumbotron"],
           seCss["section__subtitle--accent"],
           "text--center",
         )}
       >
       BWell - our program designed and developed helps discovering new ways to deliver health, happpiness and wellness by focussing on Active Mobility.
-      Adopt BWell Today with five building blocks that enable flourishing – Positive Emotion, Engagement, Relationships, Meaning, and Accomplishment.
+    Adopt BWell Today with five building blocks that enable flourishing – Positive Emotion, Engagement, Relationships, Meaning, and Accomplishment.
+  
       </p>
+
     </div>
     <img
       alt="An illustration of QuestDB use cases"

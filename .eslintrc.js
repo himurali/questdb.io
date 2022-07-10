@@ -55,8 +55,10 @@ module.exports = {
     "react/jsx-closing-tag-location": "error",
     "react/jsx-equals-spacing": "error",
     "react/jsx-first-prop-new-line": "error",
-    "react/jsx-indent": ["error", 2],
-    "react/jsx-indent-props": ["error", 2],
+  //  "react/jsx-indent": ["error",  2],
+
+     "react/jsx-indent": "off",
+     "react/jsx-indent-props": ["error", 2],
     "react/jsx-pascal-case": "error",
     "react/jsx-sort-default-props": "error",
     "react/jsx-wrap-multilines": "error",
@@ -69,6 +71,7 @@ module.exports = {
         beforeClosing: "never",
       },
     ],
+
     "react/jsx-boolean-value": "error",
     "react/jsx-curly-spacing": "error",
     "react/jsx-no-comment-textnodes": "warn",
