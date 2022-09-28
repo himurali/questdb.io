@@ -1,5 +1,5 @@
 ---
-title: My journey making QuestDB
+title: Bicycle Writings and the Cycle venki blog 
 author: Vlad Ilyushchenko
 author_title: QuestDB Team
 author_url: https://github.com/bluestreak01

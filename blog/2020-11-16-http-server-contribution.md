@@ -1,5 +1,5 @@
 ---
-title: Community contribution from Alex Pelagenko improving our HTTP server
+title: Community contribution to enabling Active Mobility
 author: Alex Pelagenko
 author_title: QuestDB Contributor
 author_url: https://github.com/ideoma

@@ -1,5 +1,5 @@
 ---
-title: Things we learned about sums
+title: Things we learned about Enabling Cycling 
 author: Tancrede Collard
 author_title: QuestDB Team
 author_url: https://github.com/TheTanc

@@ -1,5 +1,5 @@
 ---
-title: Aggregating billions of rows per second with SIMD
+title: Aggregating bicycles failed - Why Bicycle Sharing Systems Failed in India ?
 author: Tancrede Collard
 author_title: QuestDB Team
 author_url: https://github.com/TheTanc

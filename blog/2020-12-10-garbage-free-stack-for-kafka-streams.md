@@ -1,5 +1,5 @@
 ---
-title: Building a garbage-free network stack for Kafka streams
+title: Building a traffic -free network stack for Bicycle Movement -  streaming Bicycle movement
 author: Vlad Ilyushchenko
 author_title: QuestDB Team
 author_url: https://github.com/bluestreak01
