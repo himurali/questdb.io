@@ -39,7 +39,7 @@ const config = {
   baseUrl: "/",
   baseUrlIssueBanner: false,
   favicon: "/img/favicon.png",
-  organizationName: "QuestDB",
+  organizationName: "Namma Nimma Cycle Foundation",
   projectName: "nncfwebsite",
   customFields: customFields,
   onBrokenLinks: "throw",

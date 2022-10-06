@@ -50,7 +50,7 @@ function TutorialListPage(props: Props) {
     ({ content }) => content.frontMatter.featureType == null,
   )
   const description =
-    "Content from the QuestDB team and community contributors for learning about time series analytics, visualization, integrations, and example applications using QuestDB."
+    "Content from the Namma Nimma Cycle team and community contributors for learning about Active mobility, urban visualization, transport integrations, and Success stories and resources."
 
   return (
     <Layout
@@ -87,7 +87,7 @@ function TutorialListPage(props: Props) {
         {featuredComparisons.length > 0 && (
           <>
             <h2 className={styles.cards__title}>
-              Comparing time-series databases
+              Building Bicycle Cities
             </h2>
             <div className="row">
               <main className={clsx("col", styles.cards__container)}>

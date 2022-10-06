@@ -21,25 +21,25 @@ const categories: CategoriesProps["categories"] = [
   {
     title: "Benchmarks",
     description:
-      "Reproducible benchmarks of QuestDB and other databases using open source benchmarking frameworks",
+      "Reproducible benchmarks of Active Mobility using open source benchmarking frameworks",
     url: "/blog/tags/benchmark",
   },
   {
     title: "Demos",
     description:
-      "Demos involving QuestDB and other popular open source tools for a wide range of use cases",
+      "Demonstrating AM Success and the path for enabling active mobility",
     url: "/blog/tags/demo",
   },
   {
     title: "Tutorials",
     description:
-      "Step-by-step tutorials and guides for developers to build applications with QuestDB",
+      "Step-by-step tutorials and guides for communities  to build cycle enabled spaces  with NNCF",
     url: "/tutorial",
   },
   {
     title: "User Stories",
     description:
-      "How QuestDB powers the core infrastructure of our users for time series data and real-time analytics",
+      "How Active Mobility enables and  empowers the common citizens  ",
     url: "/customers",
   },
 ]

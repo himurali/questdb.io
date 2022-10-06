@@ -14,81 +14,59 @@ type FlatTutorial = FrontMatter &
   }>
 
 const tutorials: FlatTutorial[] = [
-  {
-    author: "Kovid Rathee",
-    date: "2021-01-11",
-    content:
-      "A short hands-on tutorial on how to use SQL extensions built for time-series data in QuestDB.",
-    link:
-      "https://towardsdatascience.com/sql-extensions-for-time-series-data-in-questdb-f6b53acf3213",
-    title: "SQL Extensions for Time-Series Data in QuestDB",
-    featureType: FeatureType.RESOURCE,
-    image: "/img/tutorial/shared/og-sql.png",
-  },
+   
   {
     author: "Kovid Rathee",
     date: "2020-12-17",
     content:
-      "How to ingest schemaless data into QuestDB from Python using QuestDB's InfluxDB line protocol support.",
+      "Unraveling the Cycling City bundles the state-of-the-art knowledge that emerges from research and practice on the Dutch cycling system.",
     link:
-      "https://towardsdatascience.com/schemaless-ingestion-in-questdb-using-influxdb-line-protocol-18850e69b453?gi=113183e2c22b",
-    title: "Schemaless ingestion in QuestDB using InfluxDB Line Protocol",
-    featureType: FeatureType.RESOURCE,
-    image: "/img/tutorial/shared/og-influx-line-protocol.png",
+      "https://www.coursera.org/learn/unraveling-the-cycling-city?action=enroll&aid=true",
+    title: "Unraveling the Cycling City    ",
+    featureType: FeatureType.COMPARISON,
+    image: "https://i.imgur.com/hUar1rT.png",
   },
   {
-    author: "David G. Simmons",
-    date: "2020-08-25",
+    author: "Chris Bruntlett & Melissa Bruntlett ",
+    date: "2022-02-25",
+    featureType: FeatureType.COMPARISON,
+
     content:
-      "In this video, David describes why a performant time-series database is critical for IoT use cases and shows how to set up and use QuestDB for ingesting sensor data from Arduino boards.",
-    link: "https://www.youtube.com/watch?v=5IsPIpcVCoE",
+      "In this video, Chris describes   : how to build the mid sized cycling city .",
+    link: "https://www.youtube.com/watch?v=24bs68u62pA",
     image: "/img/tutorial/shared/og-youtube.png",
-    title: "Sending IoT Data from Arduino to QuestDB",
+    title: "Building the Mid-sized Cycling City",
   },
   {
-    author: "David McKay",
+    author: "humankind  ",
     date: "2020-08-24",
-    content:
-      "How to setup QuestDB with Kubernetes and write data using the InfluxDB line protocol ingestion feature.",
-    link: "https://rawkode.com/articles/questdb-on-kubernetes/",
-    image: "/img/tutorial/shared/og-kubernetes.png",
-    title: "QuestDB on Kubernetes",
-  },
+    content:    "Designing the Cycling City The Masterclass",
+    featureType: FeatureType.COMPARISON,
+
+    link: "https://www.humankind.city/event-details/dtcc-masterclass",
+    image: "https://static.wixstatic.com/media/e3fe68_37b0eef37a2847bfa41803b18b5908ff~mv2.png/v1/fill/w_979,h_552,fp_0.50_0.50,q_90,usm_0.66_1.00_0.01,enc_auto/e3fe68_37b0eef37a2847bfa41803b18b5908ff~mv2.png",
+    title: "Designing the Cycling City The Masterclass",
+  }, 
   {
-    author: "David G. Simmons",
-    date: "2020-08-13",
-    content:
-      "How do you get the most out of your IoT data? Listen and watch as David Simmons answers this question and more during this Virtual Lunch & Learn session!",
-    link: "https://www.youtube.com/watch?v=RseiLoBRcAg",
-    image: "/img/tutorial/shared/og-youtube.png",
-    title: "QuestDB virtual lunch and learn",
-  },
-  {
-    author: "David G. Simmons",
-    date: "2020-06-26",
-    content:
-      "It's one thing to send data to your database, but being able to visualize that data is the next logical step. So let's dive right into doing that.",
-    link: "https://dev.to/davidgs/a-questdb-dashboard-with-node-red-524h",
-    title: "A QuestDB Dashboard with Node-Red",
-  },
-  {
-    author: "David G. Simmons",
+    author: "Robert ",
     date: "2020-06-19",
+    featureType: FeatureType.RESOURCE,
+
     content:
-      "In this video, David shows how to set up QuestDB on a Raspberry Pi and ingest and query IoT sensor data.",
-    link: "https://www.youtube.com/watch?v=wjkDbgi_mec",
-    image: "/img/tutorial/shared/og-youtube.png",
-    title: "Running QuestDB on Raspberry Pi and K8s Networking",
+      "In this video, Robert recently made a road trip to visit the inspirational city of Utrecht where they do things a little differently. .",
+    link: "https://www.youtube.com/watch?v=7sGy4kS9T2w",
+    image: "https://i.imgur.com/1DSiTl2.jpg",
+    title: "A 'Fully Charged' City Built Around Bicycles?",
   },
   {
-    author: "Michael Beale",
+    author: "Streetfilms  ",
     date: "2020-05-20",
+    featureType: FeatureType.RESOURCE,
     content:
-      "In this tutorial, Michael Beale writes about how he managed to simplify his ETL pipeline",
-    link:
-      "https://towardsdatascience.com/bypassing-pandas-memory-limitations-9abb574fdf76",
-    image: "/img/tutorial/shared/og-pandas.png",
-    title: "Bypassing Pandas Memory Limitations",
+      "you live in a city that doesn't have good bike planning or infrastructure this film will equally inspire and depress you!",
+    link:       "https://www.youtube.com/watch?v=Boi0XEm9-4E",
+    image: "https://i.imgur.com/LEVTnps.jpg",
+    title: "Utrecht: Planning for People & Bikes, Not for Cars ",
   },
 ]
 
