@@ -184,24 +184,37 @@ const config = {
             {
               label: "Tutorials",
               to: "/tutorial",
-            },
-            {
-              label: "QuestDB Swag",
-              to: "/community",
-            },
-            {
-              label: "Slack Community",
-              to: customFields.slackUrl,
-            },
+            }
           ],
         },
         {
-          label: "Docs",
+          label: "Who We are ?",
+          position: "left",
+          items: [
+            {
+              label: "About Us",
+              to: "/about-us",
+            },
+            {
+              label: "How to support us ",
+              to: "/SupportUs",
+            },
+            {
+              label: "Media ",
+              to: "/press",
+            }
+          ],
+        },
+
+
+
+        {
+          label: "Projects",
           to: "/docs",
           position: "left",
         },
         {
-          label: "We're Hiring",
+          label: "Events",
           to: "/careers",
           position: "left",
           className: "careers-link",
@@ -218,7 +231,7 @@ const config = {
     footer: {
       links: [
         {
-          title: "Product",
+          title: "Projects",
           items: [
             {
               label: "Cloud",

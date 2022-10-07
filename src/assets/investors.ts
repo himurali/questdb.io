@@ -5,62 +5,45 @@ type Investor = {
 
 export const investorsColumn1: Investor[] = [
   {
-    name: "Tom Preston-Werner",
-    position: "Co-founder Github",
+    name: "Prashanth Prakash, Chief Patron ",
+    position: " Accel Partners",
+  },
+   
+  {
+    name: "Ramakrishna Ganesh",
+    position: "Founder India Plogrun",
   },
   {
-    name: "Sebastian Pahl",
-    position: "Co-founder Docker",
+    name: "Nanjunda ",
+    position: "Advisor for start ups",
   },
   {
-    name: "Alexis Ohanian",
-    position: "Co-founder Reddit",
+    name: "Sohel Mohammed",
+    position: "General Manager at Thermo Fisher Scientific",
   },
   {
-    name: "Mirko Novakovic",
-    position: "Co-founder Instana (IBM)",
+    name: "Dr Ashwath Narayan ",
+    position: "Minister for IT/BT , Govt of karnataka, Start up cell karnataka ",
   },
   {
-    name: "Salil Deshpande",
-    position: "Uncorrelated Ventures",
+    name: "TB Dinesh",
+    position: "CEO Servelots",
   },
-  {
-    name: "James Hawkins",
-    position: "CEO PostHog",
-  },
-  {
-    name: "Lenny Rachitsky",
-    position: "Founder of lennysnewsletter.com",
-  },
+  
 ]
 
 export const investorsColumn2: Investor[] = [
   {
-    name: "Florian Leibert",
-    position: "468 Capital / Co-founder Mesosphere",
+    name: "Manjula V IAS",
+    position: "DULT Commissioner IAS",
   },
   {
-    name: "Tobi Knaup",
-    position: "CEO D2iQ",
+    name: "Manivannan IAS",
+    position: "Secretary GOK",
   },
   {
-    name: "Andrew Alexeev",
-    position: "Co-founder NGINX",
+    name: "Madan Gopal IAS",
+    position: "Chairman Eco tourism board, GOK",
   },
-  {
-    name: "Grace Francisco",
-    position: "VP DevRel Cisco",
-  },
-  {
-    name: "Michael Li",
-    position: "VP Data Coinbase",
-  },
-  {
-    name: "Paul Copplestone",
-    position: "CEO Supabase",
-  },
-  {
-    name: "Sumedh Pathak",
-    position: "Co-founder Citus Data (Microsoft)",
-  },
+   
 ]

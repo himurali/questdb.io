@@ -26,7 +26,7 @@ Once QuestDB is running, a guide is provided to
 [create your first database](/docs/get-started/first-database).
 
 ## Develop
-
+## Nandi habba
 This section describes how to connect to QuestDB using a variety of tools and
 programming languages through our various network endpoints.
 

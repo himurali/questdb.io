@@ -8,10 +8,10 @@ export const logos: Record<string, CustomerLogo> = {
     height: 56,
   },
   kepler: {
-    src: "/img/pages/customers/logos/kepler.svg",
+    src: "/img/pages/customers/logos/actourism.png",
     alt: "Kepler logo",
-    width: 140,
-    height: 56,
+    width: 200,
+    height: 256,
   },
   airbus: {
     src: "/img/pages/customers/logos/airbus.svg",

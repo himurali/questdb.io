@@ -36,10 +36,10 @@ const ProductMetrics = () => {
           />
           <div className={pmCss["product-metric__content__text"]}>
             <h3 className={pmCss["product-metric__content__text__header"]}>
-              {numberWithCommas(repo.stargazers_count)}+
+              {numberWithCommas(100)}+
             </h3>
             <p className={pmCss["product-metric__content__text__description"]}>
-              stargazers
+              Workshops
             </p>
           </div>
         </div>
@@ -52,10 +52,10 @@ const ProductMetrics = () => {
           />
           <div className={pmCss["product-metric__content__text"]}>
             <h3 className={pmCss["product-metric__content__text__header"]}>
-              {numberWithCommas(1100)}+
+              {numberWithCommas(150)}+
             </h3>
             <p className={pmCss["product-metric__content__text__description"]}>
-              developers
+              Cycle Events
             </p>
           </div>
         </div>
@@ -68,10 +68,10 @@ const ProductMetrics = () => {
           />
           <div className={pmCss["product-metric__content__text"]}>
             <h3 className={pmCss["product-metric__content__text__header"]}>
-              {contributorsCount}
+              {50000}
             </h3>
             <p className={pmCss["product-metric__content__text__description"]}>
-              contributors
+              Rentals 
             </p>
           </div>
         </div>
@@ -84,10 +84,10 @@ const ProductMetrics = () => {
           />
           <div className={pmCss["product-metric__content__text"]}>
             <h3 className={pmCss["product-metric__content__text__header"]}>
-              Fastest
+              10+ Succesful 
             </h3>
             <p className={pmCss["product-metric__content__text__description"]}>
-              growing TSDB on DB-Engines
+              Policy Interventions
             </p>
           </div>
         </div>

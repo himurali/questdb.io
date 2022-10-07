@@ -17,10 +17,6 @@ import { logos } from "../assets/logos"
 import { CustomerLogo } from "src/assets/types"
 import ProductMetrics from "../components/ProductMetrics"
 
-import Logo468Capital from "../assets/img/pages/about-us/468capital.svg"
-import SeedcampLogo from "../assets/img/pages/about-us/seedcamp.svg"
-import UncorrelatedLogo from "../assets/img/pages/about-us/uncorrelated.svg"
-import YCombinatorLogo from "../assets/img/pages/about-us/ycombinator.svg"
 import ExternalLink from "../assets/img/external-link.svg"
 
 import pressReleases, { PressRelease } from "../assets/press"
@@ -33,22 +29,34 @@ type PressItemProps = {
 
 const usedByLogos: CustomerLogo[] = [
   {
+    
     ...logos.airbus,
+    name: "Active Mobility Enablement",
     width: 140,
     height: 56,
   },
   {
     ...logos.kepler,
+    name: "Active Mobility For Urban Spaces",
     width: 140,
     height: 56,
   },
   {
     ...logos["copenhagen-atomics"],
+    name: "Active Mobility Innovation",
     width: 140,
     height: 56,
   },
   {
     ...logos.yahoo,
+    name: "Bicycle Sports",
+    width: 140,
+    height: 56,
+  },
+
+  {
+    ...logos.yahoo,
+    name: "Bicycle Tourism",
     width: 140,
     height: 56,
   },
@@ -58,17 +66,26 @@ const Top = () => {
   return (
     <section className={seCss["section--inner"]}>
       <div className={seCss.section__header}>
-        <h1
+        <h3
           className={clsx(
             seCss.section__title,
             seCss["section__title--accent"],
             "text--center",
           )}
         >
-          We are building the{" "}
-          <em className={seCss.section__title__em}>fastest</em> open source
-          timeseries database
-        </h1>
+          Enabling  active mobility culture,  {" "}
+          <em className={seCss.section__title__em}>design and innovation</em> excellence
+        </h3>
+        The NNCF Foundation works to ensure the active mobility (with focus on cycles) is .
+        For more than 10+ years, we’ve worked across communities, organizations, and technologies to fuel a movement to realize the full potential of Active Mobility.
+        NNCF invests in innovative ideas and campaigns for pushing the frontiers of active mobilityt. 
+        NNCF’s research — from our Insights to our white papers — are important mile stones in active mobility research. 
+<p></p>
+        <h1>Our Vision</h1>
+          <p className={clsx(seCss.section__subtitle)}>
+            Transforming transportation systems with Active mobility Innovation, Science and Policy Intervention.
+          </p>
+        
         <ProductMetrics />
       </div>
     </section>
@@ -83,13 +100,18 @@ const UsedBy = () => {
       >
         <div className={seCss.section__header}>
           <p className={clsx(seCss.section__subtitle)}>
-            Used by industry leaders in production environments
+            
+            The NNCF works to ensure that benefits of active mobility reaches one and all.
+
+
           </p>
+          <h1>Our Focus</h1>
         </div>
         <div className={ubCss.logos}>
           {usedByLogos.map((logo) => (
             <div key={logo.alt} className={ubCss.logo__item}>
-              <img alt={logo.alt} height={80} src={logo.src} width={200} />
+            
+              <h2>{logo.name}</h2>
             </div>
           ))}
         </div>
@@ -107,37 +129,17 @@ const Investors = () => {
         <h2
           className={clsx(seCss.section__title, seCss["section__title--wide"])}
         >
-          Investors
+          Partners & Patrons 
         </h2>
         <p className={clsx(seCss.section__subtitle)}>
-          We&apos;ve raised over $15M in funding, backed by leading enterprise
-          VCs and open source founders/executives.
+          We&apos;ve worked with the following and they have supported our work in the past. We are grateful for the following people for enabling the 
+          journey.
         </p>
       </div>
       <div className={inCss.investors}>
         <div className={inCss.investors__logos}>
-          <SvgImage
-            image={<Logo468Capital width="200" height="46" />}
-            title="468 Capital"
-          />
-          <SvgImage
-            image={<UncorrelatedLogo width="200" height="48" />}
-            title="Uncorrelated Ventures"
-          />
-          <SvgImage
-            image={<YCombinatorLogo width="200" height="42" />}
-            title="Y Combinator"
-          />
-          <SvgImage
-            image={
-              <SeedcampLogo
-                width="180"
-                height="54"
-                style={{ marginTop: "-8px" }}
-              />
-            }
-            title="Seedcamp"
-          />
+          
+         
         </div>
 
         <div className={inCss.investors__col}>
@@ -171,52 +173,30 @@ const Team = () => {
         <h2
           className={clsx(seCss.section__title, seCss["section__title--wide"])}
         >
-          The QuestDB team
+          The NNCF  team
         </h2>
         <div className={clsx(paCss.flex__section, teCss.team__people)}>
           <div className={clsx(paCss.half__section, teCss.team__people__text)}>
             <p>
-              QuestDB is a remote-first company, with regional offices in
-              London, Berlin and San Francisco.
+              NNCF  is a non profit company started with the intention to promote active mobility innovation.
             </p>
             <p>
-              Our team is building the fastest open-source timeseries database
-              from scratch and produces all of the components in-house. We are
-              performance-obsessed and strive to create a product that
-              developers want.
+              Our team is having 15 years of experience in the field of active mobility.
             </p>
-            <p>Here&apos;s what our team say about working at QuestDB:</p>
+           
             <div className={teCss.team__articles}>
               <div className={teCss.team__article}>
-                <h4 className={teCss.team__article__title}>
-                  <a href="/blog/2021/11/09/miguel-arregui-working-at-questdb">
-                    Why I joined QuestDB as a core database engineer
-                  </a>
-                </h4>
+                 
                 <div className={teCss.team__article__details}>
-                  <div className={teCss.team__article__image}>
-                    <img
-                      src="/img/pages/about-us/miguel.png"
-                      alt="Miguel Arregui photo"
-                      width="50"
-                      height="50"
-                    />
-                  </div>
-                  <div className={teCss.team__article__text}>
-                    <p className={teCss.team__article__author}>
-                      Miguel Arregui
-                    </p>
-                    <p className={teCss.team__article__position}>
-                      Core database engineer
-                    </p>
-                  </div>
+                  
+                   
                 </div>
               </div>
             </div>
           </div>
           <div className={clsx(paCss.half__section, teCss.team__people__photo)}>
             <img
-              src="/img/pages/about-us/team.jpg"
+              src="/img/pages/about-us/team2.png"
               alt="QuestDB team"
               width="522"
               height="300"
@@ -226,12 +206,11 @@ const Team = () => {
         </div>
         <div className={teCss.team__work}>
           <div className={teCss.team__work__text}>
-            We&apos;re hiring passionate talents to join us in building the
-            fastest open source time series database!
+          Help fund, shape, and expand our  work toward a healthy planet  and active citizens.
           </div>
           <div className={teCss.team__work__cta}>
             <Button variant="primary" to="/careers">
-              See openings
+              Donate
             </Button>
           </div>
         </div>

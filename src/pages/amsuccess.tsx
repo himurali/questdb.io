@@ -1,384 +1,383 @@
-/* eslint-disable */
-import React from "react"
-import Layout from "../theme/Layout"
-
-import seCss from "../css/section.module.css"
 import clsx from "clsx"
+import React, { useCallback, useState } from "react"
+import { CSSTransition, TransitionGroup } from "react-transition-group"
 
-import UseCaseCustomers, { Customer } from "../components/UseCaseQuotes"
+import Button from "@theme/Button"
+import Chevron from "@theme/Chevron"
+import Layout from "../theme/Layout"
+import useResizeObserver from "@theme/useResizeObserver"
 
-import ilCss from "../css/use-cases/illustration.module.css"
-import flCss from "../css/use-cases/flashy.module.css"
-import hlCss from "../css/use-cases/highlights.module.css"
-import liCss from "../css/use-cases/list.module.css"
-import ucCss from "../css/use-cases/use-case.module.css"
-import prCss from "../css/property.module.css"
+import caCss from "../css/customers/card.module.css"
+import juCss from "../css/customers/jumbotron.module.css"
+import quCss from "../css/customers/quote.module.css"
+import seCss from "../css/section.module.css"
+import _quotes from "../assets/quotes"
 
-const List = ({
-  items,
-  itemClassName,
-}: {
-  items: string[]
-  itemClassName: string
-}) => (
-  <ul className={clsx(liCss.list, ucCss.list)}>
-    {items.map((text, index) => (
-      <li key={index} className={itemClassName}>
-        {text}
-      </li>
-    ))}
-  </ul>
-)
+// temporary duplication across customer and enterprise page for quote module
 
-const Heading = () => (
-  <section
-    className={clsx(
-      seCss["section--inner"],
-      seCss["section--center"],
-      ucCss.section,
-    )}
-  >
-    <div className={seCss.section__header}>
-      <h1
-        className={clsx(seCss.section__title, seCss["section__title--accent"])}
-      >
-      Active Mobility Success
-      </h1>
+const quotes = _quotes.map(({ author, company, logo, role, text }) => {
+  const Quote = () => (
+    <div key={company} className={quCss.quote}>
+      <div className={quCss.quote__symbol} />
 
-      <p
-        className={clsx(
-          seCss.section__subtitle,
-          seCss["section__subtitle--accent"],
-          "text--center",
-        )}
-      >
-        QuestDB offers high throughput ingestion and real-time SQL queries for
-        applications in a wide range of use cases and industries
+      <div className={quCss.quote__logo}>
+        <img
+          alt={logo.alt}
+          className="responsive-image"
+          height={logo.height}
+          src={logo.src}
+          width={logo.width}
+          style={{ top: logo.offset ?? 0 }}
+        />
+      </div>
+
+      <p className={quCss.quote__content}>{text}</p>
+
+      <p className={quCss.quote__author}>
+        <span className={quCss.quote__chevron}>&gt;</span>
+        {author}
+        <br />
+        {role}
+        ,&nbsp;
+        {company}
       </p>
     </div>
-    <img
-      alt="An illustration of QuestDB use cases"
-      className={ilCss.illustration}
-      height={584}
-      src="/img/pages/use-cases/banner.svg"
-      width={1091}
-    />
-  </section>
-)
+  )
 
-type UseCaseHighlightItem = {
-  key: string
-  title: string
-  description: string
-  image: string
+  return Quote
+})
+
+type BulletProps = {
+  index: number
+  onClick: (index: number) => void
+  page: number
+  viewportSize: number
 }
 
-const useCaseHighlights: UseCaseHighlightItem[] = [
-  {
-    key: "monitoring-and-real-time-analytics",
-    title: "Monitoring and Real-time analytics",
-    description:
-      "Observability, monitoring and analytics for time series data generated from infrastructure and software applications",
-    image: "/img/pages/use-cases/real-time-analytics.svg",
-  },
-  {
-    key: "financial-market-data",
-    title: "Financial market data",
-    description:
-      "Processing billions of rows of high-frequency tick data in milliseconds and exploring vasts datasets of market data on the fly",
-    image: "/img/pages/use-cases/financial-market-data.svg",
-  },
-  {
-    key: "industrial-analytics",
-    title: "Industrial analytics",
-    description:
-      "Collecting high-frequency metrics at scale from rockets, plants, machinery, fleets or any type of IIoT sensor \n",
-    image: "/img/pages/use-cases/industrial-telemetry.svg",
-  },
-]
+const Bullet = ({ index, onClick, page, viewportSize }: BulletProps) => {
+  const handleClick = useCallback(() => {
+    onClick(index * viewportSize)
+  }, [index, onClick, viewportSize])
 
-const UseCaseHighlights = () => (
-  <section
-    className={clsx(
-      seCss["section--inner"],
-      seCss["section--center"],
-      ucCss.section,
-    )}
-  >
-    <div className={hlCss.highlights}>
-      {useCaseHighlights.map((highlight) => (
-        <div
-          className={clsx(flCss.flashy, ucCss.useCaseHighlight)}
-          key={`${highlight.title}-${highlight.key}`}
-        >
-          <img
-            src={highlight.image}
-            alt={highlight.title}
-            className={flCss.flashy__image}
-          />
-          <h3 className={flCss.flashy__title}>{highlight.title}</h3>
-          <p className={flCss.flashy__content}>{highlight.description}</p>
-          <a href={`#${highlight.key}`} className={flCss.flashy__link}>
-            Learn more
-          </a>
+  return (
+    <span
+      className={clsx(quCss.controls__pin, {
+        [quCss["controls__pin--selected"]]: page === index,
+      })}
+      onClick={handleClick}
+    />
+  )
+}
+
+const QUOTE_WIDTH = 350
+
+const Customer = () => {
+  const title = "Customers"
+  const description =
+    "Discover how QuestDB is powering the core infrastructure of companies dealing with time-series data"
+
+  const { ref, width } = useResizeObserver<HTMLDivElement>()
+  // An "item" is a quote
+  // Index in the array of quotes of the item that is "focused"
+  const [index, setIndex] = useState(0)
+  // How many items we can show on the screen
+  const viewportSize = Math.max(1, Math.floor((width ?? 0) / QUOTE_WIDTH))
+  // How many items will actually be displayed (can be smaller than viewportSize)
+  const viewportCount =
+    viewportSize === 0 ? 0 : Math.ceil(quotes.length / viewportSize)
+  // Page number
+  const page = Math.floor(index / viewportSize)
+  // The quotes to show
+  const viewportQuotes = quotes.slice(
+    page * viewportSize,
+    (page + 1) * viewportSize,
+  )
+  const increaseIndex = useCallback(() => {
+    setIndex((index) => Math.min(index + viewportSize, quotes.length - 1))
+  }, [viewportSize])
+  const decreaseIndex = useCallback(() => {
+    setIndex((index) => Math.max(index - viewportSize, 0))
+  }, [viewportSize])
+  return (
+    <Layout canonical="/customers" description={description} title={title}>
+      <section className={clsx(seCss.section, seCss["section--odd"])}>
+        <div className={juCss.jumbotron}>
+          <div className={juCss.jumbotron__left}>
+            <h1 className={seCss.section__title}>Success Stories</h1>
+            <p
+              className={clsx(
+                seCss.section__subtitle,
+                juCss.jumbotron__subtitle,
+              )}
+            >
+              Here are the most innovative stories from our users highlighting
+              how QuestDB is powering the core infrastructure of companies
+              working with time-series data.
+            </p>
+          </div>
+          <div className={juCss.jumbotron__illustration}>
+            <img
+              alt="People co-working on a dashboard"
+              height={274}
+              src="/img/pages/customers/top.svg"
+              width={250}
+            />
+          </div>
         </div>
-      ))}
-    </div>
-  </section>
-)
-
-const monitoringCustomers: Customer[] = [
-  {
-    key: "yahoo",
-    quote:
-      "See how Yahoo uses QuestDB to monitor and autoscale cloud clusters that serve a billion users",
-    caseStudyLink: "/case-study/yahoo",
-    logoWidth: 100,
-  },
-  {
-    key: "liveaction",
-    logoWidth: 120,
-  },
-  {
-    key: "syndica",
-    logoWidth: 100,
-  },
-  {
-    key: "syntropy",
-    logoWidth: 120,
-  },
-  {
-    key: "apacheNifi",
-    logoWidth: 110,
-    logoHeight: 35,
-  },
-  {
-    key: "central-group",
-  },
-  {
-    key: "prediko",
-    logoWidth: 80,
-  },
-  {
-    key: "synology",
-    logoWidth: 100,
-  },
-]
-
-const Monitoring = () => (
-  <section className={seCss.section} id="monitoring-and-real-time-analytics">
-    <div className={clsx(seCss["section--inner"], ucCss.section)}>
-      <div className={ucCss["use-case__half"]}>
-        <h2 className={clsx(seCss.section__title, ucCss["use-case__title"])}>
-          Monitoring and Real-time analytics
-        </h2>
-
-        <List
-          itemClassName={clsx(liCss.item, ucCss.listItem)}
-          items={[
-            "On the fly aggregations and downsampling for real-time dashboards",
-            "DevOps monitoring and alerting",
-            "Network traffic flow analysis and machine learning based threat detection",
-            "In-product application analytics",
-            "Real-time SQL queries computed on data streams",
-          ]}
-        />
-      </div>
-
-      <img
-        src="/img/pages/use-cases/real-time-analytics-jumbo.svg"
-        alt="An illustration of real-time analytics and monitoring"
-        width="630"
-        className={ucCss["use-case__image"]}
-      />
-    </div>
-
-    <div className={clsx(seCss["section--inner"], ucCss.section)}>
-      <div className={ucCss["use-case__industries"]}>
-        <h4>Applicable industries</h4>
-        <List
-          itemClassName={clsx(prCss.property, ucCss["use-case__property"])}
-          items={[
-            "DevOps/Networks",
-            "Blockchain / Web 3",
-            "SaaS applications",
-            "E-commerce",
-            "Cyber security",
-          ]}
-        />
-      </div>
-
-      <UseCaseCustomers customers={monitoringCustomers} />
-    </div>
-  </section>
-)
-
-const marketDataCustomers: Customer[] = [
-  {
-    key: "toggle",
-    quote:
-      "See how Toggle migrated from InfluxDB to QuestDB with queries that are 300x faster, utilizing 1/4 of the hardware\n",
-    caseStudyLink: "/case-study/toggle",
-    logoWidth: 100,
-  },
-  {
-    key: "kepler",
-    logoWidth: 120,
-  },
-  {
-    key: "coinhall",
-    logoWidth: 140,
-    logoHeight: 50,
-  },
-  {
-    key: "aquis-exchange",
-    logoWidth: 90,
-  },
-]
-
-const MarketData = () => (
-  <section className={seCss.section} id="financial-market-data">
-    <div className={clsx(seCss["section--inner"], ucCss.section)}>
-      <img
-        src="/img/pages/use-cases/financial-market-data-jumbo.svg"
-        alt="An illustration of financial market data charts"
-        width="565"
-        className={ucCss["use-case__image"]}
-      />
-      <div className={ucCss["use-case__half"]}>
-        <h2 className={clsx(seCss.section__title, ucCss["use-case__title"])}>
-          Financial market data
-        </h2>
-
-        <List
-          itemClassName={clsx(liCss.item, ucCss.listItem)}
-          items={[
-            "Real-time market data with dashboard integrations",
-            "Fast aggregations for OHLC and candlestick charts",
-            "Drill down large historical datasets to analyze the market",
-            "Financial modelling with python and machine learning libraries",
-            "Match and correlate multiple feeds with fuzzy timestamp JOINs",
-          ]}
-        />
-      </div>
-    </div>
-
-    <div className={clsx(seCss["section--inner"], ucCss.section)}>
-      <div className={ucCss["use-case__industries"]}>
-        <h4>Applicable industries</h4>
-        <List
-          itemClassName={clsx(prCss.property, ucCss["use-case__property"])}
-          items={[
-            "Crypto (Exchanges, Intelligence, Funds)",
-            "FinTech (Asset/Wealth Management, AI predictions)",
-            "Trading (FX, Equity, Commodity)",
-          ]}
-        />
-      </div>
-
-      <UseCaseCustomers customers={marketDataCustomers} />
-    </div>
-  </section>
-)
-
-const industrialTelemetryCustomers: Customer[] = [
-  {
-    key: "tqs-integration",
-    quote:
-      "See how TQS, a Cognizant company, uses QuestDB to store manufacturing plants metrics for real-time data visualization and anomaly detection",
-    caseStudyLink: "/case-study/tqs-integration",
-    logoWidth: 120,
-  },
-  {
-    key: "airbus",
-    logoWidth: 120,
-  },
-  {
-    key: "samtec",
-    logoWidth: 120,
-  },
-  {
-    key: "copenhagen-atomics",
-    logoWidth: 120,
-  },
-  {
-    key: "electric-era",
-    logoWidth: 120,
-  },
-  {
-    key: "turk-telekom",
-    logoWidth: 120,
-  },
-  {
-    key: "sapient-industries",
-    logoWidth: 120,
-  },
-  {
-    key: "razor-secure",
-  },
-]
-
-const IndustrialTelemetry = () => (
-  <section className={seCss.section} id="industrial-analytics">
-    <div className={clsx(seCss["section--inner"])}>
-      <div className={ucCss["use-case__half"]}>
-        <h2 className={clsx(seCss.section__title, ucCss["use-case__title"])}>
-          Industrial analytics
-        </h2>
-
-        <List
-          itemClassName={clsx(liCss.item, ucCss.listItem)}
-          items={[
-            "Store high frequency sensor data with continuous data ingestion",
-            "Process metrics in the manufacturing process: vibrations, pressure, temperatures, pH levels",
-            "Monitor electricity readings for usage insights",
-            "Track fleets of autonomous cars, aircrafts or cargo ships with native geospatial features",
-            "React to industrial anomalies in real-time",
-          ]}
-        />
-      </div>
-      <img
-        src="/img/pages/use-cases/industrial-telemetry-jumbo.svg"
-        alt="An illustration of industrial analytics charts"
-        width="585"
-        className={ucCss["use-case__image"]}
-      />
-    </div>
-
-    <div className={clsx(seCss["section--inner"])}>
-      <UseCaseCustomers customers={industrialTelemetryCustomers} columnLayout />
-
-      <div
-        className={clsx(
-          ucCss["use-case__industries"],
-          ucCss["use-case__industries--wide"],
-        )}
+      </section>
+      <section
+        className={clsx(seCss["section--inner"], seCss["section--column"])}
       >
-        <h4>Applicable industries</h4>
-        <List
-          itemClassName={clsx(prCss.property, ucCss["use-case__property"])}
-          items={[
-            "Energy (Power plants, Renewables, Oil & Gas, Utilities)",
-            "Space & Defence (Rockets, Satellites, Maritime, Aerospace)",
-            "Transportation and Mobility (Autonomous cars, Freight transport, Drones, Logistics)",
-            "Manufacturing & Automation (Semiconductors, Digital factories, pre-processing plants, Robotics)",
-            "Telco (Network base stations)",
-          ]}
-        />
-      </div>
-    </div>
-  </section>
-)
+        <h2 className={quCss.title}>What our users say about QuestDB</h2>
 
-const title = "Use Cases"
-const UseCasesPage = () => (
-  <Layout canonical="/careers" description={title} title={title}>
-    <Heading />
-    <UseCaseHighlights />
-    <Monitoring />
-    <MarketData />
-    <IndustrialTelemetry />
-  </Layout>
-)
+        <div className={quCss.carousel} ref={ref}>
+          <TransitionGroup component={null}>
+            <CSSTransition key={page} timeout={200} classNames="item">
+              <div className={quCss.carousel__group}>
+                {viewportQuotes.map((Quote) => (
+                  <Quote key={quotes.indexOf(Quote)} />
+                ))}
+              </div>
+            </CSSTransition>
+          </TransitionGroup>
+        </div>
 
-export default UseCasesPage
+        <div className={quCss.controls}>
+          <div
+            className={clsx(
+              quCss["controls__chevron-wrapper"],
+              quCss["controls__chevron-wrapper--left"],
+              {
+                [quCss["controls__chevron-wrapper--hidden"]]: page === 0,
+              },
+            )}
+            onClick={decreaseIndex}
+          >
+            <Chevron className={quCss.controls__chevron} side="left" />
+          </div>
+
+          <div className={quCss.controls__middle}>
+            {Array(viewportCount)
+              .fill(0)
+              .map((_, idx) => (
+                <Bullet
+                  index={idx}
+                  key={idx}
+                  onClick={setIndex}
+                  page={page}
+                  viewportSize={viewportSize}
+                />
+              ))}
+          </div>
+
+          <div
+            className={clsx(
+              quCss["controls__chevron-wrapper"],
+              quCss["controls__chevron-wrapper--right"],
+              {
+                [quCss["controls__chevron-wrapper--hidden"]]:
+                  page === viewportCount - 1,
+              },
+            )}
+            onClick={increaseIndex}
+          >
+            <Chevron className={quCss.controls__chevron} side="right" />
+          </div>
+        </div>
+      </section>
+
+      <section className={clsx(seCss.section, seCss["section--inner"])}>
+        <div className={caCss.card}>
+          <div className={caCss.card__illustration}>
+            <img
+              alt="Aquis logo"
+              src="/img/pages/case-study/aquis/summary.jpg"
+              width={525}
+            />
+          </div>
+          <p className={caCss.card__summary}>
+            <img
+              alt="Aquis logo"
+              className={caCss.card__logo}
+              height={50}
+              src="/img/pages/customers/cards/aquis.svg"
+              width={140}
+            />
+            “QuestDB is a time series database truly built by developers for
+            developers. We found that QuestDB provides a unicorn solution to
+            handle extreme transactions per second while also offering a
+            simplified SQL programming interface.”
+            <em className={caCss.card__author}>
+              - <strong>Viet Lee</strong>, CTO, Aquis
+            </em>
+            <Button className={caCss.card__cta} to="/case-study/aquis/">
+              View full case study
+            </Button>
+          </p>
+        </div>
+      </section>
+
+      <section className={clsx(seCss.section, seCss["section--inner"])}>
+        <div className={caCss.card}>
+          <p className={caCss.card__summary}>
+            <img
+              alt="Yahoo logo"
+              className={caCss.card__logo}
+              height={50}
+              src="/img/pages/customers/cards/yahoo.svg"
+              width={140}
+            />
+            “We use QuestDB to monitor metrics for autoscaling decisions within
+            our ML engine that provides search, recommendation, and
+            personalization via models and aggregations on continuously-changing
+            data.”
+            <em className={caCss.card__author}>
+              - <strong>Jon Bratseth</strong>, VP Architect, Yahoo
+            </em>
+            <Button className={caCss.card__cta} to="/case-study/yahoo/">
+              View full case study
+            </Button>
+          </p>
+
+          <div className={caCss.card__illustration}>
+            <img
+              alt="Yahoo logo"
+              height={400}
+              src="/img/pages/case-study/yahoo/summary.jpg"
+              width={525}
+            />
+          </div>
+        </div>
+      </section>
+      <section className={clsx(seCss.section, seCss["section--inner"])}>
+        <div className={caCss.card}>
+          <div className={caCss.card__illustration}>
+            <img
+              alt="Logo for liveaction AI's network threat detection suite ThreatEye"
+              height={360}
+              src="/img/pages/case-study/liveaction/summary.png"
+              width={640}
+            />
+          </div>
+
+          <p className={caCss.card__summary}>
+            <img
+              alt="LiveAction logo"
+              className={caCss.card__logo}
+              height={80}
+              src="/img/pages/customers/logos/liveaction.svg"
+              width={120}
+            />
+            “QuestDB is impressive and stands out as a superior option. We use
+            it as the basis of our time series analytics for network threat
+            detection.”
+            <em className={caCss.card__author}>
+              - <strong>Randy Caldejon</strong>, VP, ThreatEye Product
+              Development, LiveAction
+            </em>
+            <Button className={caCss.card__cta} to="/case-study/liveaction/">
+              View full case study
+            </Button>
+          </p>
+        </div>
+      </section>
+      <section className={clsx(seCss.section, seCss["section--inner"])}>
+        <div className={caCss.card}>
+          <p className={caCss.card__summary}>
+            <img
+              alt="TQS Integration logo"
+              className={caCss.card__logo}
+              height={40}
+              src="/img/pages/customers/cards/tqs-integration.svg"
+              width={140}
+            />
+            “TQS Integration uses QuestDB in data architecture solutions for
+            clients in Life Science, Pharmaceutical, Energy, and Renewables. We
+            use QuestDB when we require a time series database that’s simple and
+            efficient for data collection, contextualization, visualization, and
+            analytics.”
+            <em className={caCss.card__author}>
+              - <strong>Holger Amort</strong>, Senior Data Scientist, TQS
+              Integration
+            </em>
+            <Button
+              className={caCss.card__cta}
+              to="/case-study/tqs-integration/"
+            >
+              View full case study
+            </Button>
+          </p>
+          <div className={caCss.card__illustration}>
+            <img
+              alt="A graphic with the logo of TQS Integration"
+              height={360}
+              src="/img/pages/case-study/tqs-integration/card.png"
+              width={640}
+            />
+          </div>
+        </div>
+      </section>
+      <section className={clsx(seCss.section, seCss["section--inner"])}>
+        <div className={caCss.card}>
+          <div className={caCss.card__illustration}>
+            <img
+              alt="An photo of a cellphone with the Turk Telekom logo"
+              src="/img/pages/case-study/turk-telekom/card.png"
+            />
+          </div>
+          <p className={caCss.card__summary}>
+            <img
+              alt="Türk Telekom logo"
+              className={caCss.card__logo}
+              height={50}
+              src="/img/pages/customers/logos/turk_telekom.svg"
+              width={140}
+            />
+            “QuestDB allows us to query data while writing millions of records.
+            It is an excellent database for time series analysis, calculation of
+            aggregates and can efficiently store our data.”
+            <em className={caCss.card__author}>
+              - <strong>Erdem Aydemir</strong>, Software Engineer, Innova (Türk
+              Telekom)
+            </em>
+            <Button className={caCss.card__cta} to="/case-study/turk-telekom/">
+              View full case study
+            </Button>
+          </p>
+        </div>
+      </section>
+      <section className={clsx(seCss.section, seCss["section--inner"])}>
+        <div className={caCss.card}>
+          <p className={caCss.card__summary}>
+            <img
+              alt="Toggle.global logo"
+              className={caCss.card__logo}
+              height={50}
+              src="/img/pages/customers/cards/toggle.svg"
+              width={140}
+            />
+            “We switched from InfluxDB to QuestDB to get queries that are on
+            average 300x faster utilizing 1/4 of the hardware, without ever
+            overtaxing our servers.”
+            <em className={caCss.card__author}>
+              - <strong>Armenak Mayalian</strong>, CTO, Toggle
+            </em>
+            <Button className={caCss.card__cta} to="/case-study/toggle/">
+              View full case study
+            </Button>
+          </p>
+          <div className={caCss.card__illustration}>
+            <img
+              alt="Comparison of AI and chess to investing"
+              height={453}
+              src="/img/pages/case-study/toggle/summary.png"
+              width={600}
+            />
+          </div>
+        </div>
+      </section>
+    </Layout>
+  )
+}
+
+export default Customer

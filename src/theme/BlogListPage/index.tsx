@@ -19,13 +19,13 @@ export type FrontMatter = OriginalFrontMatter & { permalink?: string }
 
 const categories: CategoriesProps["categories"] = [
   {
-    title: "Benchmarks",
+    title: "Stories",
     description:
-      "Reproducible benchmarks of Active Mobility using open source benchmarking frameworks",
-    url: "/blog/tags/benchmark",
+      "Stories of Grit and determination in enabling  Active Mobility",
+    url: "/blog/tags/stories",
   },
   {
-    title: "Demos",
+    title: "Case Study",
     description:
       "Demonstrating AM Success and the path for enabling active mobility",
     url: "/blog/tags/demo",
@@ -45,14 +45,16 @@ const categories: CategoriesProps["categories"] = [
 ]
 
 const prioritizedTags: ChipProps["items"] = [
-  "release",
-  "company",
-  "engineering",
+  "design",
+  "innovation",
+  "sports",
   "community",
-  "kafka",
-  "prometheus",
-  "postgres",
-  "data science",
+  "events",
+  "tourism",
+  "stories",
+  "citizens",
+  "demo",
+  "cycle science",
 ].map((tag) => ({
   name: tag,
   permalink: `/blog/tags/${tag.replace(/ /g, "-")}`,
