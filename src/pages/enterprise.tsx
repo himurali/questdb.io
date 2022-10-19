@@ -18,11 +18,6 @@ import seCss from "../css/section.module.css"
 import style from "../css/enterprise/style.module.css"
 import _quotes from "../assets/quotes"
 
-import SvgImage from "../components/SvgImage"
-
-import AwsLogo from "../assets/img/aws.svg"
-import AzureLogo from "../assets/img/azure.svg"
-import GoogleCloudLogo from "../assets/img/gc.svg"
 
 const quotes = _quotes.map(({ author, company, logo, role, text }) => {
   const Quote = () => (
