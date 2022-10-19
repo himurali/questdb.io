@@ -58,7 +58,7 @@ demonstration and assessment of Active Mobility Vehicles. We are redesigning the
         <img
           alt="Screenshot of instance creation form and instance details pages in QuestDB Cloud"
           height={626}
-          src="/img/pages/cloud/screens.png"
+          src="https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/c101df064e4db4f63e23e24befb0d82d/large.jpg"
           width={1026}
           className={style["header-image"]}
         />
@@ -68,12 +68,12 @@ demonstration and assessment of Active Mobility Vehicles. We are redesigning the
             <h3 className={flCss.flashy__title}>Open source design</h3>
             <ul className={style.card__list}>
               <li className={clsx(prCss.property, style.card__item)}>
-                Apache 2.0
+              Knowledge Engineering
               </li>
               <li className={clsx(prCss.property, style.card__item)}>
-                Self-hosting
+              Acceleration
               </li>
-              <li className={clsx(prCss.property, style.card__item)}>Free</li>
+              <li className={clsx(prCss.property, style.card__item)}>Future Forever</li>
             </ul>
             <Button
               variant="primary"
@@ -81,33 +81,30 @@ demonstration and assessment of Active Mobility Vehicles. We are redesigning the
               className={style.card__button}
               newTab={false}
             >
-              Install
+                                Join Design   Community
+
             </Button>
           </div>
           <div className={flCss.flashy}>
-            <h3 className={flCss.flashy__title}>Distributed Manufacturing</h3>
+            <h3 className={flCss.flashy__title}>Ecosystem Process </h3>
             <ul className={style.card__list}>
               <li className={clsx(prCss.property, style.card__item)}>
-                Database-as-a-service
-              </li>
+              Cultivate Ecosystem              </li>
               <li className={clsx(prCss.property, style.card__item)}>
-                Database monitoring
-              </li>
+              Map the ecosystem              </li>
               <li className={clsx(prCss.property, style.card__item)}>
-                Built-in authentication
-              </li>
+              Networks Of Collaboration              </li>
               <li className={clsx(prCss.property, style.card__item)}>
-                Additional database features
-              </li>
+              AM Design              </li>
               <li className={clsx(prCss.property, style.card__item)}>
-                Multiple regions
+              & Mfg Content Hub / Lab 
               </li>
             </ul>
             <ContactFormDialog
               defaultInterest="cloud"
               trigger={
                 <Button variant="primary" className={style.card__button}>
-                  Book a demo
+                  Join Mfg  Community
                 </Button>
               }
             />

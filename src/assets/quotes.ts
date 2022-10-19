@@ -25,7 +25,7 @@ const quotes: Quote[] = [
     text:
       "QuestDB is used at Airbus for real-time applications involving hundreds of millions of data points per day. For us, QuestDB is an outstanding solution that meets (and exceeds) our performance requirements.",
     author: "Oliver Pfeiffer",
-    role: "Software Architect",
+    role: " prioritize people over vehicles",
     company: "Airbus",
   },
   {

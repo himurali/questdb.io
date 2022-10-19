@@ -30,13 +30,9 @@ const quotes = _quotes.map(({ author, company, logo, role, text }) => {
       <div className={quCss.quote__symbol} />
 
       <div className={quCss.quote__logo}>
-        <img
-          alt={logo.alt}
-          className="responsive-image"
-          height={logo.height}
-          src={logo.src}
-          width={logo.width}
-        />
+
+      <h3>{logo.alt}</h3>
+      
       </div>
 
       <p className={quCss.quote__content}>{text}</p>
@@ -141,7 +137,7 @@ const Enterprise = () => {
             alt="Artistic view of the console with sub-queries"
             className={ilCss.illustration}
             height={394}
-            src="/img/pages/enterprise/banner.svg"
+            src="https://images.unsplash.com/photo-1541687664971-639c2f8b63f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
             width={900}
           />
 
@@ -156,20 +152,7 @@ const Enterprise = () => {
           </p>
 
           <div className={clsx(clCss.cloud)}>
-            <SvgImage
-              image={<AwsLogo width="73" height="44" />}
-              title="AWS logo"
-            />
-
-            <SvgImage
-              image={<GoogleCloudLogo width="219" height="34" />}
-              title="Google Cloud logo"
-            />
-
-            <SvgImage
-              image={<AzureLogo width="116" height="34" />}
-              title="Google Cloud logo"
-            />
+          
           </div>
         </div>
       </section>
@@ -265,11 +248,10 @@ const Enterprise = () => {
 
       <section className={seCss["section--inner"]}>
         <div className={peCss.performance__left}>
-          <h2 className={peCss.performance__title}>Superior performance</h2>
+          <h2 className={peCss.performance__title}>Utrecht Bicycle city in netherlands</h2>
           <p className={peCss.performance__item}>
             <span className={peCss.performance__bullet} />
-            Fast ingestion - O(1) complexity, heavy parallelization, out of
-            order inserts
+            Facilitating the last mile 
           </p>
           <p
             className={clsx(
@@ -277,11 +259,11 @@ const Enterprise = () => {
               peCss["performance__item--important"],
             )}
           >
-            Downsize your instance, reduce hardware costs
+            System change in public transport 
           </p>
           <p className={peCss.performance__item}>
             <span className={peCss.performance__bullet} />
-            SIMD accelerated SQL queries for lightning fast data retrieval
+            Give way to pedestrians and cyclists on Priority
           </p>
           <p
             className={clsx(
@@ -289,18 +271,18 @@ const Enterprise = () => {
               peCss["performance__item--important"],
             )}
           >
-            Real-time analytics, correlate events over time
+           Space-efficiency
           </p>
-          <Button className={peCss.performance__cta} href="/case-study/toggle/">
+          <Button className={peCss.performance__cta} href="https://ecf.com/sites/ecf.com/files/Kik.M_Utrecht_A_bicycle_friendly_city.pdf">
             View case study
           </Button>
         </div>
         <div className={peCss.performance__right}>
           <img
             alt="Charts showing the performance improvments when using QuestDB"
-            height={411}
-            src="/img/pages/enterprise/performance.svg"
-            width={661}
+            height={311}
+            src="https://bicycledutch.files.wordpress.com/2016/04/utrecht2016-08.jpg"
+            width={761}
           />
         </div>
       </section>
