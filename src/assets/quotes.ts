@@ -17,35 +17,35 @@ const quotes: Quote[] = [
   {
     website: "https://www.airbus.com/",
     logo: {
-      alt: "Airbus logo",
+      alt: "People First",
       src: "/img/pages/customers/cards/airbus.svg",
       height: 56,
       width: 140,
     },
     text:
       "QuestDB is used at Airbus for real-time applications involving hundreds of millions of data points per day. For us, QuestDB is an outstanding solution that meets (and exceeds) our performance requirements.",
-    author: "Oliver Pfeiffer",
+    author: "People First",
     role: " prioritize people over vehicles",
     company: "Airbus",
   },
   {
     website: "https://www.yahoo.com/",
     logo: {
-      alt: "Yahoo logo",
+      alt: "Design Standards For Cities",
       src: "/img/pages/customers/cards/yahoo.svg",
       height: 56,
       width: 140,
     },
     text:
       "We use QuestDB to monitor metrics for autoscaling decisions within our ML engine that provides search, recommendation, and personalization via models and aggregations on continuously changing data.",
-    author: "Jon Bratseth",
+    author: "Design Standard Consistency",
     role: "VP Architect",
     company: "Yahoo",
   },
   {
     website: "https://www.keplercheuvreux.com/en/",
     logo: {
-      alt: "Kepler logo",
+      alt: "Comfortable-Appealing",
       src: "/img/pages/customers/cards/kepler.svg",
       height: 56,
       width: 140,
@@ -59,7 +59,7 @@ const quotes: Quote[] = [
   {
     website: "https://aquis.eu/",
     logo: {
-      alt: "Aquis Exchange logo",
+      alt: "Slow Speed Traffic",
       src: "/img/pages/customers/cards/aquis.svg",
       height: 30,
       width: 100,
@@ -74,7 +74,7 @@ const quotes: Quote[] = [
   {
     website: "https://syndica.io",
     logo: {
-      alt: "Syndica logo",
+      alt: "Maintain Flow",
       src: "/img/pages/customers/cards/syndica.svg",
       height: 30,
       width: 113,
@@ -88,7 +88,7 @@ const quotes: Quote[] = [
   {
     website: "https://www.copenhagenatomics.com/",
     logo: {
-      alt: "Copenhagen Atomics logo",
+      alt: "Disincentivize Driving",
       src: "/img/pages/customers/logos/ca.svg",
       height: 30,
       width: 113,
@@ -102,7 +102,7 @@ const quotes: Quote[] = [
   {
     website: "https://www.liveaction.com/",
     logo: {
-      alt: "LiveAction logo",
+      alt: "Reward Cycling Behavior",
       src: "/img/pages/customers/logos/liveaction.svg",
       height: 56,
       width: 140,
@@ -116,7 +116,7 @@ const quotes: Quote[] = [
   {
     website: "https://www.tqsintegration.com",
     logo: {
-      alt: "TQS Integration logo",
+      alt: "Provide Dedicated Spaces",
       src: "/img/pages/customers/cards/tqs-integration.svg",
       height: 56,
       width: 140,
@@ -130,7 +130,7 @@ const quotes: Quote[] = [
   {
     website: "https://www.samtec.com/",
     logo: {
-      alt: "Samtec logo",
+      alt: "Visibility of Cyclist/Walkers",
       src: "/img/pages/customers/cards/samtec.svg",
       height: 56,
       width: 140,
@@ -144,7 +144,7 @@ const quotes: Quote[] = [
   {
     website: "https://toggle.ai/",
     logo: {
-      alt: "Toggle logo",
+      alt: "Last Mile Connectivity",
       src: "/img/pages/customers/cards/toggle.svg",
       height: 56,
       width: 140,
@@ -158,7 +158,7 @@ const quotes: Quote[] = [
   {
     website: "https://www.publicissapient.com/",
     logo: {
-      alt: "Sapient logo",
+      alt: "Parking for Safety",
       src: "/img/pages/customers/cards/sapient.svg",
       height: 28,
       width: 140,
@@ -172,7 +172,7 @@ const quotes: Quote[] = [
   {
     website: "https://www.turktelekom.com.tr/en",
     logo: {
-      alt: "Türk Telekom logo",
+      alt: "Adequate Greenery",
       src: "/img/pages/customers/logos/turk_telekom.svg",
       height: 56,
       width: 140,
