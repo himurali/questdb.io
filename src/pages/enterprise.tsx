@@ -7,8 +7,6 @@ import Chevron from "@theme/Chevron"
 import Layout from "../theme/Layout"
 import Subscribe from "../components/Subscribe"
 import useResizeObserver from "@theme/useResizeObserver"
-
-import clCss from "../css/enterprise/cloud.module.css"
 import caCss from "../css/enterprise/card.module.css"
 import ilCss from "../css/enterprise/illustration.module.css"
 import peCss from "../css/enterprise/performance.module.css"
