@@ -145,10 +145,6 @@ const Enterprise = () => {
           >
             Active Mobility enables quick wins for everyone - both the private sector and public sector.
           </p>
-
-          <div className={clsx(clCss.cloud)}>
-          
-          </div>
         </div>
       </section>
 
@@ -162,14 +158,13 @@ const Enterprise = () => {
               width={62}
             />
           </div>
-          <h2 className={caCss.card__title}>Support</h2>
+          <h2 className={caCss.card__title}>Bicycle Parking</h2>
           <ul className={caCss.card__list}>
             <li className={clsx(prCss.property, caCss.card__item)}>
-              Enterprise support: 24x7 technical support from high-quality
-              engineers via phone, chat, and email
+               Enable bicycle parking facility at important locations 
             </li>
             <li className={clsx(prCss.property, caCss.card__item)}>
-              On demand training
+              Bicycle rack design
             </li>
           </ul>
         </div>
@@ -183,16 +178,16 @@ const Enterprise = () => {
               width={42}
             />
           </div>
-          <h2 className={caCss.card__title}>Security and authentication</h2>
+          <h2 className={caCss.card__title}>Integration with Public Transport</h2>
           <ul className={caCss.card__list}>
             <li className={clsx(prCss.property, caCss.card__item)}>
-              Advanced security
+              Last mile connectivity
             </li>
             <li className={clsx(prCss.property, caCss.card__item)}>
-              Access control
+              Cycle Path to metro/bus stand
             </li>
             <li className={clsx(prCss.property, caCss.card__item)}>
-              Authentication
+              Corporate Connect
             </li>
           </ul>
         </div>
@@ -206,16 +201,16 @@ const Enterprise = () => {
               width={45}
             />
           </div>
-          <h2 className={caCss.card__title}>Management</h2>
+          <h2 className={caCss.card__title}>Safety</h2>
           <ul className={caCss.card__list}>
             <li className={clsx(prCss.property, caCss.card__item)}>
-              Automation
+              Safe Pedestrian Crossing
             </li>
             <li className={clsx(prCss.property, caCss.card__item)}>
-              Database monitoring
+              Signage for Vehicles
             </li>
             <li className={clsx(prCss.property, caCss.card__item)}>
-              Analytics and visualization
+              Slow Lane roads 
             </li>
           </ul>
         </div>
@@ -229,13 +224,13 @@ const Enterprise = () => {
               width={56}
             />
           </div>
-          <h2 className={caCss.card__title}>Unlimited scale</h2>
+          <h2 className={caCss.card__title}>Dedicate Space</h2>
           <ul className={caCss.card__list}>
             <li className={clsx(prCss.property, caCss.card__item)}>
-              High throughput replication
+              Provision for cyclists
             </li>
             <li className={clsx(prCss.property, caCss.card__item)}>
-              Horizontal scalability (high-performance clusters, sharding)
+              Networked routes for easy flow
             </li>
           </ul>
         </div>

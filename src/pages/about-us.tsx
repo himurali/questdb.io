@@ -138,10 +138,7 @@ const Investors = () => {
         </p>
       </div>
       <div className={inCss.investors}>
-        <div className={inCss.investors__logos}>
-          
-         
-        </div>
+        
 
         <div className={inCss.investors__col}>
           {investorsColumn1.map((investor) => (
@@ -183,17 +180,7 @@ const Team = () => {
             </p>
             <p>
               Our team is having 15 years of experience in the field of active mobility.
-            </p>
-           
-            <div className={teCss.team__articles}>
-              <div className={teCss.team__article}>
-                 
-                <div className={teCss.team__article__details}>
-                  
-                   
-                </div>
-              </div>
-            </div>
+            </p> 
           </div>
           <div className={clsx(paCss.half__section, teCss.team__people__photo)}>
             <img
