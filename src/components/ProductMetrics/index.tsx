@@ -1,15 +1,10 @@
 import React from "react"
- 
-
 import pmCss from "../../css/product-metrics/product-metrics.module.css"
 import SvgImage from "../SvgImage"
-
 import GithubLogo from "../../assets/img/github.svg"
 import SlackLogo from "../../assets/img/slack.svg"
 import DatabaseLogo from "../../assets/img/database.svg"
 import QuestDBLogo from "../../assets/img/questdb.svg"
-
- 
 
 const numberWithCommas = (x: number) => {
   const rounded = Math.floor(x / 100) * 100
@@ -17,10 +12,7 @@ const numberWithCommas = (x: number) => {
 }
 
 const ProductMetrics = () => {
-   
-   
-
-  return (
+return (
     <div className={pmCss["product-metrics"]}>
       <div className={pmCss["product-metric"]}>
         <div className={pmCss["product-metric__content"]}>

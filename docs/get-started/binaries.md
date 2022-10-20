@@ -11,13 +11,11 @@ import InterpolateReleaseData from "../../src/components/InterpolateReleaseData"
 
 This page describes how to install and use QuestDB via binaries. QuestDB comes
 with a script `questdb.sh` for Linux/FreeBSD and an executable `questdb.exe` for
-Windows. If you are looking for macOS, please check our
-[Homebrew](/docs/get-started/homebrew) section.
+Windows. If you are looking for macOS, please check our 
 
 ## Download
 
-You can find the latest binaries on the [Get QuestDB](/get-questdb) page. The
-release notes are on our [GitHub release]({@githubUrl@}/releases) page.
+You can find the latest binaries on th 
 
 ## Prerequisites
 
@@ -135,88 +133,8 @@ This binary weights around 20MB, this depends on your operating system.
 When using this binary, you do not need anything on your machine, the Java
 runtime is packaged directly with QuestDB.
 
-## Extract the tarball
-
-<!-- prettier-ignore-start -->
-
-<Tabs defaultValue="any" values={[
-  { label: "Any (no JVM)", value: "any" },
-  { label: "Linux", value: "linux" },
-  { label: "FreeBSD", value: "bsd" },
-  { label: "Windows", value: "windows" },
-]}>
-
-<!-- prettier-ignore-end -->
-
-<TabItem value="any">
-
-
-<InterpolateReleaseData
-  renderText={(release) => {
-    return (
-      <CodeBlock className="language-shell">
-        {`tar -xvf questdb-${release.name}-no-jre-bin.tar.gz`}
-      </CodeBlock>
-    )
-  }}
-/>
-
-</TabItem>
-
-
-<TabItem value="linux">
-
-
-<InterpolateReleaseData
-  renderText={(release) => {
-    return (
-      <CodeBlock className="language-shell">
-        {`tar -xvf questdb-${release.name}-rt-linux-amd64.tar.gz`}
-      </CodeBlock>
-    )
-  }}
-/>
-
-</TabItem>
-
-
-<TabItem value="bsd">
-
-
-<InterpolateReleaseData
-  renderText={(release) => {
-    return (
-      <CodeBlock className="language-shell">
-        {`tar -xvf questdb-${release.name}-rt-freebsd-amd64.tar.gz`}
-      </CodeBlock>
-    )
-  }}
-/>
-
-</TabItem>
-
-
-<TabItem value="windows">
-
-
-<InterpolateReleaseData
-  renderText={(release) => {
-    return (
-      <CodeBlock className="language-shell">
-        {`tar -xvf questdb-${release.name}-rt-windows-amd64.tar.gz`}
-      </CodeBlock>
-    )
-  }}
-/>
-
-</TabItem>
-
-
-</Tabs>
 
 
 ## Next steps
 
-Once you extracted the tarball, you are ready to use QuestDB. Navigate to our
-[command-line options](/docs/reference/command-line-options) page to learn more
-about its usage.
+Once you extracted the tarball,  

@@ -1,222 +1,104 @@
 import clsx from "clsx"
-import { differenceInDays, format, formatDistanceToNowStrict } from "date-fns"
-import { usePluginData } from "@docusaurus/useGlobalData"
-import React, { ReactNode, useEffect, useState } from "react"
+import React, { useCallback, useState } from "react"
+import { CSSTransition, TransitionGroup } from "react-transition-group"
 
 import Button from "@theme/Button"
-import CodeBlock from "@theme/CodeBlock"
+import Chevron from "@theme/Chevron"
 import Layout from "../theme/Layout"
-
-import biCss from "../css/get-questdb/binary.module.css"
-import chCss from "../css/get-questdb/changelog.module.css"
-import ctCss from "../css/get-questdb/cta.module.css"
-import heCss from "../css/get-questdb/help.module.css"
-import ilCss from "../css/get-questdb/illustration.module.css"
+import Subscribe from "../components/Subscribe"
+import useResizeObserver from "@theme/useResizeObserver"
+import caCss from "../css/enterprise/card.module.css"
+import ilCss from "../css/enterprise/illustration.module.css"
+import peCss from "../css/enterprise/performance.module.css"
+import quCss from "../css/enterprise/quote.module.css"
+import prCss from "../css/property.module.css"
 import seCss from "../css/section.module.css"
-import { getAssets, getOs, Os, Release } from "../utils"
+import style from "../css/enterprise/style.module.css"
+import _quotes from "../assets/quotes"
 
-import customFields from "../config/customFields"
 
-type BinaryProps = Readonly<{
-  architecture: boolean
-  basis: string
-  children?: ReactNode
-  detailsGrow: number
-  grow: number
-  href?: string
-  logo: ReactNode
-  rt: boolean
-  size?: string
-  title: string
-}>
+const quotes = _quotes.map(({ author, company, logo, role, text }) => {
+  const Quote = () => (
+    <div key={company} className={quCss.quote}>
+      <div className={quCss.quote__symbol} />
 
-const Binary = ({
-  architecture,
-  basis,
-  children,
-  detailsGrow,
-  grow,
-  href,
-  logo,
-  rt,
-  size,
-  title,
-}: BinaryProps) => {
-  const hasDetails = Boolean(architecture || rt || size)
+      <div className={quCss.quote__logo}>
+
+      <h3>{logo.alt}</h3>
+      
+      </div>
+
+      <p className={quCss.quote__content}>{text}</p>
+
+      <p className={quCss.quote__author}>
+        <span className={quCss.quote__chevron}>&gt;</span>
+        {author}
+        <br />
+        {role}
+        ,&nbsp;
+        {company}
+      </p>
+    </div>
+  )
+
+  return Quote
+})
+
+type BulletProps = {
+  index: number
+  onClick: (index: number) => void
+  page: number
+  viewportSize: number
+}
+
+const Bullet = ({ index, onClick, page, viewportSize }: BulletProps) => {
+  const handleClick = useCallback(() => {
+    onClick(index * viewportSize)
+  }, [index, onClick, viewportSize])
 
   return (
-    <section className={clsx(biCss.binary)}>
-      <div className={biCss.binary__expand} style={{ flexBasis: basis }} />
-
-      {logo}
-
-      <h3
-        className={clsx(biCss.binary__title, {
-          [biCss["binary__title--grow"]]: !hasDetails,
-        })}
-        style={{ flexGrow: grow }}
-      >
-        {title}
-      </h3>
-
-      {hasDetails && (
-        <p className={biCss.binary__details} style={{ flexGrow: detailsGrow }}>
-          {architecture && (
-            <span className={biCss.binary__architecture}>64-bit</span>
-          )}
-
-          <span className={biCss.binary__size}>
-            {rt && " rt -"}
-            {size != null && ` ${size}`}
-          </span>
-        </p>
-      )}
-
-      {href != null && (
-        <Button
-          className={biCss.binary__download}
-          href={href}
-          newTab={false}
-          variant="tertiary"
-        >
-          Download
-        </Button>
-      )}
-
-      {children}
-    </section>
+    <span
+      className={clsx(quCss.controls__pin, {
+        [quCss["controls__pin--selected"]]: page === index,
+      })}
+      onClick={handleClick}
+    />
   )
 }
 
-Binary.defaultProps = {
-  architecture: false,
-  basis: "auto",
-  detailsGrow: 1,
-  grow: 0,
-  rt: false,
-}
+const QUOTE_WIDTH = 350
 
 const GetQuestdbPage = () => {
-  const title = "Download QuestDB"
+  const title = "Urban Design"
   const description =
-    "Download QuestDB, an open source time series SQL database for fast ingestion and queries"
-  const { release } = usePluginData<{ release: Release }>(
-    "fetch-latest-release",
+    "The fastest open source time-series database for organizations, on premise or on the cloud."
+
+  const { ref, width } = useResizeObserver<HTMLDivElement>()
+  // An "item" is a quote
+  // Index in the array of quotes of the item that is "focused"
+  const [index, setIndex] = useState(0)
+  // How many items we can show on the screen
+  const viewportSize = Math.max(1, Math.floor((width ?? 0) / QUOTE_WIDTH))
+  // How many items will actually be displayed (can be smaller than viewportSize)
+  const viewportCount =
+    viewportSize === 0 ? 0 : Math.ceil(quotes.length / viewportSize)
+  // Page number
+  const page = Math.floor(index / viewportSize)
+  // The quotes to show
+  const viewportQuotes = quotes.slice(
+    page * viewportSize,
+    (page + 1) * viewportSize,
   )
-  const [os, setOs] = useState<Os | undefined>()
-  const [releaseDate, setReleaseDate] = useState(
-    format(new Date(release.published_at), "MMMM M, yyyy"),
-  )
-  const assets = getAssets(release)
-
-  useEffect(() => {
-    const isClient = typeof window !== "undefined"
-
-    if (!isClient) {
-      return
-    }
-
-    if (differenceInDays(new Date(), new Date(release.published_at)) < 31) {
-      setReleaseDate(
-        `${formatDistanceToNowStrict(new Date(release.published_at))} ago`,
-      )
-    }
-    setOs(getOs())
-  }, [release.published_at])
-
-  const perOs = {
-    linux: (
-      <Binary
-        architecture
-        href={assets.linux.href}
-        logo={
-          <img
-            alt="Linux Logo"
-            className={biCss.binary__logo}
-            height={49}
-            src="/img/pages/getQuestdb/linux.svg"
-            width={42}
-          />
-        }
-        rt
-        size={assets.linux.size}
-        title="Linux"
-      >
-        <p className={biCss.binary__docs}>
-          <a href="/docs/get-started/binaries#your-operating-system-version">
-            Docs
-          </a>
-        </p>
-      </Binary>
-    ),
-    macos: (
-      <Binary
-        basis="15px"
-        grow={1}
-        logo={
-          <img
-            alt="macOS Logo"
-            className={biCss.binary__logo}
-            height={49}
-            src="/img/pages/getQuestdb/macos.svg"
-            width={41}
-          />
-        }
-        title="macOS (via Homebrew)"
-      >
-        <div />
-
-        <CodeBlock className="language-shell">
-          {`brew update
-brew install questdb`}
-        </CodeBlock>
-
-        <p className={biCss.binary__docs}>
-          <a href="/docs/get-started/homebrew">Docs</a>
-        </p>
-      </Binary>
-    ),
-    windows: (
-      <Binary
-        architecture
-        href={assets.windows.href}
-        logo={
-          <img
-            alt="Windows Logo"
-            className={biCss.binary__logo}
-            height={49}
-            src="/img/pages/getQuestdb/windows.svg"
-            width={49}
-          />
-        }
-        rt
-        size={assets.windows.size}
-        title="Windows"
-      >
-        <p className={biCss.binary__docs}>
-          <a href="/docs/get-started/binaries#your-operating-system-version">
-            Docs
-          </a>
-        </p>
-      </Binary>
-    ),
-  }
-
-  useEffect(() => {
-    const isClient = typeof window !== "undefined"
-
-    if (!isClient) {
-      return
-    }
-
-    setOs(getOs())
-  }, [])
+  const increaseIndex = useCallback(() => {
+    setIndex((index) => Math.min(index + viewportSize, quotes.length - 1))
+  }, [viewportSize])
+  const decreaseIndex = useCallback(() => {
+    setIndex((index) => Math.max(index - viewportSize, 0))
+  }, [viewportSize])
 
   return (
-    <Layout canonical="/get-questdb" description={description} title={title}>
-      <section
-        className={clsx(seCss["section--inner"], seCss["section--accent"])}
-      >
+    <Layout canonical="/enterprise" description={description} title={title}>
+      <section className={seCss["section--inner"]}>
         <div className={seCss.section__header}>
           <h1
             className={clsx(
@@ -224,7 +106,7 @@ brew install questdb`}
               seCss["section__title--accent"],
             )}
           >
-            Download QuestDB
+            Urban Design & Active Mobility
           </h1>
 
           <p
@@ -234,234 +116,229 @@ brew install questdb`}
               "text--center",
             )}
           >
-            You can find below download links for the latest version of QuestDB
-            ({release.name}). Once your download is finished, you can check our
-            documentation for <a href="/docs/get-started/docker/">Docker</a>,
-            the <a href="/docs/get-started/binaries/">binaries</a> or{" "}
-            <a href="/docs/get-started/homebrew/">Homebrew</a> to get started.
+            Understanding the link between health, safety, community with Active Mobility for Urban Areas.
           </p>
 
-          <img
-            alt="Screenshot of the Web Console showing various SQL statements and the result of one as a chart"
-            className={ilCss.illustration}
-            height={375}
-            src="/img/pages/getQuestdb/console.png"
-            width={500}
+          <Subscribe
+            placeholder="Work Email"
+            submitButtonText="Contact Us"
+            provider="enterprise"
+            className={style.subscribe}
           />
 
-          <div className={ctCss.cta}>
-            <p
-              className={clsx(ctCss.cta__details, {
-                [ctCss["cta__details--download"]]: os !== "macos",
-              })}
-            >
-              Latest Release:&nbsp;
-              <span className={ctCss.cta__version}>{release.name}</span>
-              &nbsp;({releaseDate})
-            </p>
-            {os != null && os !== "macos" && assets[os] && (
-              <Button href={assets[os].href} newTab={false}>
-                {os}&nbsp;Download
-              </Button>
-            )}
-          </div>
+          <img
+            alt="Artistic view of the console with sub-queries"
+            className={ilCss.illustration}
+            height={394}
+            src="https://images.unsplash.com/photo-1541687664971-639c2f8b63f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            width={900}
+          />
 
-          <div className={chCss.changelog}>
-            <a
-              className={chCss.changelog__link}
-              href={release.html_url}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              View the changelog
-            </a>
-            <a
-              className={chCss.changelog__link}
-              href={`${customFields.githubUrl}/tags`}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              View previous releases
-            </a>
-          </div>
+          <p
+            className={clsx(
+              seCss.section__subtitle,
+              seCss["section__subtitle--accent"],
+              "text--center",
+            )}
+          >
+            Active Mobility enables quick wins for everyone - both the private sector and public sector.
+          </p>
         </div>
       </section>
 
-      <div className={seCss["section--flex-wrap"]}>
-        <Binary
-          basis="40px"
-          grow={2.6}
-          logo={
+      <section className={seCss["section--flex-wrap"]}>
+        <div className={caCss.card}>
+          <div className={caCss.card__image}>
             <img
-              alt="Docker logo"
-              className={biCss.binary__logo}
-              height={49}
-              src="/img/pages/getQuestdb/docker.svg"
-              width={69}
+              alt="Chat icon"
+              height={52}
+              src="/img/pages/enterprise/chat.svg"
+              width={62}
             />
-          }
-          title="Docker"
-        >
-          <CodeBlock className="language-shell">
-            docker run -p 9000:9000 questdb/questdb
-          </CodeBlock>
-          <p className={biCss.binary__docs}>
-            <a href="/docs/get-started/docker">Docs</a>
-          </p>
-        </Binary>
-        <Binary
-          grow={0.6}
-          logo={
-            <img
-              alt="Helm logo"
-              className={biCss.binary__logo}
-              height={49}
-              src="/img/pages/getQuestdb/helm.svg"
-              width={50}
-            />
-          }
-          title="Kubernetes (via Helm)"
-        >
-          <CodeBlock className="language-shell">
-            {`helm repo add questdb https://helm.${customFields.domain}/
-helm install my-questdb questdb/questdb --version ${customFields.helmVersion}`}
-          </CodeBlock>
-          <p className={biCss.binary__docs}>
-            <a
-              href={customFields.artifactHubUrl}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Docs
-            </a>
-          </p>
-        </Binary>
-        {os != null ? (
-          <>
-            {perOs[os]}
-            {os !== "linux" && perOs.linux}
-            {os !== "macos" && perOs.macos}
-            {os !== "windows" && perOs.windows}
-          </>
-        ) : (
-          <>
-            {perOs.linux}
-            {perOs.macos}
-            {perOs.windows}
-          </>
-        )}
-        <Binary
-          architecture
-          detailsGrow={3.5}
-          href={assets.noJre.href}
-          logo={
-            <img
-              alt="Planet with wings"
-              className={biCss.binary__logo}
-              height={49}
-              src="/img/pages/getQuestdb/nojre.svg"
-              width={75}
-            />
-          }
-          size={assets.noJre.size}
-          title="Any (no JVM)"
-        >
-          <p className={biCss.binary__docs}>
-            <a href="/docs/get-started/binaries#any-no-jvm-version">Docs</a>
-          </p>
-        </Binary>
-        <Binary
-          grow={0.5}
-          logo={
-            <img
-              alt="Maven logo"
-              className={biCss.binary__logo}
-              height={49}
-              src="/img/pages/getQuestdb/maven.svg"
-              width={37}
-            />
-          }
-          title="Maven"
-        >
-          <CodeBlock className="language-xml">
-            {`<dependency>
-  <groupId>org.questdb</groupId>
-  <artifactId>questdb</artifactId>
-  <version>${release.name}</version>
-</dependency>`}
-          </CodeBlock>
-          <p className={biCss.binary__docs}>
-            <a href="/docs/reference/api/java-embedded">Docs</a>
-          </p>
-        </Binary>
-        <Binary
-          grow={2}
-          logo={
-            <img
-              alt="Gradle logo"
-              className={biCss.binary__logo}
-              height={48}
-              src="/img/pages/getQuestdb/gradle.svg"
-              width={67}
-            />
-          }
-          title="Gradle"
-        >
-          <CodeBlock className="language-shell">
-            {`implementation 'org.questdb:questdb:${release.name}'`}
-          </CodeBlock>
-          <div style={{ height: "2.75rem" }} />
-          <p className={biCss.binary__docs}>
-            <a href="/docs/reference/api/java-embedded">Docs</a>
-          </p>
-        </Binary>
-      </div>
-
-      <div className={heCss.help}>
-        <img
-          alt="SQL statement in a code editor with an artistic view of the query result shown as a chart and a table"
-          className={heCss.help__illustration}
-          height={468}
-          src="/img/pages/getQuestdb/query.svg"
-          width={500}
-        />
-
-        <div className={heCss.help__text}>
-          <h2 className={heCss.help__title}>How does it work</h2>
-          <p>
-            QuestDB is distributed as a single binary. You can download either:
-          </p>
-          <ul className={heCss.help__list}>
-            <li className={heCss.help__bullet}>
-              The &quot;rt&quot; version, this includes a trimmed JVM so you do
-              not need anything else (~ {assets.linux.size})
+          </div>
+          <h2 className={caCss.card__title}>Bicycle Parking</h2>
+          <ul className={caCss.card__list}>
+            <li className={clsx(prCss.property, caCss.card__item)}>
+               Enable bicycle parking facility at important locations 
             </li>
-            <li className={heCss.help__bullet}>
-              The binary itself (~ {assets.noJre.size}), without the JVM. In
-              this case, you need Java 11 installed locally
+            <li className={clsx(prCss.property, caCss.card__item)}>
+              Bicycle rack design
             </li>
           </ul>
-          <p>
-            To find out more about how to use the binaries, please check
-            the&nbsp;
-            <a href="/docs/get-started/binaries/">dedicated page</a> in our
-            documentation.
-          </p>
-          <p>
-            Check out the{" "}
-            <a
-              href={release.html_url}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              v{release.name} CHANGELOG
-            </a>{" "}
-            for information on the latest release.
-          </p>
         </div>
-      </div>
+
+        <div className={caCss.card}>
+          <div className={caCss.card__image}>
+            <img
+              alt="Lock icon"
+              height={58}
+              src="/img/pages/enterprise/lock.svg"
+              width={42}
+            />
+          </div>
+          <h2 className={caCss.card__title}>Integration with Public Transport</h2>
+          <ul className={caCss.card__list}>
+            <li className={clsx(prCss.property, caCss.card__item)}>
+              Last mile connectivity
+            </li>
+            <li className={clsx(prCss.property, caCss.card__item)}>
+              Cycle Path to metro/bus stand
+            </li>
+            <li className={clsx(prCss.property, caCss.card__item)}>
+              Corporate Connect
+            </li>
+          </ul>
+        </div>
+
+        <div className={caCss.card}>
+          <div className={caCss.card__image}>
+            <img
+              alt="Cog icon"
+              height={48}
+              src="/img/pages/enterprise/cog.svg"
+              width={45}
+            />
+          </div>
+          <h2 className={caCss.card__title}>Safety</h2>
+          <ul className={caCss.card__list}>
+            <li className={clsx(prCss.property, caCss.card__item)}>
+              Safe Pedestrian Crossing
+            </li>
+            <li className={clsx(prCss.property, caCss.card__item)}>
+              Signage for Vehicles
+            </li>
+            <li className={clsx(prCss.property, caCss.card__item)}>
+              Slow Lane roads 
+            </li>
+          </ul>
+        </div>
+
+        <div className={caCss.card}>
+          <div className={caCss.card__image}>
+            <img
+              alt="Rocket icon"
+              height={56}
+              src="/img/pages/enterprise/rocket.svg"
+              width={56}
+            />
+          </div>
+          <h2 className={caCss.card__title}>Dedicate Space</h2>
+          <ul className={caCss.card__list}>
+            <li className={clsx(prCss.property, caCss.card__item)}>
+              Provision for cyclists
+            </li>
+            <li className={clsx(prCss.property, caCss.card__item)}>
+              Networked routes for easy flow
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section className={seCss["section--inner"]}>
+        <div className={peCss.performance__left}>
+          <h2 className={peCss.performance__title}>Utrecht Bicycle city in netherlands</h2>
+          <p className={peCss.performance__item}>
+            <span className={peCss.performance__bullet} />
+            Facilitating the last mile 
+          </p>
+          <p
+            className={clsx(
+              peCss.performance__item,
+              peCss["performance__item--important"],
+            )}
+          >
+            System change in public transport 
+          </p>
+          <p className={peCss.performance__item}>
+            <span className={peCss.performance__bullet} />
+            Give way to pedestrians and cyclists on Priority
+          </p>
+          <p
+            className={clsx(
+              peCss.performance__item,
+              peCss["performance__item--important"],
+            )}
+          >
+           Space-efficiency
+          </p>
+          <Button className={peCss.performance__cta} href="https://ecf.com/sites/ecf.com/files/Kik.M_Utrecht_A_bicycle_friendly_city.pdf">
+            View case study
+          </Button>
+        </div>
+        <div className={peCss.performance__right}>
+          <img
+            alt="Charts showing the performance improvments when using QuestDB"
+            height={311}
+            src="https://bicycledutch.files.wordpress.com/2016/04/utrecht2016-08.jpg"
+            width={761}
+          />
+        </div>
+      </section>
+
+      <section
+        className={clsx(seCss["section--inner"], seCss["section--column"])}
+      >
+        <h2 className={quCss.title}>Active Mobility for Cities - Design Principles</h2>
+
+        <div className={quCss.carousel} ref={ref}>
+          <TransitionGroup component={null}>
+            <CSSTransition key={page} timeout={200} classNames="item">
+              <div className={quCss.carousel__group}>
+                {viewportQuotes.map((Quote) => (
+                  <Quote key={quotes.indexOf(Quote)} />
+                ))}
+              </div>
+            </CSSTransition>
+          </TransitionGroup>
+        </div>
+
+        <div className={quCss.controls}>
+          <div
+            className={clsx(
+              quCss["controls__chevron-wrapper"],
+              quCss["controls__chevron-wrapper--left"],
+              {
+                [quCss["controls__chevron-wrapper--hidden"]]: page === 0,
+              },
+            )}
+            onClick={decreaseIndex}
+          >
+            <Chevron className={quCss.controls__chevron} side="left" />
+          </div>
+
+          <div className={quCss.controls__middle}>
+            {Array(viewportCount)
+              .fill(0)
+              .map((_, idx) => (
+                <Bullet
+                  index={idx}
+                  key={idx}
+                  onClick={setIndex}
+                  page={page}
+                  viewportSize={viewportSize}
+                />
+              ))}
+          </div>
+
+          <div
+            className={clsx(
+              quCss["controls__chevron-wrapper"],
+              quCss["controls__chevron-wrapper--right"],
+              {
+                [quCss["controls__chevron-wrapper--hidden"]]:
+                  page === viewportCount - 1,
+              },
+            )}
+            onClick={increaseIndex}
+          >
+            <Chevron className={quCss.controls__chevron} side="right" />
+          </div>
+        </div>
+      </section>
     </Layout>
   )
 }
 
 export default GetQuestdbPage
+
+ 
