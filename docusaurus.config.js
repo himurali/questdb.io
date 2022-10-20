@@ -33,7 +33,7 @@ function variable() {
 }
 
 const config = {
-  title: "Namma Nimma Cycle fOudation",
+  title: "Namma Nimma Cycle Foundation",
   tagline: "Thought and Action leader in Active Mobility",
   url: `https://nncf.onrender.com`,
   baseUrl: "/",

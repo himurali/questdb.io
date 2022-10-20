@@ -1,51 +1,34 @@
 # Our Work
 
-import Tabs from "@theme/Tabs"
-import TabItem from "@theme/TabItem"
 
-This page shows how to insert data into QuestDB using different programming
-languages and tools.
+![](https://i.imgur.com/LRYqchL.jpg)
+We played a critical role in making cycle day a popular event in Bangalore, until it was stopped by corona.
+From the initial days of cycle day we were 
   
 
-## Web Console
- 
-SQL statements can be written in the code editor and executed by clicking the
-**Run** button. Note that the web console runs a single statement at a time. You
-can also use the Web Console to upload CSV.
 
-## InfluxDB Line Protocol
+## Bicycle Rentals
 
-The InfluxDB Line Protocol (ILP) is a text protocol over TCP or UDP on
-port 9009.
+We had a team of 3 - led by Shankar S who did a magnificient work in managing the rentals and also upkeeping the cycles.
+Our main focus was to rent the cycles and ensure that the cycles are in good condition.
+The team would deliver the cycles at sharp 7AM to various localities.
 
-It is a one-way protocol to insert data, focusing on simplicity and performance.
+![](https://i.imgur.com/THfHiFN.jpg)
 
-Here is a summary table is how it compares with ways to insert data that we
-support:
 
-| Protocol                 | Record Insertion Reporting       | Data Insertion Performance |
+| Localities               | Cycles                           | Impact |
 | :----------------------- | :------------------------------- | :------------------------- |
-| InfluxDB Line Protocol   | Server logs; Disconnect on error | **Best**                   |
-| CSV upload via HTTP REST | Configurable                     | Very Good                  |
-| SQL `INSERT` statements  | Transaction-level                | Good                       |
-
-This interface is the preferred ingestion method as it provides the following
-benefits:
-
-- high-throughput ingestion
-- robust ingestion from 
-
-With sufficient client-side validation, the lack of errors to the client and
-confirmation isn't necessarily a concern: QuestDB will log out any issues and
-disconnect on error. The  
-:::tip
-
- provide more user-friendly ILP clients for a growing number of languages.
+| yelahanka            | 100+                             | Increase in cycle sales by 10% |
+| Malleswaram   | 100+                     | More women take up cycling               |
+| Whitefield  | 100+               | Increased awareness on cycling                       |
 
 :::
 
-### Examples
+### More Pics
 
-These examples send a few rows of input. These use client libraries for C++, C#,
-Golang, Java, and C, as well as raw TCP socket connections for NodeJS and Python.
+Check out more pics here 
  
+![Y](https://i.imgur.com/LpRtABK.jpg)
+
+
+![H](https://i.imgur.com/plfzMKq.jpg)
