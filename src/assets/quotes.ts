@@ -17,16 +17,16 @@ const quotes: Quote[] = [
   {
     website: "https://www.airbus.com/",
     logo: {
-      alt: "People First",
+      alt: "participatory urban planning,",
       src: "/img/pages/customers/cards/airbus.svg",
       height: 56,
       width: 140,
     },
     text:
-      "QuestDB is used at Airbus for real-time applications involving hundreds of millions of data points per day. For us, QuestDB is an outstanding solution that meets (and exceeds) our performance requirements.",
-    author: "People First",
-    role: " prioritize people over vehicles",
-    company: "Airbus",
+      "The planners include   opportunity to engage in city-sanctioned tactical urbanism and the whole community or neighbourhood in the planning process. This grassroots approach increases the legitimacy of new urban developments – who could better judge plans and contribute additional ideas to urban planning.",
+    author: "Creating the Participatory City",
+    role: " ",
+    company: "Cities have the capability of providing something for everybody, only because, and only when, they are created by everybody",
   },
   {
     website: "https://www.yahoo.com/",
@@ -37,10 +37,10 @@ const quotes: Quote[] = [
       width: 140,
     },
     text:
-      "We use QuestDB to monitor metrics for autoscaling decisions within our ML engine that provides search, recommendation, and personalization via models and aggregations on continuously changing data.",
-    author: "Design Standard Consistency",
-    role: "VP Architect",
-    company: "Yahoo",
+      "Publish Design Standards - Marking a people-first focus for street and public space design.  Cater for all the functions of a street. Create quality places",
+    author: "Design Standard Development",
+    role: " ",
+    company: "Forging Visions - Developing Strategies",
   },
   {
     website: "https://www.keplercheuvreux.com/en/",
@@ -51,10 +51,10 @@ const quotes: Quote[] = [
       width: 140,
     },
     text:
-      "When we set out to design the next generation of our execution platform, one of our requirements was large-scale model calibration based on real-time market data streams. QuestDB allows us to derive quick insights on live and historical data that would not be achievable with other open source time series databases.",
-    author: "Jean-Francois Perreton",
-    role: "Head of Algo Quant",
-    company: "Kepler Cheuvreux",
+      " Making Streets safe and comfortable and an aesthetic place ",
+    author: "Appealing places",
+    role: " ",
+    company: "Comfortable / Aesthetic streets",
   },
   {
     website: "https://aquis.eu/",
@@ -66,10 +66,10 @@ const quotes: Quote[] = [
       offset: 5,
     },
     text:
-      "QuestDB is a time series database truly built by developers for developers. We found that QuestDB provides a unicorn solution to handle extreme TPS while also offering a simplified SQL programming interface.",
-    author: "Viet Lee",
-    role: "CTO",
-    company: "Aquis Exchange",
+      " Reducing the speed within the city enhances the safety of the walkers and also the most vulnerable ",
+    author: "Redesign Junctions",
+    role: "",
+    company: "Upper speed limit for the city",
   },
   {
     website: "https://syndica.io",
@@ -80,7 +80,7 @@ const quotes: Quote[] = [
       width: 113,
     },
     text:
-      "QuestDB outperforms every database we have tested and delivered a 10x improvement in querying speed. It has become a critical piece of our infrastructure.",
+      "  Maintaining  the flow for walking and cycling is crucial to make cycling infrastructure success. This requires multiple perspectives, radical empathy and engaged neighborhood",
     author: "Ahmed Abbasi",
     role: "Co-Founder/CEO",
     company: "Syndica",
@@ -94,7 +94,7 @@ const quotes: Quote[] = [
       width: 113,
     },
     text:
-      "QuestDB was our choice for real time data due to high performance, open source, high flexibility and great support. Performance was significantly better than the competition and we believe that QuestDB will become market leading.",
+      " we drive too much, and frequently at unsafe speeds   . Need strategies to promote   disincentives to driving ",
     author: "Lasse Tarp",
     role: "Software Group manager",
     company: "Copenhagen Atomics",
@@ -108,10 +108,10 @@ const quotes: Quote[] = [
       width: 140,
     },
     text:
-      "QuestDB is impressive and stands out as a superior option. We use it as the basis of our time series analytics for network threat detection.",
-    author: "Randy Caldejon",
-    role: "VP Product Development ThreatEye",
-    company: "LiveAction",
+      " Voluntary travel behavioural change (VTBC) schemes that use incentives such as rewards, feedback, subsi- dies and public transport discounts.",
+    author: "Identify Good Behavior",
+    role: " ",
+    company: "Reward Good behavior",
   },
   {
     website: "https://www.tqsintegration.com",
@@ -122,10 +122,10 @@ const quotes: Quote[] = [
       width: 140,
     },
     text:
-      "TQS Integration uses QuestDB in data architecture solutions for clients in the Life Science, Pharmaceutical, Energy, and Renewables industries. We use QuestDB when we require a time series database that’s simple and efficient for data collection, contextualization, visualization, and analytics.",
-    author: "Holger Amort",
-    role: "Senior Data Scientist",
-    company: "TQS Integration",
+      "   Dedicated bicycle infrastructure in a city will encourage more people to cycle.",
+    author: "cycle lanes do not work",
+    role: " ",
+    company: "",
   },
   {
     website: "https://www.samtec.com/",
@@ -136,10 +136,10 @@ const quotes: Quote[] = [
       width: 140,
     },
     text:
-      "QuestDB is the most promising open source platform for time series analytics. It's thoughtfully designed to be both wicked fast and easy to use.",
-    author: "Nick Slocum",
-    role: "Senior Software Engineer",
-    company: "Samtec",
+      "Ensure safety of cyclists at critical junctions by providing visibility for cyclists.",
+    author: " ",
+    role: " ",
+    company: " ",
   },
   {
     website: "https://toggle.ai/",
@@ -150,10 +150,10 @@ const quotes: Quote[] = [
       width: 140,
     },
     text:
-      "We switched from InfluxDB to QuestDB to get queries that are on average 300x faster utilizing 1/4 of the hardware, without ever overtaxing our servers.",
-    author: "Armenak Mayalian",
-    role: "CTO",
-    company: "Toggle",
+      "Last mile connectivity by cycle/ micro mobility to be priority .",
+    author: "reduce private vehicle usage to public transport services, increase efficiency of public transport",
+    role: " ",
+    company: " ",
   },
   {
     website: "https://www.publicissapient.com/",
@@ -164,10 +164,10 @@ const quotes: Quote[] = [
       width: 140,
     },
     text:
-      "Sapient ingests, analyzes and converts billions of data points into meaningful insights through AI and machine learning. We chose QuestDB for the simplicity of SQL, high-throughput ingestion, and PostgreSQL wire compatibility with our tooling.",
-    author: "Dan Worth",
-    role: "Principal Software Engineer",
-    company: "Sapient Industries",
+      "  Parking Policy for all buildings to be made mandatory in all the municipal laws.",
+    author: "",
+    role: " ",
+    company: "",
   },
   {
     website: "https://www.turktelekom.com.tr/en",
@@ -178,10 +178,10 @@ const quotes: Quote[] = [
       width: 140,
     },
     text:
-      "QuestDB allows us to query data while writing millions of records. It is an excellent database for time series analysis and can efficiently store our data. QuestDB’s community is constantly growing and its popularity is on the rise.",
-    author: "Erdem Aydemir",
-    role: "Software Engineer",
-    company: "Innova (Türk Telekom)",
+      "  Cycling needs greenery on the road. Provide green cover for the cyclist. ",
+    author: "safe green corridor",
+    role: " ",
+    company: " more shade and cool environment",
   },
 ]
 

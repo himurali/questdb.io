@@ -53,7 +53,7 @@ const Heading = () => (
         )}
       >
       BWell - our program designed and developed helps discovering new ways to deliver health, happpiness and wellness by focussing on Active Mobility.
-    Adopt BWell Today with five building blocks that enable flourishing – Positive Emotion, Engagement, Relationships, Meaning, and Accomplishment.
+     
   
       </p>
 
@@ -62,7 +62,7 @@ const Heading = () => (
       alt="An illustration of QuestDB use cases"
       className={ilCss.illustration}
       height={584}
-      src="/img/pages/use-cases/banner.svg"
+      src="https://i.imgur.com/M8I1zdM.png"
       width={1091}
     />
   </section>
@@ -376,10 +376,7 @@ const title = "Use Cases"
 const UseCasesPage = () => (
   <Layout canonical="/careers" description={title} title={title}>
     <Heading />
-    <UseCaseHighlights />
-    <Monitoring />
-    <MarketData />
-    <IndustrialTelemetry />
+   
   </Layout>
 )
 
