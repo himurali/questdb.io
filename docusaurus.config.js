@@ -159,7 +159,7 @@ const config = {
             },
 
 
-            {
+            /*{
               label: "B-Well",
               to: "/use-cases",
             },
@@ -170,7 +170,7 @@ const config = {
             {
               label: "Roadmap",
               href: `https://github.com/orgs/questdb/projects/1/views/5`,
-            },
+            },*/
           ],
         },
         {
@@ -215,7 +215,7 @@ const config = {
         },
         {
           label: "Events",
-          to: "/careers",
+          to: "/events",
           position: "left",
           className: "careers-link",
         },

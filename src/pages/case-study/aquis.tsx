@@ -11,9 +11,9 @@ import seCss from "../../css/section.module.css"
 import chCss from "../../css/case-study/chart.module.css"
 
 const Aquis = () => {
-  const title = "Aquis"
+  const title = "Decathlon"
   const description =
-    "QuestDB is used by Aquis Exchange to store their infrastructure and business metrics in a single place and analyze them in real-time across multiple dimensions."
+    "  ssss"
 
   return (
     <Layout

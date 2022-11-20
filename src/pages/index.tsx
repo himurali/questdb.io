@@ -386,14 +386,14 @@ const Usp = () => (
           <h2 className={usCss.usp__title}>Lead Bengaluru Ride  </h2>
 
           <p className={usCss.usp__description}>
-            Time series and relational joins
+          Convene
           </p>
-          <p className={usCss.usp__description}>Postgres compatibility</p>
+          <p className={usCss.usp__description}>Collaborate</p>
           <p className={usCss.usp__description}>
-            Aggregations and downsampling
+          Champion
           </p>
-          <p className={usCss.usp__description}>Unlimited sub-queries</p>
-          <p className={usCss.usp__description}>Built-in SQL optimizer</p>
+          <p className={usCss.usp__description}>Celebrate</p>
+        
           <p> </p>
 
           <Button

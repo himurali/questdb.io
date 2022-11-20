@@ -1,12 +1,11 @@
 import clsx from "clsx"
-import React, { useCallback, useRef } from "react"
-
-import Button from "@theme/Button"
+import React, {   useRef } from "react"
+ 
 import Layout from "../theme/Layout"
 
-import caCss from "../css/careers/card.module.css"
-import joCss from "../css/careers/job.module.css"
-import liCss from "../css/careers/list.module.css"
+import caCss from "../css/events/card.module.css"
+import joCss from "../css/events/job.module.css"
+import liCss from "../css/events/list.module.css"
 import seCss from "../css/section.module.css"
 
 type Opening = {
@@ -17,55 +16,60 @@ type Opening = {
 
 const currentOpenings: Opening[] = [
   {
-    href: "/careers/core-database-engineer/",
-    title: "Core Database Engineers",
-    location: "Remote",
+    href: "/events/lead-blr-ride/",
+    title: "Lead Blr   Ride",
+    location: "Vidhana Soudha",
   },
 
   {
-    href: "/careers/developer-relations-engineer/",
-    title: "Developer Relations Engineers",
-    location: "Remote",
+    href: "/events/manipal-ride/",
+    title: "Wellness Ride",
+    location: "Blr",
   },
 
   {
-    href: "/careers/senior-backend-engineer-python/",
-    title: "Backend Engineers (Python)",
-    location: "Remote",
+    href: "/events/puneeth-ride/",
+    title: "Puneeth Memorial Ride",
+    location: "Blr",
+  },
+  {
+    href: "/events/tree-festival/",
+    title: "Tree Festival",
+    location: "Nandi Hills",
   },
 
   {
-    href: "/careers/senior-cloud-engineer/",
-    title: "Cloud Engineers",
-    location: "Remote",
+    href: "/events/senior-backend-engineer-python/",
+    title: "Sankey Ride",
+    location: "Cubbon Park",
   },
 
+  
+
   {
-    href: "/careers/technical-content-writer/",
+    href: "/events/technical-content-writer/",
     title: "Technical Content Writers",
     location: "Remote",
   },
 
   {
-    href: "/careers/solution-engineer/",
+    href: "/events/solution-engineer/",
     title: "Solution Engineer",
     location: "Remote",
   },
   {
-    href: "/careers/ux-designer/",
+    href: "/events/ux-designer/",
     title: "UX Designer",
     location: "Remote",
   },
 ]
 
-const CareersPage = () => {
+const EventsPage = () => {
   const title = "Careers at QuestDB"
   const description =
     "Join us at QuestDB to build breakthrough technology that will power the infrastructure of tomorrow."
   const scrollAnchorRef = useRef<HTMLDivElement | null>(null)
-  const onOpeningsClick = useCallback(() => {
-    scrollAnchorRef.current?.scrollIntoView({ behavior: "smooth" })
-  }, [scrollAnchorRef])
+  
 
   return (
     <Layout canonical="/careers" description={description} title={title}>
@@ -80,12 +84,7 @@ const CareersPage = () => {
               them started in just a few minutes with the fastest and most
               accessible time series database.
             </p>
-            <div className={caCss.careers_cta}>
-              <Button onClick={onOpeningsClick}>Openings</Button>
-              <Button variant="secondary" href="/about-us" newTab={false}>
-                Our Team
-              </Button>
-            </div>
+            
           </div>
           <div
             className={clsx(
@@ -102,55 +101,7 @@ const CareersPage = () => {
           </div>
         </div>
 
-        <div
-          className={clsx(
-            caCss.card,
-            caCss["card--reverse"],
-            caCss["card--no-gap"],
-          )}
-        >
-          <div
-            className={clsx(
-              caCss.card__side,
-              caCss["card__side--illustration"],
-              caCss["card__side--baseline"],
-            )}
-          >
-            <img
-              alt="Illustration of team spirit"
-              height={230}
-              src="/img/pages/careers/teamSpirit.svg"
-              width={305}
-            />
-          </div>
-          <div className={caCss.card__side}>
-            <h2 className={caCss.card__title}>Working at QuestDB</h2>
-            <p className={caCss.card__content}>
-              We hire talented and passionate people who share our mission to
-              empower developers to solve their problems with data. We are
-              building breakthrough technology to power the infrastructure of
-              tomorrow
-            </p>
-            <ul className={liCss.list}>
-              <li className={liCss.list__item}>
-                We are a company with thousands of users; our mission is to
-                empower them
-              </li>
-              <li className={liCss.list__item}>
-                We invest in a culture that promotes ownership, autonomy and
-                independent thinking
-              </li>
-              <li className={liCss.list__item}>
-                We have transparent leadership and value employees’ strategic
-                inputs
-              </li>
-              <li className={liCss.list__item}>
-                Our team is ambitious and tackles the most difficult problems at
-                the deepest data infrastructure layer
-              </li>
-            </ul>
-          </div>
-        </div>
+        
 
         <div className={caCss.scrollAnchor} ref={scrollAnchorRef} />
 
@@ -228,4 +179,4 @@ const CareersPage = () => {
   )
 }
 
-export default CareersPage
+export default EventsPage
