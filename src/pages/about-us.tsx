@@ -29,7 +29,6 @@ type PressItemProps = {
 
 const usedByLogos: CustomerLogo[] = [
   {
-    
     ...logos.airbus,
     name: "Active Mobility Enablement",
     width: 140,
@@ -74,19 +73,22 @@ const Top = () => {
             "text--center",
           )}
         >
-          Enabling  active mobility culture,  {" "}
-          <em className={seCss.section__title__em}>design and innovation</em> excellence
+          Enabling active mobility culture,{" "}
+          <em className={seCss.section__title__em}>design and innovation</em>{" "}
+          excellence
         </h3>
-        The NNCF Foundation works to ensure the active mobility (with focus on cycles) is .
-        For more than 10+ years, we’ve worked across communities, organizations, and technologies to fuel a movement to realize the full potential of Active Mobility.
-        NNCF invests in innovative ideas and campaigns for pushing the frontiers of active mobilityt. 
-        NNCF’s research — from our Insights to our white papers — are important mile stones in active mobility research. 
-
+        The NNCF Foundation works to ensure the active mobility (with focus on
+        cycles) is enabled on scale. For more than 10+ years, we’ve worked
+        across communities, organizations, and technologies to fuel a movement
+        to realize the full potential of Active Mobility. NNCF invests in
+        innovative ideas and campaigns for pushing the frontiers of active
+        mobilityt. NNCF’s research — from our Insights to our white papers — are
+        important mile stones in active mobility research.
         <h1>Our Vision</h1>
-          <p className={clsx(seCss.section__subtitle)}>
-            Transforming transportation systems with Active mobility Innovation, Science and Policy Intervention.
-          </p>
-        
+        <p className={clsx(seCss.section__subtitle)}>
+          Transforming transportation systems with Active mobility Innovation,
+          Science and Policy Intervention.
+        </p>
         <ProductMetrics />
       </div>
     </section>
@@ -101,17 +103,14 @@ const UsedBy = () => {
       >
         <div className={seCss.section__header}>
           <p className={clsx(seCss.section__subtitle)}>
-            
-            The NNCF works to ensure that benefits of active mobility reaches one and all.
-
-
+            The NNCF works to ensure that benefits of active mobility reaches
+            one and all.
           </p>
           <h1>Our Focus</h1>
         </div>
         <div className={ubCss.logos}>
           {usedByLogos.map((logo) => (
             <div key={logo.alt} className={ubCss.logo__item}>
-            
               <h2>{logo.name}</h2>
             </div>
           ))}
@@ -130,16 +129,15 @@ const Investors = () => {
         <h2
           className={clsx(seCss.section__title, seCss["section__title--wide"])}
         >
-          Partners & Patrons 
+          Partners & Patrons
         </h2>
         <p className={clsx(seCss.section__subtitle)}>
-          We&apos;ve worked with the following and they have supported our work in the past. We are grateful for the following people for enabling the 
+          We&apos;ve worked with the following and they have supported our work
+          in the past. We are grateful for the following people for enabling the
           journey.
         </p>
       </div>
       <div className={inCss.investors}>
-        
-
         <div className={inCss.investors__col}>
           {investorsColumn1.map((investor) => (
             <div className={inCss.investor} key={investor.name}>
@@ -171,16 +169,18 @@ const Team = () => {
         <h2
           className={clsx(seCss.section__title, seCss["section__title--wide"])}
         >
-          The NNCF  team
+          The NNCF team
         </h2>
         <div className={clsx(paCss.flex__section, teCss.team__people)}>
           <div className={clsx(paCss.half__section, teCss.team__people__text)}>
             <p>
-              NNCF  is a non profit company started with the intention to promote active mobility innovation.
+              NNCF is a non profit company started with the intention to promote
+              active mobility innovation.
             </p>
             <p>
-              Our team is having 15 years of experience in the field of active mobility.
-            </p> 
+              Our team is having 15 years of experience in the field of active
+              mobility.
+            </p>
           </div>
           <div className={clsx(paCss.half__section, teCss.team__people__photo)}>
             <img
@@ -194,7 +194,8 @@ const Team = () => {
         </div>
         <div className={teCss.team__work}>
           <div className={teCss.team__work__text}>
-          Help fund, shape, and expand our  work toward a healthy planet  and active citizens.
+            Help fund, shape, and expand our work toward a healthy planet and
+            active citizens.
           </div>
           <div className={teCss.team__work__cta}>
             <Button variant="primary" to="/careers">
