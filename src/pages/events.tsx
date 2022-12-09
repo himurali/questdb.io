@@ -65,7 +65,7 @@ const currentOpenings: Opening[] = [
 ]
 
 const EventsPage = () => {
-  const title = "Careers at QuestDB"
+  const title = "Events at NNCF"
   const description =
     "Join us at QuestDB to build breakthrough technology that will power the infrastructure of tomorrow."
   const scrollAnchorRef = useRef<HTMLDivElement | null>(null)
@@ -78,11 +78,9 @@ const EventsPage = () => {
       >
         <div className={caCss.card}>
           <div className={caCss.card__side}>
-            <h1 className={caCss["card__title--important"]}>Careers</h1>
+            <h1 className={caCss["card__title--important"]}>Events at NNCF</h1>
             <p className={caCss.card__content}>
-              We help developers handle explosive amounts of data while getting
-              them started in just a few minutes with the fastest and most
-              accessible time series database.
+              We organize Active Mobility Promotion Events.
             </p>
             
           </div>

@@ -4,9 +4,9 @@ module.exports = {
   artifactHubUrl: "https://artifacthub.io/packages/helm/questdb/questdb",
   copyright: `Copyright © ${new Date().getFullYear()} NNCF`,
   crunchbaseUrl: "https://www.crunchbase.com/organization/quest-db",
-  demoUrl: `https://demo.${consts.domain}`,
+  demoUrl: `https://rzp.io/l/nammacyclesupport`,
   description:
-    "QuestDB is an open source database designed to make time-series lightning fast and easy. It exposes a high performance REST API and is Postgres compatible.",
+    " NNCF is   Thought and Action leader in Active Mobility    ",
   dockerUrl: "https://hub.docker.com/r/questdb/questdb",
   domain: consts.domain,
   githubOrgUrl: consts.githubOrgUrl,
@@ -16,8 +16,8 @@ module.exports = {
   oneLiner: "QuestDB: the database for time series",
   slackUrl: `https://slack.${consts.domain}`,
   stackoverflowUrl: "https://stackoverflow.com/questions/tagged/questdb",
-  twitterUrl: "https://twitter.com/questdb",
-  videosUrl: "https://www.youtube.com/c/QuestDB",
-  redditUrl: "https://www.reddit.com/r/questdb",
+  twitterUrl: "https://twitter.com/nammacycle",
+  videosUrl: "https://www.youtube.com/nammacycle",
+  redditUrl: "https://www.reddit.com/r/nammacycle",
   linenUrl: "https://community-chat.questdb.io",
 }

@@ -58,22 +58,22 @@ const Top = () => {
         <img
           alt="Screenshot of instance creation form and instance details pages in QuestDB Cloud"
           height={626}
-          src="/img/pages/cloud/screens.png"
+          src="https://i.imgur.com/yCen7Zq.jpg"
           width={1026}
           className={style["header-image"]}
         />
 
         <div className={hlCss.highlights}>
           <div className={flCss.flashy}>
-            <h3 className={flCss.flashy__title}>Donate</h3>
+            <h3 className={flCss.flashy__title}>Commit Funds </h3>
             <ul className={style.card__list}>
               <li className={clsx(prCss.property, style.card__item)}>
-                Community Events
+                Support Research in Active Mobility
               </li>
               <li className={clsx(prCss.property, style.card__item)}>
-                Knowledge Sessions
+                Fund Campaigns
               </li>
-              <li className={clsx(prCss.property, style.card__item)}>Transforming Neighborhoods</li>
+              <li className={clsx(prCss.property, style.card__item)}>Sponsor our Events and Programs </li>
             </ul>
             <Button
               variant="primary"
@@ -88,19 +88,19 @@ const Top = () => {
             <h3 className={flCss.flashy__title}>Become a Partner</h3>
             <ul className={style.card__list}>
               <li className={clsx(prCss.property, style.card__item)}>
-                Database-as-a-service
+                Sign up for Lead Ride in your organization
               </li>
               <li className={clsx(prCss.property, style.card__item)}>
-                Database monitoring
+                Knowledge Partner - Share insights on Active Mobility
               </li>
               <li className={clsx(prCss.property, style.card__item)}>
-                Built-in authentication
+               Activation Partner - Join hands to activate our programs
               </li>
               <li className={clsx(prCss.property, style.card__item)}>
-                Additional database features
+                Institional Partner - Share resources to enable active mobility
               </li>
               <li className={clsx(prCss.property, style.card__item)}>
-                Multiple regions
+                Patron - Become a patron for our programs
               </li>
             </ul>
             <ContactFormDialog

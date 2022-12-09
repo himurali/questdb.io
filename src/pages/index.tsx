@@ -268,7 +268,7 @@ const Top = () => {
             }
             variant="secondary"
           >
-            CLOUD
+            JOIN LEAD RIDE
           </Button>
         </div>
         <p className={juCss.jumbotron__description}>
@@ -319,11 +319,12 @@ const Usp = () => (
 
           <h2 className={usCss.usp__title}>Bharath Open Bike </h2>
 
-          <p className={usCss.usp__description}>Community Bicycle Sharing </p>
-          <p className={usCss.usp__description}>B-Well</p>
-          <p className={usCss.usp__description}>Vectorized query execution</p>
-          <p className={usCss.usp__description}>Tiny memory footprint</p>
-          <p className={usCss.usp__description}>C++ and zero-GC Java</p>
+          <p className={usCss.usp__description}>Innovation Vehicles for
+Commons </p>
+          <p className={usCss.usp__description}>Design for Manufacturing</p>
+          <p className={usCss.usp__description}>Active Mobility Ecosystem</p>
+          <p className={usCss.usp__description}>Transition to Active Mobility Vehicles</p>
+          <p className={usCss.usp__description}>Activate Design Community</p>
             <p> </p>
 
           <Button
@@ -347,17 +348,20 @@ const Usp = () => (
             width={176}
           />
 
-          <h2 className={usCss.usp__title}>B Well - Theory of Wellbeing -</h2>
+          <h2 className={usCss.usp__title}>She Cycles - Active Mobility For Women </h2>
 
           <p className={usCss.usp__description}>
-            Relational model for time series
+          Empower all women and girls. 
+
           </p>
           <p className={usCss.usp__description}>
-            Data stored in chronological order
+          Ensure inclusive and equitable mobility design
           </p>
-          <p className={usCss.usp__description}>Time partitioned</p>
-          <p className={usCss.usp__description}>Immediate consistency</p>
-          <p className={usCss.usp__description}>Fast InfluxDB line protocol</p>
+          <p className={usCss.usp__description}>Enable  ability of women  to move about freely and safely.</p>
+          <p className={usCss.usp__description}>Shaping Women’s Access to Opportunities</p>
+          <p className={usCss.usp__description}> Highlighting women’s perspectives .</p>
+          <p className={usCss.usp__description}> Involve women in  decision-making table.</p>
+
           <p> </p>
 
           <Button
@@ -365,7 +369,7 @@ const Usp = () => (
 
             size="small"
           >
-            Wellbeing Now
+            She Cycles
           </Button>
 
         </div>
@@ -386,13 +390,13 @@ const Usp = () => (
           <h2 className={usCss.usp__title}>Lead Bengaluru Ride  </h2>
 
           <p className={usCss.usp__description}>
-          Convene
+          Convene connect active mobility minds
           </p>
-          <p className={usCss.usp__description}>Collaborate</p>
+          <p className={usCss.usp__description}>Collaborate -  Join hands to bring in knowledge and action in mobility space </p>
           <p className={usCss.usp__description}>
-          Champion
+          Champion -   give voice to active mobility
           </p>
-          <p className={usCss.usp__description}>Celebrate</p>
+          <p className={usCss.usp__description}>Celebrate - celebrate by cycling together</p>
         
           <p> </p>
 
@@ -543,21 +547,13 @@ const getTopByIndex = (m: number[], index: 1 | 2 | 3 | 4): number => {
   return scale[index] ?? 0
 }
 
-const searchQuery = `sssss sssss timestamp, tempC
-FROM sensors
-WHERE timestamp IN '2021-05-14;1M';`
+const searchQuery = `DDDDDDDDDDDD`
 
-const sliceQuery = `SELECT timestamp, avg(tempC)
-FROM sensors
-SAMPLE BY 5m;`
+const sliceQuery = `CCCCCCCCCC`
 
-const navigateQuery = `SELECT timestamp, sensorName, tempC
-FROM sensors
-LATEST ON timestamp PARTITION BY sensorName;`
+const navigateQuery = `BBBBBBB`
 
-const mergeQuery = `SELECT sensors.timestamp ts, rain1H
-FROM sensors
-ASOF JOIN weather;`
+const mergeQuery = `AAAAAAAAA`
 
 type Index = 1 | 2 | 3 | 4
 
@@ -679,7 +675,7 @@ const QueryScroller = () => {
                 Empathy & System Thinking
               </h3>
               <p className={shCss.showcase__description}>
-                Filter and search for specific timestamps with “WHERE”
+                AAAAAAAAAAAA
               </p>
             </div>
 
@@ -697,8 +693,7 @@ const QueryScroller = () => {
                 Define Goals &
               </h3>
               <p className={shCss.showcase__description}>
-                Create time buckets and aggregate by intervals with “SAMPLE BY”
-              </p>
+              AAAAAAAAAAAA              </p>
             </div>
 
             <div
@@ -715,8 +710,7 @@ const QueryScroller = () => {
                 Strategy & Action Plan
               </h3>
               <p className={shCss.showcase__description}>
-                Search time series from most recent values to oldest with
-                “LATEST BY”
+              BBBBBBBBBBBB
               </p>
             </div>
             <div
@@ -733,8 +727,7 @@ const QueryScroller = () => {
                 Execute & Impact
               </h3>
               <p className={shCss.showcase__description}>
-                Join two tables based on timestamp where timestamps do not
-                exactly match with “ASOF JOIN”
+               CCCCCCCCCC
               </p>
             </div>
           </div>
@@ -752,14 +745,12 @@ const Home = () => (
     replaceTitle
   >
     <Top />
-    <Customers nbElements={6} />
 
     <Usp />
     <Integration />
     <FeatureTabs />
     <QueryScroller />
     <Cards />
-    <Console />
   </Layout>
 )
 
