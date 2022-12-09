@@ -154,8 +154,8 @@ const config = {
             },
 
             {
-              label: "Active Mobility Success",
-              to: "/amsuccess",
+              label: "Lead Ride",
+              to: "/leadride",
             },
 
 

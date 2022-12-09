@@ -103,23 +103,21 @@ const Customer = () => {
       <section className={clsx(seCss.section, seCss["section--odd"])}>
         <div className={juCss.jumbotron}>
           <div className={juCss.jumbotron__left}>
-            <h1 className={seCss.section__title}>Success Stories</h1>
+            <h1 className={seCss.section__title}>Lead Ride</h1>
             <p
               className={clsx(
                 seCss.section__subtitle,
                 juCss.jumbotron__subtitle,
               )}
             >
-              Here are the most innovative stories from our users highlighting
-              how QuestDB is powering the core infrastructure of companies
-              working with time-series data.
+              Building & Shaping the future with active movement & active mobility
             </p>
           </div>
           <div className={juCss.jumbotron__illustration}>
             <img
               alt="People co-working on a dashboard"
               height={274}
-              src="/img/pages/customers/top.svg"
+              src="https://res.cloudinary.com/dsmfsfyci/image/upload/v1670171897/nncfwebdocu/logolearide_da8ioi.png"
               width={250}
             />
           </div>
