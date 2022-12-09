@@ -3,15 +3,14 @@ import clsx from "clsx"
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
 import Highlight from "../components/Highlight"
 import React, { useCallback, useEffect, useState } from "react"
-import Customers from "../components/Customers"
+
 import customFields from "../config/customFields"
 
 import Button from "@theme/Button"
 import Chevron from "@theme/Chevron"
 import Layout from "../theme/Layout"
 import useWindowWidth from "@theme/useWindowWidth"
-import SvgImage from "../components/SvgImage"
-import { ActionFooter } from "../components/ActionFooter"
+import SvgImage from "../components/SvgImage" 
 
 import doCss from "../css/index/docker.module.css"
 import feCss from "../css/index/feature.module.css"
@@ -488,49 +487,6 @@ Achieve enduring Active Mobility success and sustained growth          </h3>
   </section>
 )
 
-const Console = () => {
-  return (
-    <section
-      className={clsx(
-        seCss.section,
-        seCss["section--inner"],
-        seCss["section--center"],
-      )}
-    >
-      <h2
-        className={clsx(
-          seCss.section__title,
-          seCss["section__title--wide"],
-          "text--center",
-        )}
-      >
-        Interactive Console
-      </h2>
-      <p
-        className={clsx(
-          seCss.section__subtitle,
-          seCss["section__subtitle--narrow"],
-          "text--center",
-        )}
-      >
-        Interactive console to import data (drag and drop) and start querying
-        right away. Check our{" "}
-        <a href="/docs/develop/web-console">Web Console documentation</a> to get
-        started.
-      </p>
-
-      <img
-        alt="Artistic view of QuestDB's Web Console split in 3 components: the navigation tree, the SQL code editor and data displayed as a chart"
-        className={seCss.section__illustration}
-        height={467}
-        src="/img/pages/index/console.svg"
-        width={600}
-      />
-
-      <ActionFooter />
-    </section>
-  )
-}
 
 const S = [3, 1, 6, 10]
 const M = [3, 0, 4, 8]
