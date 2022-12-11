@@ -5,6 +5,13 @@
   align-items: self-start;
 }
 
+
+.getStartedButtons_eYe1 {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
 .jumbotron__cta {
   display: flex;
   margin-top: 2.9rem;

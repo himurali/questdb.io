@@ -1,30 +1,18 @@
-import clsx from "clsx"
-import React from "react" 
-import Button from "@theme/Button" 
-import Layout from "../theme/Layout"
-import caCss from "../css/customers/card.module.css"
-import juCss from "../css/customers/jumbotron.module.css" 
-import seCss from "../css/section.module.css" 
-
+import clsx from "clsx";
+import React from "react";
+import Button from "@theme/Button";
+import Layout from "../theme/Layout";
+import caCss from "../css/customers/card.module.css";
+import juCss from "../css/customers/jumbotron.module.css";
+import seCss from "../css/section.module.css";
+import StepCity from "src/components/StepCity";
 // temporary duplication across customer and enterprise page for quote module
-  
 const LeadRide = () => {
-  const title = "Customers"
-  const description =
-    "Discover how QuestDB is powering the core infrastructure of companies dealing with time-series data"
- 
-  // An "item" is a quote
-  // Index in the array of quotes of the item that is "focused" 
-  // How many items we can show on the screen 
-  // How many items will actually be displayed (can be smaller than viewportSize)
-   
-  // Page number 
-  // The quotes to show
-  
-   
-  
+  const title = "Lead Ride ";
+  const description = "Discover Leadride";
+
   return (
-    <Layout canonical="/customers" description={description} title={title}>
+    <Layout canonical="/leadride" description={description} title={title}>
       <section className={clsx(seCss.section, seCss["section--odd"])}>
         <div className={juCss.jumbotron}>
           <div className={juCss.jumbotron__left}>
@@ -32,11 +20,28 @@ const LeadRide = () => {
             <p
               className={clsx(
                 seCss.section__subtitle,
-                juCss.jumbotron__subtitle,
+                juCss.jumbotron__subtitle
               )}
             >
-           Building & Shaping the future, with active movement & active mobility
+              Building & Shaping the future, with active movement & active
+              mobility
             </p>
+            <section className={clsx(seCss.section, seCss["section--inner"])}>
+              <div className="getStartedButtons_eYe1">
+                <Button
+                  className={caCss.card__cta}
+                  to="/case-study/citysignup/"
+                >
+                  City SignUp
+                </Button>{" "}
+                <Button
+                  className={caCss.card__cta}
+                  to="/case-study/citypgmflow/"
+                >
+                  City Program Flow
+                </Button>
+              </div>
+            </section>
           </div>
           <div className={juCss.jumbotron__illustration}>
             <img
@@ -48,8 +53,6 @@ const LeadRide = () => {
           </div>
         </div>
       </section>
-      
-
       <section className={clsx(seCss.section, seCss["section--inner"])}>
         <div className={caCss.card}>
           <div className={caCss.card__illustration}>
@@ -60,37 +63,51 @@ const LeadRide = () => {
             />
           </div>
           <p className={caCss.card__summary}>
-             <h2>Lead Ride For Cities</h2>              
- Lead ride city program acts as a bridge to connect the city leadership, 
- business leadership and the youth leadership in transforming the city to healthy 
- and happy cities by making them cycle together.
-            <Button className={caCss.card__cta} to="/case-study/aquis/">
-              Program Details
-            </Button>
-             <em className={caCss.card__author}> <strong>Sign up Here </strong> </em>
-            <Button className={caCss.card__cta} to="/case-study/aquis/">
-              Sign Up  For Cities
-            </Button>
+            <h2>Lead Ride For Cities</h2>
+            Lead ride city program acts as a bridge to connect the city
+            leadership, business leadership and the youth leadership in
+            transforming the city to healthy and happy cities by making them
+            cycle together.
+            <section className={clsx(seCss.section, seCss["section--inner"])}>
+              <div className="getStartedButtons_eYe1">
+                <Button
+                  className={caCss.card__cta}
+                  to="/case-study/citysignup/"
+                >
+                  City SignUp
+                </Button>{" "}
+                <Button
+                  className={caCss.card__cta}
+                  to="/case-study/citypgmflow/"
+                >
+                  City Program Flow
+                </Button>
+              </div>
+            </section>
           </p>
         </div>
       </section>
-
       <section className={clsx(seCss.section, seCss["section--inner"])}>
         <div className={caCss.card}>
           <p className={caCss.card__summary}>
-           
-           Lead ride Companies  program acts as a bridge to connect the city leadership, business leadership and the youth leadership in transforming the city to healthy and happy cities by making them cycle together.
-          <em className={caCss.card__author}> <strong>Sign up Here </strong> </em>
-
-            <Button className={caCss.card__cta} to="/case-study/yahoo/">
-            Lead Ride For Companies
-            </Button>
+            <h2>Lead Ride For Companies</h2>
+            Lead ride Companies program acts as a bridge to connect the city
+            leadership, business leadership and the youth leadership in
+            transforming the city to healthy and happy cities by making them
+            cycle together.
+            <div className="getStartedButtons_eYe1">
+              <Button className={caCss.card__cta} to="/case-study/aquis/">
+                Corporate Program
+              </Button>{" "}
+              <Button className={caCss.card__cta} to="/case-study/aquis/">
+                Corporate Sign Up
+              </Button>
+            </div>
           </p>
-
           <div className={caCss.card__illustration}>
             <img
               alt="Yahoo logo"
-              height={400}              
+              height={400}
               src="https://bikeleague.org/sites/default/files/styles/node_gallery_display/public/node_gallery/bike-pic.jpg"
               width={525}
             />
@@ -107,38 +124,39 @@ const LeadRide = () => {
               width={640}
             />
           </div>
-
           <p className={caCss.card__summary}>
-            
-          Lead ride Academia  program acts as a bridge to connect the city leadership, business leadership and the youth leadership in transforming the city to healthy and happy cities by making them cycle together.
-
-          <em className={caCss.card__author}> <strong>Sign up Here </strong> </em>
-
-            <Button className={caCss.card__cta} to="/case-study/liveaction/">
-            Lead Ride For Academia
-            </Button>
+            <h2>Lead Ride For Academics</h2>
+            Lead ride Academia program acts as a bridge to connect the city
+            leadership, business leadership and the youth leadership in
+            transforming the city to healthy and happy cities by making them
+            cycle together.
+            <div className="getStartedButtons_eYe1">
+              <Button className={caCss.card__cta} to="/case-study/aquis/">
+                Academic Program
+              </Button>{" "}
+              <Button className={caCss.card__cta} to="/case-study/aquis/">
+                Academic Sign Up
+              </Button>
+            </div>
           </p>
         </div>
       </section>
-      
-      
       <section className={clsx(seCss.section, seCss["section--inner"])}>
         <div className={caCss.card}>
           <p className={caCss.card__summary}>
-          
-          Lead ride commnities  program acts as a bridge to connect the city leadership, business leadership and the youth leadership in transforming the city to healthy and happy cities by making them cycle together.
-
-            <Button className={caCss.card__cta} to="/case-study/toggle/">
-              Lead Ride For Communities
-            </Button>
-
-            <em className={caCss.card__author}> <strong>Sign up Here </strong> 
-            </em>
-
-            <Button className={caCss.card__cta} to="/case-study/toggle/">
-              Lead Ride For Communities
-            </Button>
-         
+            <h2>Lead Ride For Community</h2>
+            Lead ride communities program acts as a bridge to connect the city
+            leadership, business leadership and the youth leadership in
+            transforming the city to healthy and happy cities by making them
+            cycle together.
+            <div className="getStartedButtons_eYe1">
+              <Button className={caCss.card__cta} to="/case-study/aquis/">
+                Community Program
+              </Button>{" "}
+              <Button className={caCss.card__cta} to="/case-study/aquis/">
+                Community Sign Up
+              </Button>
+            </div>
           </p>
           <div className={caCss.card__illustration}>
             <img
@@ -149,9 +167,9 @@ const LeadRide = () => {
             />
           </div>
         </div>
+ 
       </section>
     </Layout>
-  )
-}
-
-export default LeadRide
+  );
+};
+export default LeadRide;
