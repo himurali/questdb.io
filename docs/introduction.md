@@ -68,6 +68,27 @@ following channels:
 
 ## How We do ?
 
+
+Ecosystem Map & Connection Connect
+Identify active mobility actors,
+stakeholders, critical users and
+establish connection.
+Lead Ride Round Table
+Meetup with critical stakeholders and
+ecosystem players for transfromation
+Lead Ride Perform for Success
+Convene
+Celebrate
+Create
+Create a Strong Buddy Network across
+communities, institutions and
+corporate
+Ride together on World Cycle Day and
+achieve unity to enable active mobility
+at scale.
+
+
+
 ## Outcomes of Lead Ride
 
 ## Research Projects 
