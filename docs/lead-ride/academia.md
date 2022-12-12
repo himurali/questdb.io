@@ -6,47 +6,94 @@ description:
   Homebrew on macOS.
 ---
 
-Each software release of QuestDB is distributed via the
-[Homebrew](https://brew.sh/) package manager.
+# Program Flow For Cities
+1. [Handshake](#Handshake)
+2. [Ecosystem Mapping](#ecosystem)
+3. [Round Table](#round-table)
+3. [Program Finalization](#lead-ride-program-finalization)
+4. [Network Activation](#lead-ride-network-activation )
 
-## Install Homebrew
 
-Users who already have Homebrew installed may skip this section and proceed to  
-## Install QuestDB
 
-To install QuestDB via Homebrew, run the following command:
 
-```shell
-brew install questdb
-```
+## Handshake
+
+NNCF initiates the conversation with the city leadership and the key stakeholders to make the city as a Lead Ride City.
+
+A Lead Ride City performs the following key roles.
+
+1. Agrees to organize the Lead Ride on World Cycle Day 
+2. Connects and Convenes the Active Mobility Ecosystem players
+3. Commits funding for the Lead Ride 
+4. The outreach and branding campaign  is supported 
+5. Agrees to hold the Lead Ride Round Table along with NNCF leadership 3 times in a year.
+6. Appoints Lead Ride champions in the city to lead the effort of Active Mobility Transformation.
+![](https://i.imgur.com/fkeB3Bg.png)
+
+## Ecosystem
+
+
+Ecosystem Map of Active Mobility - We describe all the entities, flows and relationships that characterize the surrounding ecosystem.
+ ![](https://i.imgur.com/19wQcuK.png)
+1. Identify all players and entities involved in the service supply and delivery.
+
+:::info
+**For cyclists by cyclists: ecosystem enhancement through community engagement!**  !
+:::
+2. Place the cyclist  at the center of the ecosystem mapping exercize, then position the other players in the space around. 
+:::info
+**Use different types of line  (appearance, colour, stroke) to represent different kinds of relationship such as information exchange, money exchange, etc** Try to put cyclist closer to the center the ones that have more importance for the cyclist. When they are all on the map, start tracing connections between the cyclist and other players and then among the latter.! 
+:::
+
+
+## Round Table
+
+
+![](https://i.imgur.com/KCxUiqP.png)
  
 
-## Uninstall QuestDB
+## Lead Ride Program Finalization
 
-To remove QuestDB, use Homebrew's `uninstall` command:
+ 
 
-```shell
-questdb uninstall
-```
+The file is named:
 
-## Troubleshooting Homebrew issues
+<!-- prettier-ignore-start -->
+ 
 
-It's recommended to first run `update` before trying to install packages or
-diagnose errors:
+<!-- prettier-ignore-end -->
+ 
+## Lead Ride Network Activation
+Step 3 : Lead Ride Program Finalization
+--- 
 
-```shell
-brew update
-```
 
-Homebrew comes with a basic diagnostic command which can help find
-inconsistencies with system settings and permissions. This command will exit
-with a non-zero status if any potential problems are found:
+![](https://i.imgur.com/rcICZnv.png)
 
-```shell
-brew doctor
-```
+Step 4 : 
+---
 
-## Next steps
+![](https://i.imgur.com/SrENWqr.png)
 
-Once you installed the QuestDB with Homebrew, you can navigate to our 
-about its usage.
+## Lead Ride Announcement
+
+Step 4 : 
+---
+
+
+
+###### tags: `leadride` `cyclingtogether`
+
+
+Step 4 : Lead Ride World Bicycle Together
+---
+
+
+
+![](https://i.imgur.com/85apZr5.jpg)
+
+## Appendix and FAQ
+
+:::info
+**Find this document incomplete?** Leave a comment!
+:::

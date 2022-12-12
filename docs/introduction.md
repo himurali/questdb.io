@@ -11,56 +11,64 @@ event data. It uses SQL with extensions for time series to assist with real-time
 analytics. These pages cover core concepts of QuestDB, including setup steps,
 usage guides, and reference documentation for syntax, APIs and configuration.
 
-## Get Started
+## Mission 
 
-This section explains how to install and run QuestDB using one of the following
-methods:
-
--  for repeatable, portable and scalable
-  installations
--  for direct downloads to run on Linux,
-  macOS or Windows
--  for running QuestDB on macOS
-
-Once QuestDB is running, a guide is provided to
+Building & Shaping the future with active movement & active mobility
  
 
-## Develop
-## Nandi habba
-This section describes how to connect to QuestDB using a variety of tools and
-programming languages through our various network endpoints.
+## Vision
+Create a vibrant active mobility community by connecting and collaborating to create healthy and happy places in cities.
+## What is Lead Ride
 
--  to the database through our various
-  endpoints. Learn which protocol is best for different use cases.
--  using the InfluxDB Line Protocol,
-  PostgreSQL wire protocol or our HTTP REST API.
--   with SQL queries via the PostgreSQL
-  Wire Protocol or exported to JSON or CSV via our HTTP REST API.
--  for quick SQL queries, charting and
-  CSV upload/export functionality.
+Lead ride is a movement to bring together leaders and decision makers at the city, to immersively ride together and connect to
+cities.
+Lead ride as a movement aims to bring industries and governance and citizens to cycle together, so as to co-create,
+co-operate, and co-design Shared Spaces in Cities & Towns.
 
-## Guides
+
    
 
-## Reference
+## What We do ?
 
-This section contains the reference documentation for the following categories:
+WORLD CYCLE DAY
+The annual World Bicycle Day  on June 3 2022 in multiple
+cities.
+City Wide "Lead Ride" Champions to Plan & Execute  World Cycle Day.
+Branding & Outreach across  the city
+
+BUILD A STRONG NETWORK FOR ACTIVE MOBILITY
+Lead Ride Buddy Network at Companies & Institutions.
+Ecosystem connection and Activation for cultural alignment
+
+
+ACCELERATOR
+
+Active Mobility Living Lab
+Ecosystem connection and Activation for cultural alignment.
+Bicycle Experiences
+Knowledge & Capacity Building
  
-## Support
+Build Culture
+Active Mobility Culture Building - with literature,
+media, arts, theater and philosophy. 
 
-For hints on diagnosing common configuration issues, see the following
-resources:
+## Principles
 
--   guide with solutions for
-  various HW & SW configuration issues
--   page with the
-  list of Operating System error codes
 
 We are happy to help with any question you may have, particularly to help you
-optimize the performance of your application. Feel free to reach out using the
+enable Active Mobility in your neighborhood. Feel free to reach out using the
 following channels:
 
 - [Raise an issue on GitHub]({@githubUrl@}/issues)
 - [Join the Community Slack]({@slackUrl@})
-- [QuestDB on Stack Overflow]({@stackoverflowUrl@})
-- or send us an email at [hello@questdb.io](mailto:hello@questdb.io)
+ 
+- or send us an email at [murali@nammacycle.in](mailto:murali@nammacycle.in)
+
+
+
+## How We do ?
+
+## Outcomes of Lead Ride
+
+## Research Projects 
+
