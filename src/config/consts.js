@@ -1,4 +1,4 @@
 module.exports = {
-  githubOrgUrl: "https://github.com/questdb",
-  domain: "questdb.io",
+  githubOrgUrl: "https://github.com/nammacycle",
+  domain: "nncf.life",
 }

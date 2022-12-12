@@ -29,7 +29,7 @@ const LeadRide = () => {
               <div className="getStartedButtons_eYe1">
                 <Button
                   className={caCss.card__cta}
-                  to="/case-study/citysignup/"
+                  to="https://sprw.io/stt-bAHzYEC8vfVZHWkXcgE263"
                 >
                   City SignUp
                 </Button>{" "}
@@ -71,7 +71,7 @@ const LeadRide = () => {
               <div className="getStartedButtons_eYe1">
                 <Button
                   className={caCss.card__cta}
-                  to="/case-study/citysignup/"
+                  to="https://sprw.io/stt-bAHzYEC8vfVZHWkXcgE263"
                 >
                   City SignUp
                 </Button>{" "}
@@ -98,7 +98,7 @@ const LeadRide = () => {
               <Button className={caCss.card__cta} to="/case-study/aquis/">
                 Corporate Program
               </Button>{" "}
-              <Button className={caCss.card__cta} to="/case-study/aquis/">
+              <Button className={caCss.card__cta} to="https://sprw.io/stt-bAHzYEC8vfVZHWkXcgE263">
                 Corporate Sign Up
               </Button>
             </div>

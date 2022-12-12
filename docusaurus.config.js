@@ -234,29 +234,26 @@ const config = {
           title: "Projects",
           items: [
             {
-              label: "Cloud",
+              label: "Bharath Open Bike",
               to: "/cloud",
             },
             {
-              label: "Enterprise",
+              label: "She Cycles",
               to: "/enterprise",
             },
             {
-              label: "Use Cases",
+              label: "Lead Ride",
               to: "/use-cases",
             },
             {
-              label: "Customers",
+              label: "Success Stories",
               to: "/customers",
-            },
-            {
-              label: "Roadmap",
-              href: "https://github.com/orgs/questdb/projects/1/views/5",
-            },
+            }
+             
           ],
         },
         {
-          title: "Developers",
+          title: "Community",
           items: [
             {
               label: "Docs",
@@ -270,18 +267,12 @@ const config = {
               label: "Blog",
               to: "/blog",
             },
-            {
-              label: "Discussions",
-              to: customFields.linenUrl,
-            },
+           
             {
               label: "Join Slack",
               to: customFields.slackUrl,
             },
-            {
-              label: "Swag",
-              to: "/community",
-            },
+           
           ],
         },
         {
@@ -304,14 +295,8 @@ const config = {
               label: "Twitter",
               href: customFields.twitterUrl,
             },
-            {
-              label: "GitHub",
-              href: customFields.githubUrl,
-            },
-            {
-              label: "StackOverflow",
-              to: customFields.stackoverflowUrl,
-            },
+           
+            
             {
               label: "Linkedin",
               href: customFields.linkedInUrl,
@@ -320,10 +305,7 @@ const config = {
               label: "YouTube",
               to: customFields.videosUrl,
             },
-            {
-              label: "Reddit",
-              href: customFields.redditUrl,
-            },
+           
           ],
         },
       ],

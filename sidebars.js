@@ -34,10 +34,10 @@ module.exports = {
       label: "Get Started",
       type: "category",
       items: [
-        "get-started/docker",
-        "get-started/binaries",
-        "get-started/homebrew",
-        "get-started/first-database",
+        "lead-ride/city",
+        "lead-ride/company",
+        "lead-ride/academia",
+        "lead-ride/community",
       ],
     },
      
