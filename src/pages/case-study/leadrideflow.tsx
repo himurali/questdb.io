@@ -203,10 +203,10 @@ const Tqs = () => {
                 width={100}
               />
             </Button>
-            <span className={juCss.jumbotron__name}>Case study</span>
+            <span className={juCss.jumbotron__name}>Workflow</span>
           </div>
           <h1 className={seCss.section__title}>
-            Getting Started with Lead Ride - Cities
+              Lead Ride for Cities
           </h1>
           <p
             className={clsx(

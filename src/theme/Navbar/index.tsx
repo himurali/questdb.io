@@ -148,7 +148,7 @@ function Navbar(): JSX.Element {
           <Button
             className={clsx(styles.ctaButton, styles.getQuestdb)}
             size="xsmall"
-            to="/get-questdb/"
+            to="https://leadride.slack.com//"
             variant="secondary"
           >
             Join Community
@@ -156,7 +156,7 @@ function Navbar(): JSX.Element {
           <Button
             className={clsx(styles.ctaButton, styles.benchmarkButton)}
             size="xsmall"
-            to="/get-questdb/"
+            to="https://rzp.io/l/nammacyclesupport"
           >
             Donate
           </Button>
