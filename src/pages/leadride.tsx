@@ -4,8 +4,7 @@ import Button from "@theme/Button";
 import Layout from "../theme/Layout";
 import caCss from "../css/customers/card.module.css";
 import juCss from "../css/customers/jumbotron.module.css";
-import seCss from "../css/section.module.css";
-import StepCity from "src/components/StepCity";
+import seCss from "../css/section.module.css"; 
 // temporary duplication across customer and enterprise page for quote module
 const LeadRide = () => {
   const title = "Lead Ride ";
@@ -167,7 +166,7 @@ const LeadRide = () => {
             />
           </div>
         </div>
- 
+  
       </section>
     </Layout>
   );
