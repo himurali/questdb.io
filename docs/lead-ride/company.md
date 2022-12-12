@@ -1,5 +1,6 @@
 ---
 title: Create my first dataset
+sidebar_label: For Corporate
 description:
   This document shows how to work with QuestDB as a time series database by
   generating dummy time series data, insert the data into a table, then querying

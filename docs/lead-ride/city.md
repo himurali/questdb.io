@@ -1,140 +1,99 @@
 ---
-title: Get started with QuestDB from the binaries
-sidebar_label: Binaries
+title:  Lead Ride For Cities
+sidebar_label: For Cities
 description:
   How to install and launch QuestDB from the binaries which are available on the
   Get QuestDB page.
 ---
+ 
+# Program Flow For Cities
+1. [Handshake](#Handshake)
+2. [Ecosystem Mapping](#ecosystem)
+3. [Round Table](#round-table)
+3. [Program Finalization](#lead-ride-program-finalization)
+4. [Network Activation](#lead-ride-network-activation )
 
-import CodeBlock from "@theme/CodeBlock"
-import InterpolateReleaseData from "../../src/components/InterpolateReleaseData"
 
-This page describes how to install and use QuestDB via binaries. QuestDB comes
-with a script `questdb.sh` for Linux/FreeBSD and an executable `questdb.exe` for
-Windows. If you are looking for macOS, please check our 
 
-## Download
 
-You can find the latest binaries on th 
+## Handshake
 
-## Prerequisites
+NNCF initiates the conversation with the city leadership and the key stakeholders to make the city as a Lead Ride City.
 
-### "Any (no JVM)" version
+A Lead Ride City performs the following key roles.
 
-The file is named:
+1. Agrees to organize the Lead Ride on World Cycle Day 
+2. Connects and Convenes the Active Mobility Ecosystem players
+3. Commits funding for the Lead Ride 
+4. The outreach and branding campaign  is supported 
+5. Agrees to hold the Lead Ride Round Table along with NNCF leadership 3 times in a year.
+6. Appoints Lead Ride champions in the city to lead the effort of Active Mobility Transformation.
+![](https://i.imgur.com/fkeB3Bg.png)
 
-<InterpolateReleaseData
-  renderText={(release) => {
-    return (
-      <CodeBlock className="language-shell">
-        {`questdb-${release.name}-no-jre-bin.tar.gz`}
-      </CodeBlock>
-    )
-  }}
-/>
+## Ecosystem
 
-This binary is approximately 4MB.
 
-#### Java 11
+Ecosystem Map of Active Mobility - We describe all the entities, flows and relationships that characterize the surrounding ecosystem.
+ ![](https://i.imgur.com/19wQcuK.png)
+1. Identify all players and entities involved in the service supply and delivery.
 
-When using this binary you will need to have Java 11 installed locally. You can
-check which version is already installed on your system with:
+:::info
+**For cyclists by cyclists: ecosystem enhancement through community engagement!**  !
+:::
+2. Place the cyclist  at the center of the ecosystem mapping exercize, then position the other players in the space around. 
+:::info
+**Use different types of line  (appearance, colour, stroke) to represent different kinds of relationship such as information exchange, money exchange, etc** Try to put cyclist closer to the center the ones that have more importance for the cyclist. When they are all on the map, start tracing connections between the cyclist and other players and then among the latter.! 
+:::
 
-```shell
-java -version
-```
 
-If you do not already have Java installed, download and install the package for
-your operating system. We support:
+## Round Table
 
-- AdoptOpenJDK
-- Amazon Corretto
-- OpenJDK
-- Oracle Java
 
-Other Java distributions are most likely working but we are not running tests on
-them.
+![](https://i.imgur.com/KCxUiqP.png)
+ 
 
-#### `JAVA_HOME`
+## Lead Ride Program Finalization
 
-The environment variable `JAVA_HOME` needs to be set to your JDK's installation
-folder.
-
-### Your operating system version
+ 
 
 The file is named:
 
 <!-- prettier-ignore-start -->
-
-import Tabs from "@theme/Tabs"
-import TabItem from "@theme/TabItem"
-
-<Tabs defaultValue="linux" values={[
-  { label: "Linux", value: "linux" },
-  { label: "FreeBSD", value: "bsd" },
-  { label: "Windows", value: "windows" },
-]}>
+ 
 
 <!-- prettier-ignore-end -->
-
-<TabItem value="linux">
-
-
-<InterpolateReleaseData
-  renderText={(release) => {
-    return (
-      <CodeBlock className="language-shell">
-        {`questdb-${release.name}-rt-linux-amd64.tar.gz`}
-      </CodeBlock>
-    )
-  }}
-/>
-
-</TabItem>
+ 
+## Lead Ride Network Activation
+Step 3 : Lead Ride Program Finalization
+--- 
 
 
-<TabItem value="bsd">
+![](https://i.imgur.com/rcICZnv.png)
 
+Step 4 : 
+---
 
-<InterpolateReleaseData
-  renderText={(release) => {
-    return (
-      <CodeBlock className="language-shell">
-        {`questdb-${release.name}-rt-freebsd-amd64.tar.gz`}
-      </CodeBlock>
-    )
-  }}
-/>
+![](https://i.imgur.com/SrENWqr.png)
 
-</TabItem>
+## Lead Ride Announcement
 
-
-<TabItem value="windows">
-
-
-<InterpolateReleaseData
-  renderText={(release) => {
-    return (
-      <CodeBlock className="language-shell">
-        {`questdb-${release.name}-rt-windows-amd64.tar.gz`}
-      </CodeBlock>
-    )
-  }}
-/>
-
-</TabItem>
-
-
-</Tabs>
-
-
-This binary weights around 20MB, this depends on your operating system.
-
-When using this binary, you do not need anything on your machine, the Java
-runtime is packaged directly with QuestDB.
+Step 4 : 
+---
 
 
 
-## Next steps
+###### tags: `leadride` `cyclingtogether`
 
-Once you extracted the tarball,  
+
+Step 4 : Lead Ride World Bicycle Together
+---
+
+
+
+![](https://i.imgur.com/85apZr5.jpg)
+
+## Appendix and FAQ
+
+:::info
+**Find this document incomplete?** Leave a comment!
+:::

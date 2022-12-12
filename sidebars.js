@@ -31,7 +31,7 @@ module.exports = {
       type: "doc",
     },
     {
-      label: "Get Started",
+      label: "Lead Ride",
       type: "category",
       items: [
         "lead-ride/city",

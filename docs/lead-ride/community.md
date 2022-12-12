@@ -1,6 +1,6 @@
 ---
 title: Get started with QuestDB via Docker
-sidebar_label: Docker
+sidebar_label: For Community
 description:
   Guide showing how to use QuestDB with Docker. This also covers how to import
   data as well as persistence.

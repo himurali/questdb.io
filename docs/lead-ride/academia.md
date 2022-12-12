@@ -1,6 +1,6 @@
 ---
 title: Get started with QuestDB via Homebrew (macOS)
-sidebar_label: Homebrew
+sidebar_label: For Academia
 description:
   A short guide for getting started with installing and running QuestDB via
   Homebrew on macOS.
