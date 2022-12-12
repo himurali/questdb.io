@@ -1,9 +1,8 @@
 ---
-title: Get started with QuestDB via Homebrew (macOS)
+title: Lead Ride For Academia
 sidebar_label: For Academia
 description:
-  A short guide for getting started with installing and running QuestDB via
-  Homebrew on macOS.
+  A short guide for getting started For Academia.
 ---
 
 Each software release of QuestDB is distributed via the

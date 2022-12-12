@@ -1,5 +1,5 @@
 ---
-title: Create my first dataset
+title: Lead Ride For Corporate
 sidebar_label: For Corporate
 description:
   This document shows how to work with QuestDB as a time series database by

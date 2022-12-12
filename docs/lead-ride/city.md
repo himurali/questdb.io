@@ -2,8 +2,7 @@
 title:  Lead Ride For Cities
 sidebar_label: For Cities
 description:
-  How to install and launch QuestDB from the binaries which are available on the
-  Get QuestDB page.
+  A short guide for getting started For Cities..
 ---
  
 # Program Flow For Cities

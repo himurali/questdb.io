@@ -1,5 +1,5 @@
 ---
-title: Get started with QuestDB via Docker
+title: Lead Ride For Community
 sidebar_label: For Community
 description:
   Guide showing how to use QuestDB with Docker. This also covers how to import
