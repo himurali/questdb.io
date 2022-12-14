@@ -97,3 +97,83 @@ Step 4 : Lead Ride World Bicycle Together
 :::info
 **Find this document incomplete?** Leave a comment!
 :::
+
+role of cycling  in shaping a healthy lifestyle
+further develop physical culture and mass
+sports and possibility of exploring the world on cycles - 
+
+people who are active during life and
+work, healthy and physically strong, then slow down physical activity or some people in their
+profession over time. under the pretext that they are not there, they “give out” their actions
+and health. In such cases, there is a slowdown in movement or restriction of active movement
+- hypodynamics. According to scientists, hypodynamics is the cause of the development of
+modern diseases (ischemia, tachycardia, hypertension, bronchial asthma, osteochondrosis,
+etc.). The
+
+
+actions, regular physical activity is the most dramatic,
+harmless, relaxing, "free medicine" and "free treatment" that creates symptoms for health. .
+
+the content, intensity, volume and direction of training
+
+nimble body, super reflexes, and a sharp, focused
+focus,
+
+than 10% of human deaths worldwide are related to physical
+inactivity.
+II. There has be
+
+mendous shift in the world toward physically unnecessary work and
+other sedentary lifestyles.
+
+including obesity, heart disease, stroke and
+high cholesterol
+
+improves mobility
+
+burns more calories and greatly improves your cardiovascular health.
+
+you stay healthy and lose weight
+Improves metabolic rate
+Increases concentration and reflex action
+Improves heart function
+muscle strength and flexibility
+
+Increases bone density
+Reduces risk of diabetes
+Improves lung function
+Helps maintain body and muscle tone
+
+
+Touring  : 
+
+Knowledge of various cultures 
+Additional Opportunities
+Multi Dimensions & Perspectives
+Nature connect -> leads to rejuvenation;
+
+Health
+Rejuvenation & 
+Sports
+Team Work
+
+
+Intellectual growth and academic achievement should not come at the expense of wellbeing. Together, we can create a culture at your campus
+that embraces the importance of mental health and wellbeing.
+
+Mind: Taking care of your mind is critical to managing your feelings, thoughts, and behaviors, and also allows you to reason, innovate, practice self-compassion, empathize, and develop insight.
+
+Body: Caring for your body is foundational to wellbeing and includes getting good sleep, physical exercise, and eating well. Wellbeing for your body is not tied to physical ability or size.
+
+Relationships: Healthy relationships and meaningful connections help create thriving communities where everyone feels valued and respected
+
+
+ live healthy and purposeful lives is a necessary complement to learning science, technology, engineering, mathematics, and the humanities
+
+
+Habitica: create your own avatar and earn experience/gold by completing tasks
+Forest: grow your own virtual forest instead of browsing through social media
+Pomodoro: use Pomodoro to keep track of your study time and break time
+Kardia: inhale when the sphere expands and exhale when it contracts
+Headspace: take a moment to practice mindfulness and reground yourself
+
