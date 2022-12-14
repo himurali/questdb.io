@@ -6,73 +6,94 @@ description:
   data as well as persistence.
 ---
 
-QuestDB has images for both Linux/macOS and Windows on
-[Docker Hub]({@dockerUrl@}).
+# Program Flow For Cities
+1. [Handshake](#Handshake)
+2. [Ecosystem Mapping](#ecosystem)
+3. [Round Table](#round-table)
+3. [Program Finalization](#lead-ride-program-finalization)
+4. [Network Activation](#lead-ride-network-activation )
 
-## Install Docker
 
-Before we start, you will need to install Docker.  
 
-## QuestDB image
 
+## Handshake
+
+NNCF initiates the conversation with the city leadership and the key stakeholders to make the city as a Lead Ride City.
+
+A Lead Ride City performs the following key roles.
+
+1. Agrees to organize the Lead Ride on World Cycle Day 
+2. Connects and Convenes the Active Mobility Ecosystem players
+3. Commits funding for the Lead Ride 
+4. The outreach and branding campaign  is supported 
+5. Agrees to hold the Lead Ride Round Table along with NNCF leadership 3 times in a year.
+6. Appoints Lead Ride champions in the city to lead the effort of Active Mobility Transformation.
+![](https://i.imgur.com/fkeB3Bg.png)
+
+## Ecosystem
+
+
+Ecosystem Map of Active Mobility - We describe all the entities, flows and relationships that characterize the surrounding ecosystem.
+ ![](https://i.imgur.com/19wQcuK.png)
+1. Identify all players and entities involved in the service supply and delivery.
+
+:::info
+**For cyclists by cyclists: ecosystem enhancement through community engagement!**  !
+:::
+2. Place the cyclist  at the center of the ecosystem mapping exercize, then position the other players in the space around. 
+:::info
+**Use different types of line  (appearance, colour, stroke) to represent different kinds of relationship such as information exchange, money exchange, etc** Try to put cyclist closer to the center the ones that have more importance for the cyclist. When they are all on the map, start tracing connections between the cyclist and other players and then among the latter.! 
+:::
+
+
+## Round Table
+
+
+![](https://i.imgur.com/KCxUiqP.png)
+ 
+
+## Lead Ride Program Finalization
+
+ 
+
+The file is named:
 
 <!-- prettier-ignore-start -->
-
-import Tabs from "@theme/Tabs"
-import TabItem from "@theme/TabItem"
-
-<Tabs defaultValue="linux" values={[
-  { label: "Linux", value: "linux" },
-  { label: "Windows", value: "windows" },
-]}>
+ 
 
 <!-- prettier-ignore-end -->
-
-<TabItem value="linux">
-
-
-```shell
-/root/.questdb
-```
-
-</TabItem>
-
-
-<TabItem value="windows">
-
-AAA
-```shell
-C:\questdb
-```
-
-</TabItem>
-
-
-</Tabs>
-
-
-## Container status
-
-You can check the status of your container with **docker ps**. It also lists the
-ports we published:
-
-## Importing data and sending queries
-
-Now that QuestDB is running, you can start interacting with it:
-
-
-## Data persistence
-
-### Mounting a volume
-
-Volumes can be mounted to the QuestDB Docker container so that data may be
-persisted or server configuration settings may be passed to an instance. The
-following example demonstrated how to mount the current directory to a QuestDB
-container using the `-v` flag in a Docker `run` command:
  
- 
+## Lead Ride Network Activation
+Step 3 : Lead Ride Program Finalization
+--- 
 
-### Writing logs to disk
 
-When mounting a volume to a Docker container,  
- 
+![](https://i.imgur.com/rcICZnv.png)
+
+Step 4 : 
+---
+
+![](https://i.imgur.com/SrENWqr.png)
+
+## Lead Ride Announcement
+
+Step 4 : 
+---
+
+
+
+###### tags: `leadride` `cyclingtogether`
+
+
+Step 4 : Lead Ride World Bicycle Together
+---
+
+
+
+![](https://i.imgur.com/85apZr5.jpg)
+
+## Appendix and FAQ
+
+:::info
+**Find this document incomplete?** Leave a comment!
+:::
