@@ -12,11 +12,11 @@
 .brand {
   display: block;
   height: 50px;
-  width: 50px;
+  width: 75px;
   min-width: 20px;
   margin-right: var(--ifm-navbar-item-padding-horizontal);
   color: transparent;
-  background-image: url("https://res.cloudinary.com/dsmfsfyci/image/upload/c_scale,r_4,w_266/v1596014425/nncfcycleinfra/logo_j8pcys.jpg");
+  background-image: url("https://res.cloudinary.com/dsmfsfyci/image/upload/v1671185140/nncfwebdocu/NNCycleFoundation_nfe5z2.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -27,7 +27,7 @@
 
 
 :global(html[data-theme="light"]) .brand {
-  background-image: url("https://res.cloudinary.com/dsmfsfyci/image/upload/c_scale,r_4,w_266/v1596014425/nncfcycleinfra/logo_j8pcys.jpg");
+  background-image: url("https://res.cloudinary.com/dsmfsfyci/image/upload/v1671185140/nncfwebdocu/NNCycleFoundation_nfe5z2.png");
 
 }
 

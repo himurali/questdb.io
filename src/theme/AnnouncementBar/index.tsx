@@ -22,11 +22,11 @@ const AnnouncementBar = () => {
         If you like NNCF,&nbsp;
         <a
           className={styles.announcement__link}
-          href={customFields.githubUrl}
+          href={customFields.demoUrl}
           rel="noopener noreferrer"
           target="_blank"
         >
-          give us a star on GitHub
+          support us !
         </a>
         ! ⭐️
       </p>

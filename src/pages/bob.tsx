@@ -2,9 +2,7 @@
 import React from "react"
 import clsx from "clsx"
 
-import Layout from "../theme/Layout"
-import Subscribe from "../components/Subscribe"
-
+import Layout from "../theme/Layout" 
 import seCss from "../css/section.module.css"
 import style from "../css/cloud/style.module.css"
 import flCss from "../css/cloud/flashy.module.css"
@@ -12,8 +10,7 @@ import { ActionFooter } from "../components/ActionFooter"
 
 import hlCss from "../css/cloud/highlights.module.css"
 import prCss from "../css/property.module.css"
-import Button from "@theme/Button"
-import { ContactFormDialog } from "../components/ContactFormDialog"
+import Button from "@theme/Button" 
 
 
 
@@ -32,7 +29,7 @@ const Top = () => {
             seCss["section__title--accent"],
           )}
         >
-          Innovation
+          Bharath Open Bike   
         </h1>
 
         <p
@@ -43,23 +40,25 @@ const Top = () => {
             "text--center",
           )}
         >
-        To explore the potential of Active Mobility Vehicles in the Developing World context,
-        the AM Innovation Ecosystem is being  created by us.We aim to activate an Unique innovation ecosystem for development,
-demonstration and assessment of Active Mobility Vehicles. We are redesigning the (DFM) Design for Manufacturability Stack for Active Mobility vehicles - how these vehicles are designed and manufactured in Asia
-        </p>
+        We propose to develop an idea “Bharath Open Bike” as a combination of Architecture & Design Framework and Manufacturing Stack to transform the cycle industry from centralized to decentralized, autocratic to democratic, homogeneous to heterogeneous products.
+To explore the potential of Active Mobility Vehicles in the Developing World context.
+          </p>
 
-        <Subscribe
-          placeholder="E-mail"
-          className={style.subscribe}
-          submitButtonText="Get access"
-          provider="cloud"
-        />
+          <Button
+              variant="primary"
+              href="/docs/bob/vision"
+              className={style.card__button}
+              newTab={false}
+            >
+                                More about Bharath Open Bike
+
+            </Button>
 
         <img
           alt="Screenshot of instance creation form and instance details pages in QuestDB Cloud"
-          height={626}
-          src="https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/c101df064e4db4f63e23e24befb0d82d/large.jpg"
-          width={1026}
+          height={326}
+          src="https://i.imgur.com/64iASNs.png"
+          width={526}
           className={style["header-image"]}
         />
 
@@ -77,7 +76,7 @@ demonstration and assessment of Active Mobility Vehicles. We are redesigning the
             </ul>
             <Button
               variant="primary"
-              href="/get-questdb"
+              href="/docs/bob/opensource"
               className={style.card__button}
               newTab={false}
             >
@@ -100,14 +99,17 @@ demonstration and assessment of Active Mobility Vehicles. We are redesigning the
               & Mfg Content Hub / Lab 
               </li>
             </ul>
-            <ContactFormDialog
-              defaultInterest="cloud"
-              trigger={
-                <Button variant="primary" className={style.card__button}>
-                  Join Mfg  Community
-                </Button>
-              }
-            />
+
+            <Button
+              variant="primary"
+              href="/docs/bob/manufacturing"
+              className={style.card__button}
+              newTab={false}
+            >
+                                Join Mfg  Community
+
+            </Button>
+            
           </div>
         </div>
       </div>

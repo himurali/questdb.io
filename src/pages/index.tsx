@@ -1,6 +1,5 @@
 /* eslint-disable */
-import clsx from "clsx"
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
+import clsx from "clsx" 
 import Highlight from "../components/Highlight"
 import React, { useCallback, useEffect, useState } from "react"
 
@@ -11,18 +10,14 @@ import Chevron from "@theme/Chevron"
 import Layout from "../theme/Layout"
 import useWindowWidth from "@theme/useWindowWidth"
 import SvgImage from "../components/SvgImage" 
-
-import doCss from "../css/index/docker.module.css"
+ 
 import feCss from "../css/index/feature.module.css"
-import inCss from "../css/index/integration.module.css"
-import juCss from "../css/index/jumbotron.module.css"
+import inCss from "../css/index/integration.module.css" 
 import meCss from "../css/index/menu.module.css"
 import shCss from "../css/index/showcase.module.css"
 import usCss from "../css/index/usp.module.css"
 import prCss from "../css/property.module.css"
 import seCss from "../css/section.module.css"
-
-import QuestDBLogo from "../assets/img/questdb.svg"
 import PgLogo from "../assets/img/pages/index/integrations/pg.svg"
 import GrafanaLogo from "../assets/img/pages/index/integrations/grafana.svg"
 import KafkaLogo from "../assets/img/pages/index/integrations/kafka.svg"
@@ -39,6 +34,42 @@ import SliceTimeIcon from "../assets/img/pages/index/sliceTime.svg"
 import NavigateTimeIcon from "../assets/img/pages/index/navigateTime.svg"
 import MergeTimeIcon from "../assets/img/pages/index/mergeTime.svg"
 
+//
+
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
+class DemoCarousel extends React.Component  {
+  render() {
+      return (
+          <Carousel>
+             <div>
+                  <img src="https://res.cloudinary.com/dsmfsfyci/image/upload/v1671182873/nncfwebdocu/leadride_ljbh2m.png" />
+                 
+                  <a className="legend"   href="/leadride" >
+                  Join Lead Ride
+                        </a> 
+              </div>
+               <div>
+                  <img src="https://res.cloudinary.com/dsmfsfyci/image/upload/v1671182855/nncfwebdocu/shecycles_zpqgvr.png" />
+                
+                  <a className="legend"   href="/shecycles" >
+                  Enable She Cycles
+                        </a> 
+              </div>
+
+              <div>
+                  <img src="https://res.cloudinary.com/dsmfsfyci/image/upload/v1671182413/nncfwebdocu/Lead_RideFInal_gcatdq.png" />
+                                  
+                        <a className="legend"   href="/bob" >
+                          Innovate with us
+                        </a> 
+              </div>           
+             
+          </Carousel>
+      );
+  }
+}; 
 const FeatureTabs = () => {
   const [opened, setOpened] = useState<"digital" | "realtime" | "integration">(
     "digital",
@@ -220,66 +251,6 @@ const Integration = () => (
   </section>
 )
 
-const Top = () => {
-  const { siteConfig } = useDocusaurusContext()
-
-  return (
-    <section
-      className={clsx(seCss["section--inner"], seCss["section--slim--accent"])}
-    >
-      <div className={juCss.jumbotron}>
-        <h1
-          className={clsx(
-            seCss.section__title,
-            seCss["section__title--jumbotron"],
-            seCss["section__title--accent"],
-          )}
-        >
-        Transform the Culture and Future of Mobility.
-
-        </h1>
-
-        <p
-          className={clsx(
-            seCss.section__subtitle,
-            seCss["section__subtitle--jumbotron"],
-            seCss["section__subtitle--accent"],
-          )}
-        >
-          {siteConfig.tagline}
-        </p>
-
-        <div className={juCss.jumbotron__cta}>
-          <Button className={juCss.jumbotron__link} href={customFields.demoUrl}>
-            Donate
-          </Button>
-          <Button
-            className={clsx(
-              juCss.jumbotron__link,
-              juCss["jumbotron__cta--github"],
-            )}
-            href="/cloud"
-            icon={
-              <SvgImage
-                image={<QuestDBLogo width="32" height="32" />}
-                title="QuestDB Cloud"
-              />
-            }
-            variant="secondary"
-          >
-            JOIN LEAD RIDE
-          </Button>
-        </div>
-        <p className={juCss.jumbotron__description}>
-          Join with any of the initiatives we are taking to make Active Mobility Success in India.
-        </p>
-      </div>
-
-      <div className={doCss.docker}> S</div>
-    </section>
-  )
-}
-
 const Usp = () => (
 
 
@@ -323,16 +294,16 @@ Commons </p>
           <p className={usCss.usp__description}>Design for Manufacturing</p>
           <p className={usCss.usp__description}>Active Mobility Ecosystem</p>
           <p className={usCss.usp__description}>Transition to Active Mobility Vehicles</p>
-          <p className={usCss.usp__description}>Activate Design Community</p>
-            <p> </p>
-
+        
           <Button
-            className={meCss.menu__button}
+              variant="primary"
+              href="/bob"
+              className={meCss.menu__button}
+              newTab={false}
+            >
+                                Bharath Open Bike
 
-            size="small"
-          >
-            Innovate Now
-          </Button>
+            </Button>
 
         </div>
       </div>
@@ -364,12 +335,14 @@ Commons </p>
           <p> </p>
 
           <Button
-            className={meCss.menu__button}
+              variant="primary"
+              href="/shecycles"
+              className={meCss.menu__button}
+              newTab={false}
+            >
+                                She Cycles
 
-            size="small"
-          >
-            She Cycles
-          </Button>
+            </Button>
 
         </div>
 
@@ -386,7 +359,7 @@ Commons </p>
             width={176}
           />
 
-          <h2 className={usCss.usp__title}>Lead Bengaluru Ride  </h2>
+          <h2 className={usCss.usp__title}>Lead   Ride  </h2>
 
           <p className={usCss.usp__description}>
           Convene connect active mobility minds
@@ -399,13 +372,17 @@ Commons </p>
         
           <p> </p>
 
-          <Button
-            className={meCss.menu__button}
+    
 
-            size="small"
-          >
-            Lead Now
-          </Button>
+          <Button
+              variant="primary"
+              href="/leadride"
+              className={meCss.menu__button}
+              newTab={false}
+            >
+                                Lead Now
+
+            </Button>
         </div>
       </div>
 
@@ -700,7 +677,8 @@ const Home = () => (
     title="NNCF | Change the Future of Mobility"
     replaceTitle
   >
-    <Top />
+   <DemoCarousel /> 
+   
 
     <Usp />
     <Integration />

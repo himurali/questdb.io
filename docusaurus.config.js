@@ -136,7 +136,7 @@ const config = {
     navbar: {
       title: " ",
       logo: {
-        alt: "QuestDB",
+        alt: "NNCF",
         src: "/img/navbar/questdb.svg",
       },
       items: [
@@ -145,8 +145,8 @@ const config = {
           position: "left",
           items: [
             {
-              label: "Active Mobility  Innovation",
-              to: "/cloud",
+              label: "Bharath Open Bike",
+              to: "/bob",
             },
             {
               label: "Urban Design",

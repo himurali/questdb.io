@@ -148,10 +148,10 @@ function Navbar(): JSX.Element {
           <Button
             className={clsx(styles.ctaButton, styles.getQuestdb)}
             size="xsmall"
-            to="https://leadride.slack.com//"
+            to="/leadride"
             variant="secondary"
           >
-            Join Community
+            Join Lead Ride
           </Button>
           <Button
             className={clsx(styles.ctaButton, styles.benchmarkButton)}

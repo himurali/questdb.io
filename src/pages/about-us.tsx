@@ -7,10 +7,13 @@ import teCss from "../css/about-us/team.module.css"
 import ubCss from "../css/about-us/used-by.module.css"
 import inCss from "../css/about-us/investors.module.css"
 import prCss from "../css/about-us/press.module.css"
+ 
+
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+ 
 
 import Layout from "../theme/Layout"
 import Button from "@theme/Button"
-
 import SvgImage from "../components/SvgImage"
 
 import { logos } from "../assets/logos"
@@ -25,7 +28,9 @@ import { investorsColumn1, investorsColumn2 } from "../assets/investors"
 
 type PressItemProps = {
   release: PressRelease
-}
+} 
+
+
 
 const usedByLogos: CustomerLogo[] = [
   {
@@ -248,13 +253,17 @@ const AboutUsPage = () => {
   const description = ""
 
   return (
-    <Layout canonical="/about-us" description={description} title={title}>
-      <Top />
+<div>    
+  <Layout canonical="/about-us" description={description} title={title}>
+    
+      <Top />      
       <UsedBy />
       <Investors />
       <Team />
       <Press />
-    </Layout>
+  </Layout>
+</div>
+
   )
 }
 

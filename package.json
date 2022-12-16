@@ -75,6 +75,8 @@
     "sharp": "0.30.5",
     "url-loader": "4.1.1",
     "webpack": "^5.33.2",
+    "react-slideshow-image": "4.1.1",
+    "react-responsive-carousel":"3.2.23",
     "webpack-manifest-plugin": "^3.1.1"
   },
   "browserslist": {
