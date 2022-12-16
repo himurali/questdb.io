@@ -40,8 +40,27 @@ module.exports = {
         "lead-ride/community",
       ],
     },
+    {
+      label: "Bharath Open Bike",
+      type: "category",
+      items: [
+        "bob-final/vision",
+        "bob-final/strategy",
+        "bob-final/bcdc",
+        "bob-final/programflow",
+      ],
+    },
      
-
+    {
+      label: "She Cycles",
+      type: "category",
+      items: [
+        "she-cycles/vision",
+        "she-cycles/strategy",
+        "she-cycles/socialstock",
+        "she-cycles/programflow",
+      ],
+    },
     {
       label: "Cycle Day",
       type: "category",

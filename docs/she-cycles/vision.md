@@ -1,6 +1,6 @@
 ---
-title:  Bharath Open Bike 
-sidebar_label: Active Mobility Innovation for Bharath
+title:  She Cycles
+sidebar_label: Vision
 description:
   A short guide for getting started For Cities..
 ---
