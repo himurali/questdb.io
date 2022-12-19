@@ -7,52 +7,56 @@ description:
 ---
 
 # Program Flow For Cities
-1. [Handshake](#Handshake)
+1. [BCDC](#BCDC)
 2. [Ecosystem Mapping](#ecosystem)
-3. [Round Table](#round-table)
+3. [Round Table](#design-for-india)
 3. [Program Finalization](#lead-ride-program-finalization)
 4. [Network Activation](#lead-ride-network-activation )
 
 
 
 
-## Handshake
+## BCDC
 
-NNCF initiates the conversation with the city leadership and the key stakeholders to make the city as a Lead Ride City.
+BCDC envisions to transform the nicycle design and making stack leading to sustainable mobility. BCDC is the response of india for a sustaining and green economy - where we intend to bring in the innovation in design and modern practices in manufacturability.
+BCDC is a growing community of Bicycle Designers and Product creators working with tech, across diverse industries, schools and non-profits. We aim to get the best bicycle designers on our platform and host a virtual design summit.
 
-A Lead Ride City performs the following key roles.
+Inspire. Create. Build. Make in India.
 
-1. Agrees to organize the Lead Ride on World Cycle Day 
-2. Connects and Convenes the Active Mobility Ecosystem players
-3. Commits funding for the Lead Ride 
-4. The outreach and branding campaign  is supported 
-5. Agrees to hold the Lead Ride Round Table along with NNCF leadership 3 times in a year.
-6. Appoints Lead Ride champions in the city to lead the effort of Active Mobility Transformation.
-![](https://i.imgur.com/fkeB3Bg.png)
-
-## Ecosystem
+The Program is designed in 2 stages Stage 1. In the first stage we conduct the Hackathon .Stage 2. Host a Designer and Maker Summit
+Over 200 designers, will participate in the event.
 
 
-Ecosystem Map of Active Mobility - We describe all the entities, flows and relationships that characterize the surrounding ecosystem.
- ![](https://i.imgur.com/19wQcuK.png)
-1. Identify all players and entities involved in the service supply and delivery.
+Over 100 design colleges, relevant national and regional design schools will participate in the event.
+Design school representatives and manufacturing services like the Peenya Industrial Hub will participate in the event.
+Industrial Bodies will present illustrative practices as well as new developments in the field of Bike and EBike Manufacturing.
+Material technology to be the focus of the hackathon.
+IM4 the latest manufacturing tech shall be the stack on which the bicycle will be designed and manufactured.
 
-:::info
-**For cyclists by cyclists: ecosystem enhancement through community engagement!**  !
-:::
-2. Place the cyclist  at the center of the ecosystem mapping exercize, then position the other players in the space around. 
-:::info
-**Use different types of line  (appearance, colour, stroke) to represent different kinds of relationship such as information exchange, money exchange, etc** Try to put cyclist closer to the center the ones that have more importance for the cyclist. When they are all on the map, start tracing connections between the cyclist and other players and then among the latter.! 
-:::
+## Design for India
 
+We hope this design challenge may lead to new, disruptive ideas, increasing the chance for India to be the leader in bicycle industry: providing the right bicycle to the people who need it, at the right time, in a convenient, affordable, easy and accessible way, and – if possible – at the lowest cost. We encourage the next generation of designers to use their creative power to shape mobility and transport in india.Create well-designed, practical bicycles that improve access, comfort, safety and convenience .
+
+
+
+ ![](https://www.bcdc.in/images/feature-1.jpg)
 
 ## Round Table
 
-
+Designers and Design Network for Bicycle Design
 ![](https://i.imgur.com/KCxUiqP.png)
  
 
-## Lead Ride Program Finalization
+## Outcomes
+
+ A Publication of Bicycle Designs that won the hackathon.
+ A Website highlighting the design of the cycles that are selected.
+ Prototype development and validation for manufacturability by Industry Bodies.
+ Publication of Directory of Bicycle Designers in India.
+ Networking with 200+ designers to get the best cycle globally.
+ Blogs explaining the design process.
+ Webinar with around 500 participants - to engage the design community to highlight the design of cycle.
+ Design History of Indian cycles - how they have been designed in the last 100 years in association with cycle companies.
 
  
 
@@ -63,37 +67,11 @@ The file is named:
 
 <!-- prettier-ignore-end -->
  
-## Lead Ride Network Activation
+## Make in India
+
 Step 3 : Lead Ride Program Finalization
 --- 
 
 
 ![](https://i.imgur.com/rcICZnv.png)
-
-Step 4 : 
----
-
-![](https://i.imgur.com/SrENWqr.png)
-
-## Lead Ride Announcement
-
-Step 4 : 
----
-
-
-
-###### tags: `leadride` `cyclingtogether`
-
-
-Step 4 : Lead Ride World Bicycle Together
----
-
-
-
-![](https://i.imgur.com/85apZr5.jpg)
-
-## Appendix and FAQ
-
-:::info
-**Find this document incomplete?** Leave a comment!
-:::
+ 

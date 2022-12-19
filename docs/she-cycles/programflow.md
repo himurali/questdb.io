@@ -33,68 +33,39 @@ that embraces the importance of mental health and wellbeing. To live healthy and
 
 ## Handshake
 
-NNCF initiates the conversation with the Academic leadership and the key stakeholders to make the Institute as a Lead Ride Institute.
 
-A Lead Ride Institute performs the following key roles.
+Here’s how to get started:
 
-1. Agrees to organize the Lead Ride Program on World Cycle Day 
-2. Connects and Convenes the Active Mobility Ecosystem players
-3. Commits funding for the Lead Ride Program in the University
-4. Appoints Lead Ride Buddies in the University to lead the effort of Active Mobility Transformation.
-
-## Lead Ride Program Stages
-The Lead Ride University Program consists of two core stages, with   interactive sessions, as well as: 
+Subscribe to our weekly e-newsletter to learn about the latest sharing innovations, events, research, and campaigns. It’s a great way to connect to the sharing movement.
+Donate to Shareable. Help us achieve our mission to empower people to share. Get premium access to our reporting, publications, and events. We need and greatly appreciate your support.
+Volunteer. Help us tell sharing stories or produce events. Better yet, start your own sharing initiative. We can help! Drop us a line at info@shareable.net.
+Partner with us. Are you leading a sharing initiative in your city, community, or organization? Are you producing a sharing event, research project, or campaign? We can help. Learn more about our services here.
 
 
-### Stage 1 
-Active Mobility Awareness  - Foundation , a  guided course where students will learn the basics of Active Mobility and discover opportunities  for enhancing Active Mobility in their campus
-A lot of the inner-workings of Active Mobility and its impact are explored in the   `Active Mobility Awareness ` module.
+THE MISSION
+Websites that offer short-term vacation rentals allow for affordable and unique travel experiences. Locals can supplement their income while sharing their culture. But this model can come at a cost, driving up real estate prices, fragmenting communities, and closing local businesses. Across dozens of cities, technology-driven tourism is making it harder for locals to live in and manage their own neighbourhoods.
 
--   Introduction to  `Active Mobility Concept` or `Active Mobility Principles` to generate interest in the student and faculty community 
--   Organizing  `Active Travel` to students - they can explore cultures - people and opportunities and network  
--   Wellness with Bicycles `B-well club` - to start a b-well club at the institute. Health and Wellness Programs  develop young people’s capacity to engage in positive behaviors to nurture their well-being by cycling. B-well habits  emphasizes good habits - focus on food and nutrition, regular physical activity and improved overall well-being.
--   Enable  `Alumni Connect` to connect with the alumni and use the alumni network for growth and thriving
--   We connect   `Peer to Peer` Lead Ride Institutes to design and build Active Mobility Futures.
+WHO WE ARE
+FairBnB.coop is first and foremost a community of activists, coders, researchers and designers that aims to address this challenge by putting the “share” back into the sharing economy. We want to offer a community-centred alternative that prioritizes people over profit and facilitates authentic, sustainable and intimate travel experiences.
 
+We are creating an online platform that allows hosts and guests to connect for meaningful travel and cultural exchange, while minimizing the cost to communities.
 
-![](https://i.imgur.com/s4ml9Tz.png)
+HOW WE DO IT
+Collective ownership
+Our platform is owned not by faceless investors but by those who use it and are impacted by its use: hosts, guests, local business owners, neighbours. Created and governed by citizens, FairBnB.coop will keep profits in communities and ensure decisions are made for the good of neighbourhoods, not their exploitation.
 
+Democratic governance
+Collaboration and consensus are at the heart of our model. FairBnB.coop will provide a space where community members can come together and collectively decide how the platform will be run in their neighbourhood. FairBnB.coop will work with local government to promote regulations that encourage sustainable tourism.
 
+Social sustainability
+In order to rebuild community, profits will be reinvested in social projects that counter the negative effects of tourism. Locals will vote to support those projects they want to see in their neighbourhoods: food coops, playgrounds, green projects, community cafes.
 
-### Stage 2
-Despite improved understanding of the links between  Active Mobility (AM) and human well-being, no real progress has been made in India in that direction. To kickstart the movement, fundamental work - conceptual, methodological and empirical - is needed to make AM ideas operational and meaningful to the general public.
-Looking to deepen your own practice and knowledge in Active Mobility ? Ready to take your University  to the next level? The skills and techniques needed to help themselves, and others, develop more meaningful Active Mobility practices
--   Introduction to  `Climate Change Mitigation` based on  `Active Mobility Principles` to mitigate the climate change effects
--   Organizing  `Sustainability Leadership` to students - they can explore leadership futures in sustaunability
--   Understanding the economics of mobility a `Economics of Mobility` - to start measuring the value of active mobility at the institute
--   Enable  `Active Mobility Planning` in the neighborhood of the institute to embrace active mobility
--   Spark   `Active Mobility Innovation`  to design and build  Active Mobility Innovations.
-
-![](https://i.imgur.com/40KTf0F.png)
+Transparency and accountability
+FairBnB.coop is committed to open data and compliance with local and regional legislation, which will be balanced with the privacy and security needs of platform members.
 
  
 
-<!-- prettier-ignore-start -->
- 
+WHAT CAN YOU DO?
+FairBnB.coop offers a fair, collectively-owned and transparent alternative. We invite all travellers and citizens concerned by the negative effects of unchecked tourism to join us in co-creating a community platform that promotes travel that is extraordinary… and ethical.
 
-<!-- prettier-ignore-end -->
-  
-
-
-
-###### tags: `leadride` `cyclingtogether`
-
-
-World Bicycle Day Ride Together
----
-Finally the University / Institute showcases the progress during the Lead Ride on World Cycle Day.
-
-
-![](https://i.imgur.com/85apZr5.jpg)
-
-
-
-
-
- 
-
+For more info about our project please visit our website and follow us on Facebook and Twitt

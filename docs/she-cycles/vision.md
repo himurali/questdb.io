@@ -32,6 +32,15 @@ A Lead Ride City performs the following key roles.
 ## Ecosystem
 
 
+GOvernment has questions. Women have answers.
+Too often, Givernments  and Execution  waste time and money creating   services that don't meaningfully impact women' lives. Why? Because they never bothered to ask Women.
+
+Womens Insights are here :
+
+Co-designing the Future of Mobility 
+
+Kindful mobility 
+
 Ecosystem Map of Active Mobility - We describe all the entities, flows and relationships that characterize the surrounding ecosystem.
  ![](https://i.imgur.com/19wQcuK.png)
 1. Identify all players and entities involved in the service supply and delivery.
@@ -96,3 +105,15 @@ Step 4 : Lead Ride World Bicycle Together
 :::info
 **Find this document incomplete?** Leave a comment!
 :::
+
+
+ a global movement of movements emerging from the grassroots to address today’s biggest challenges - sustainability and climate change.
+ 
+
+
+cooperation can play a role in relation to social protection, and in their approach to work especially for self-employed, but part-time and fixed-term workers who are among the most vulnerable. They noted that they can provide a concrete response to their isolation and precariousness by forming collective enterprises.
+ensure shared control, shared wealth, and shared responsibility for the common goods
+
+
+ empowers women  for a more resilient, equitable, and joyful mobility spaces. 
+ We inspire social change by enabling active mobility for women in collaboration with our global partners.

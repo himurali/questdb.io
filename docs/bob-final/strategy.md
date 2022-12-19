@@ -8,93 +8,92 @@ description:
 ---
 
 # Program Flow For Corporate
-1. [Handshake](#Handshake)
-2. [Ecosystem Mapping](#ecosystem)
-3. [Round Table](#round-table)
-3. [Program Finalization](#lead-ride-program-finalization)
-4. [Network Activation](#lead-ride-network-activation )
+1. [Design in India](#ecosystem)
+2. [Make in India](#Handshake)
+3. [Innovate in India](#round-table)
+ 
+
+India was one of the leaders in Bicycle Manufacturing , but in the last two decades India has LOST the opportunity to be a world leader in exporting bicycles. China and Taiwan have captured the opportunity and have developed complete ecosystems for making the best cycles. BCDC creates multiple windows to explore initiatives to win in the global market. Post Corona with the push for "Make In India" and the reduction on the dependency of chinese imports world over - there is a great opportunity for India to promote cycles and sustainability.
 
 
-
-
-## Handshake
-
-NNCF initiates the conversation with the city leadership and the key stakeholders to make the city as a Lead Ride City.
-
-A Lead Ride City performs the following key roles.
-
-1. Agrees to organize the Lead Ride on World Cycle Day 
-2. Connects and Convenes the Active Mobility Ecosystem players
-3. Commits funding for the Lead Ride 
-4. The outreach and branding campaign  is supported 
-5. Agrees to hold the Lead Ride Round Table along with NNCF leadership 3 times in a year.
-6. Appoints Lead Ride champions in the city to lead the effort of Active Mobility Transformation.
-![](https://i.imgur.com/fkeB3Bg.png)
-
-## Ecosystem
-
-
-Ecosystem Map of Active Mobility - We describe all the entities, flows and relationships that characterize the surrounding ecosystem.
- ![](https://i.imgur.com/19wQcuK.png)
-1. Identify all players and entities involved in the service supply and delivery.
-
-:::info
-**For cyclists by cyclists: ecosystem enhancement through community engagement!**  !
-:::
-2. Place the cyclist  at the center of the ecosystem mapping exercize, then position the other players in the space around. 
-:::info
-**Use different types of line  (appearance, colour, stroke) to represent different kinds of relationship such as information exchange, money exchange, etc** Try to put cyclist closer to the center the ones that have more importance for the cyclist. When they are all on the map, start tracing connections between the cyclist and other players and then among the latter.! 
-:::
-
-
-## Round Table
 
 
 ![](https://i.imgur.com/KCxUiqP.png)
  
+ Create a Robust Ecosystem Framework for enabling designers and
+makers to join hands to create the best products in India.
+● Build and Host a active community of designers and makers on BCDC
+platform
+● Link, Connect and create hub for SME in Active Mobility to be part of the
+transformation
+● Identify Talent and enable startup creation with seed to scale capability
+● Enable Funding through Accelerator program as a Venture led initiative
+to deliver the product to the market.
 
-## Lead Ride Program Finalization
+The Ecosystem combines the best elements of design and manufacturing to
+deliver the reliability, strong quality standards and high performance of
+products with innovation, openness and collaboration with manufacturers and
+researchers.
+COLLABORATION
+•Comprised of different actors across different knowledge and service sectors
+INNOVATION
+•Integrate Designers and Business Managers
+•Innovate product, process and people skilling
+COMPETENCE
+•Design, Develop and Deliver competence in manufacturing the best in quality
+products
+CO-CREATION
+•Tie up with other corporate houses to develop inhouse Active Mobility
+Products by enabling startups.
 
- 
-
-The file is named:
-
-<!-- prettier-ignore-start -->
- 
-
-<!-- prettier-ignore-end -->
- 
-## Lead Ride Network Activation
-Step 3 : Lead Ride Program Finalization
---- 
-
-
-![](https://i.imgur.com/rcICZnv.png)
-
-Step 4 : 
----
-
-![](https://i.imgur.com/SrENWqr.png)
-
-## Lead Ride Announcement
-
-Step 4 : 
----
+MARKET FOCUS
+Cycle Rickshaw for Last Mile Connectivity in Urban Neighborhoods
+Cargo Bicycles for Retail Businesses
+Delivery Bicycles for Delivery Startups like Swiggy
+Rural Bicycles for Rural Needs.
+Special Bicycles for Indian Women Needs.
+CHALLENGES
+Import from China Lack of Bicycle Adaptation in Indian Middle-Class
+Segment
+Lack of Bicycle Design Culture
+Design Stagnancy in Industry
+Lack of Innovation Ecosystem
+Lack of Knowledge Sharing - Experimenting and Resource Sharing.
+OPPORTUNITIES
+Huge Market of $200Billion+ Globally for Active Mobility Products
+Huge Demand for low emission products due to climate awareness
+Potential to produce 10 lakh green jobs directly and indirectly
+Lack of Innovation Ecosystem
+Lack of Knowledge Sharing - Experimenting and Resource Sharing
+Atma Nirbhar - Self reliant India can be realized quickly for political
+dividends.
+Local Jobs at least direct and indirect jobs of 5 lakh + .
 
 
+3 YEAR GOAL
+1. Design and Make Active Mobility Products - 10 Unique Products with 3
+being top 10 products in India which will result in an Inclusive and
+Sustainable Mobility for India
+2. Enable Creation of at least 5 startups making these unique products with
+adequate funding and a sustainable revenue which will enable Building
+Societal Scale Mobility Solutions for India
+3. Create a Bharath Bicycle Design Studio cum Lab for students to explore
+and experiment the functional and business economics of Active
+Mobility which will enable global Industry, Academia &
+4. Government collaboration for Active Mobility in India
+5. Active Mobility Design and Manufacturing Policy for Making India World
+Leader in Active Mobility.
+6. Create an Active Mobility Manufacturing Architecture
+a. a. Active Mobility component parts and design standardization
 
-###### tags: `leadride` `cyclingtogether`
 
 
-Step 4 : Lead Ride World Bicycle Together
----
+## Design in India
+
+Indian cycle manufacturing is lagging in research and design to take on the global competition. We just don’t need a designer with a bicycle design. What we need is a design culture for bicycle designing. This is the first step in this direction , done for the first time in India. Great design starts with the customer
 
 
+## Make In India
+The dependence of the industry on institutional sales is substantial. Indian Middle class has drifted away from the bicycle to the two wheeler and cars. This shift need to be reversed by enabling cycles that meet the multiple needs of the middle class.
 
-![](https://i.imgur.com/85apZr5.jpg)
-
-## Appendix and FAQ
-
-:::info
-**Find this document incomplete?** Leave a comment!
-:::
+## Innovate in India

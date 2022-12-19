@@ -17,83 +17,13 @@ description:
 
 
 ## Handshake
+ Let's change tourism - one booking at a time
+We work to connect conscious travellers with fair hosts to promote stronger, more sustainable and equitable communities all around the world.
 
-NNCF initiates the conversation with the city leadership and the key stakeholders to make the city as a Lead Ride City.
+We are inspired by Fair Trade, Circular Economy and Sustainable Development Goals. Like all the other platforms we ask for a fee for your bookings but unlike other platforms we transfer 50% of the commision to community projects in the host area with the goal to redistribute wealth and create jobs.
 
-A Lead Ride City performs the following key roles.
+Cooperation and consensus are at the heart of our model. We are on a journey to become a home for all those who want to participate and grow this model of solidarity and participatory economy: hosts, guests, local business owners, neighbours are all welcome.
 
-1. Agrees to organize the Lead Ride on World Cycle Day 
-2. Connects and Convenes the Active Mobility Ecosystem players
-3. Commits funding for the Lead Ride 
-4. The outreach and branding campaign  is supported 
-5. Agrees to hold the Lead Ride Round Table along with NNCF leadership 3 times in a year.
-6. Appoints Lead Ride champions in the city to lead the effort of Active Mobility Transformation.
-![](https://i.imgur.com/fkeB3Bg.png)
-
-## Ecosystem
-
-
-Ecosystem Map of Active Mobility - We describe all the entities, flows and relationships that characterize the surrounding ecosystem.
- ![](https://i.imgur.com/19wQcuK.png)
-1. Identify all players and entities involved in the service supply and delivery.
-
-:::info
-**For cyclists by cyclists: ecosystem enhancement through community engagement!**  !
-:::
-2. Place the cyclist  at the center of the ecosystem mapping exercize, then position the other players in the space around. 
-:::info
-**Use different types of line  (appearance, colour, stroke) to represent different kinds of relationship such as information exchange, money exchange, etc** Try to put cyclist closer to the center the ones that have more importance for the cyclist. When they are all on the map, start tracing connections between the cyclist and other players and then among the latter.! 
-:::
-
-
-## Round Table
-
-
-![](https://i.imgur.com/KCxUiqP.png)
- 
-
-## Lead Ride Program Finalization
-
- 
-
-The file is named:
-
-<!-- prettier-ignore-start -->
- 
-
-<!-- prettier-ignore-end -->
- 
-## Lead Ride Network Activation
-Step 3 : Lead Ride Program Finalization
---- 
-
-
-![](https://i.imgur.com/rcICZnv.png)
-
-Step 4 : 
----
-
-![](https://i.imgur.com/SrENWqr.png)
-
-## Lead Ride Announcement
-
-Step 4 : 
----
-
-
-
-###### tags: `leadride` `cyclingtogether`
-
-
-Step 4 : Lead Ride World Bicycle Together
----
-
-
-
-![](https://i.imgur.com/85apZr5.jpg)
-
-## Appendix and FAQ
-
-:::info
-**Find this document incomplete?** Leave a comment!
-:::
+A non extractive alternative to the current vacation rental platforms
+WE PRIORITIZE PEOPLE OVER PROFIT.
+We offer the potential for authentic, sustainable and intimate travel experiences while facilitating the development of socially relevant projects within communities worldwide.
