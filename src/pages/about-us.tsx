@@ -164,7 +164,7 @@ const Team = () => {
             <div className={teCss.team__article__details}>
               <div>
                 <img
-                  src="/img/pages/about-us/sridhar.png"
+                  src="/img/pages/about-us/sri.png"
                   alt="Miguel Arregui photo"
                   width="100"
                   height="100"
@@ -181,7 +181,7 @@ const Team = () => {
             <div className={teCss.team__article__details}>
               <div>
                 <img
-                  src="/img/pages/about-us/manoj.png"
+                  src="/img/pages/about-us/man.png"
                   alt="Miguel Arregui photo"
                   width="100"
                   height="100"
@@ -198,7 +198,7 @@ const Team = () => {
             <div className={teCss.team__article__details}>
               <div>
                 <img
-                  src="/img/pages/about-us/nanju.png"
+                  src="/img/pages/about-us/nan.png"
                   alt="Miguel Arregui photo"
                   width="100"
                   height="100"
