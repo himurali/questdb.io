@@ -2,13 +2,11 @@
 import React from "react"
 import clsx from "clsx"
 
-import Layout from "../theme/Layout"
-import Subscribe from "../components/Subscribe"
+import Layout from "../theme/Layout" 
 
 import seCss from "../css/section.module.css"
 import style from "../css/cloud/style.module.css"
-import flCss from "../css/cloud/flashy.module.css"
-import { ActionFooter } from "../components/ActionFooter"
+import flCss from "../css/cloud/flashy.module.css" 
 
 import hlCss from "../css/cloud/highlights.module.css"
 import prCss from "../css/property.module.css"
@@ -48,12 +46,7 @@ const Top = () => {
         We rely on donations to carry out our mission to keep the streets traffic free. Will you support us  today?
         </p>
 
-        <Subscribe
-          placeholder="E-mail"
-          className={style.subscribe}
-          submitButtonText="Register for newsletter "
-          provider="cloud"
-        />
+        
 
         <img
           alt="Screenshot of instance creation form and instance details pages in QuestDB Cloud"
@@ -77,7 +70,7 @@ const Top = () => {
             </ul>
             <Button
               variant="primary"
-              href="/get-questdb"
+              href="https://rzp.io/l/nammacyclesupport"
               className={style.card__button}
               newTab={false}
             >
@@ -119,14 +112,7 @@ const Top = () => {
 }
 
 
-
-const Footer = () => {
-  return (
-    <section className={seCss["section--inner"]}>
-      <ActionFooter />
-    </section>
-  )
-}
+ 
 
 const CloudPage = () => {
   const title = "Cloud"
@@ -140,8 +126,7 @@ const CloudPage = () => {
       image="/img/pages/cloud/screens-thumb.png"
     >
       <Top />
-
-      <Footer />
+ 
     </Layout>
   )
 }

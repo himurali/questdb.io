@@ -101,7 +101,7 @@ export const ContactFormDialog = ({ trigger, defaultInterest }: Props) => {
                         ? { checked: true }
                         : {})}
                     />
-                    QuestDB Cloud demo
+                    Lead Ride
                   </label>
 
                   <label className={style.radio}>
@@ -111,7 +111,7 @@ export const ContactFormDialog = ({ trigger, defaultInterest }: Props) => {
                       value="sla"
                       {...(defaultInterest === "sla" ? { checked: true } : {})}
                     />
-                    Support with SLAs
+                    She Cycles
                   </label>
 
                   <p>

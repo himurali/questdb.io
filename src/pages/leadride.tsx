@@ -35,7 +35,7 @@ const LeadRide = () => {
                 </Button>{" "}
                 <Button
                   className={caCss.card__cta}
-                  to="/case-study/citypgmflow/"
+                  to="/docs/lead-ride/city"
                 >
                   City Program Flow
                 </Button>
@@ -95,7 +95,7 @@ const LeadRide = () => {
             transforming the city to healthy and happy cities by making them
             cycle together.
             <div className="getStartedButtons_eYe1">
-              <Button className={caCss.card__cta} to="/case-study/aquis/">
+              <Button className={caCss.card__cta} to="/docs/lead-ride/corporate">
                 Corporate Program
               </Button>{" "}
               <Button className={caCss.card__cta} to="https://sprw.io/stt-bAHzYEC8vfVZHWkXcgE263">
@@ -130,10 +130,10 @@ const LeadRide = () => {
             transforming the city to healthy and happy cities by making them
             cycle together.
             <div className="getStartedButtons_eYe1">
-              <Button className={caCss.card__cta} to="/case-study/aquis/">
+              <Button className={caCss.card__cta} to="/docs/lead-ride/academia">
                 Academic Program
               </Button>{" "}
-              <Button className={caCss.card__cta} to="/case-study/aquis/">
+              <Button className={caCss.card__cta} to="https://sprw.io/stt-bAHzYEC8vfVZHWkXcgE263">
                 Academic Sign Up
               </Button>
             </div>
@@ -149,10 +149,10 @@ const LeadRide = () => {
             transforming the city to healthy and happy cities by making them
             cycle together.
             <div className="getStartedButtons_eYe1">
-              <Button className={caCss.card__cta} to="/case-study/aquis/">
+              <Button className={caCss.card__cta} to="/docs/lead-ride/community">
                 Community Program
               </Button>{" "}
-              <Button className={caCss.card__cta} to="/case-study/aquis/">
+              <Button className={caCss.card__cta} to="https://sprw.io/stt-bAHzYEC8vfVZHWkXcgE263">
                 Community Sign Up
               </Button>
             </div>

@@ -217,7 +217,7 @@ const Team = () => {
           Help fund, shape, and expand our  work toward a healthy planet  and active citizens.
           </div>
           <div className={teCss.team__work__cta}>
-            <Button variant="primary" to="/careers">
+            <Button variant="primary" to="https://rzp.io/l/nammacyclesupport">
               Donate
             </Button>
           </div>

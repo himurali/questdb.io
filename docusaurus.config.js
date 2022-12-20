@@ -244,10 +244,6 @@ const config = {
             {
               label: "Lead Ride",
               to: "/use-cases",
-            },
-            {
-              label: "Success Stories",
-              to: "/customers",
             }
              
           ],
@@ -281,11 +277,7 @@ const config = {
             {
               label: "About us",
               to: "/about-us",
-            },
-            {
-              label: "Careers",
-              to: "/careers",
-            },
+            }
           ],
         },
         {

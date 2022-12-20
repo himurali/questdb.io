@@ -4,8 +4,7 @@ import React, {   useRef } from "react"
 import Layout from "../theme/Layout"
 
 import caCss from "../css/events/card.module.css"
-import joCss from "../css/events/job.module.css"
-import liCss from "../css/events/list.module.css"
+import joCss from "../css/events/job.module.css" 
 import seCss from "../css/section.module.css"
 
 type Opening = {
@@ -44,30 +43,13 @@ const currentOpenings: Opening[] = [
     location: "Cubbon Park",
   },
 
-  
-
-  {
-    href: "/events/technical-content-writer/",
-    title: "Technical Content Writers",
-    location: "Remote",
-  },
-
-  {
-    href: "/events/solution-engineer/",
-    title: "Solution Engineer",
-    location: "Remote",
-  },
-  {
-    href: "/events/ux-designer/",
-    title: "UX Designer",
-    location: "Remote",
-  },
+   
 ]
 
 const EventsPage = () => {
   const title = "Events at NNCF"
   const description =
-    "Join us at QuestDB to build breakthrough technology that will power the infrastructure of tomorrow."
+    "  Events at NNCF."
   const scrollAnchorRef = useRef<HTMLDivElement | null>(null)
   
 
@@ -76,28 +58,7 @@ const EventsPage = () => {
       <section
         className={clsx(seCss["section--inner"], seCss["section--center"])}
       >
-        <div className={caCss.card}>
-          <div className={caCss.card__side}>
-            <h1 className={caCss["card__title--important"]}>Events at NNCF</h1>
-            <p className={caCss.card__content}>
-              We organize Active Mobility Promotion Events.
-            </p>
-            
-          </div>
-          <div
-            className={clsx(
-              caCss.card__side,
-              caCss["card__side--illustration"],
-            )}
-          >
-            <img
-              alt="Illustration of team collaboration"
-              height={201}
-              src="/img/pages/careers/teamCollaboration.svg"
-              width={305}
-            />
-          </div>
-        </div>
+         
 
         
 
@@ -105,7 +66,7 @@ const EventsPage = () => {
 
         <div className={caCss.card}>
           <div className={caCss.card__side}>
-            <h2 className={caCss.card__title}>Current openings</h2>
+            <h2 className={caCss.card__title}>Current Events</h2>
           </div>
 
           <div className={clsx(caCss.card__side, caCss["card__side--center"])}>
@@ -127,51 +88,7 @@ const EventsPage = () => {
           </div>
         </div>
 
-        <div className={clsx(caCss.card, caCss["card--reverse"])}>
-          <div
-            className={clsx(
-              caCss.card__side,
-              caCss["card__side--illustration"],
-              caCss["card__side--baseline"],
-            )}
-          >
-            <img
-              alt="Illustration of a developer with efficient"
-              height={230}
-              src="/img/pages/careers/timeseriesApplication.svg"
-              width={305}
-            />
-          </div>
-          <div className={caCss.card__side}>
-            <h2 className={caCss.card__title}>What we offer</h2>
-            <ul className={liCss.list}>
-              <li className={liCss.list__item}>
-                Generous equity options package
-              </li>
-              <li className={liCss.list__item}>Flexible working hours</li>
-              <li className={liCss.list__item}>100% remote</li>
-              <li className={liCss.list__item}>
-                Freedom of choice for your technical equipment
-              </li>
-              <li className={liCss.list__item}>
-                Wonderful, highly qualified colleagues
-              </li>
-              <li className={liCss.list__item}>
-                Truly international: more than 10 different nationalities
-              </li>
-              <li className={liCss.list__item}>
-                A transparent, collaborative & inclusive culture
-              </li>
-              <li className={liCss.list__item}>
-                Exciting opportunities for career progression as we grow
-              </li>
-              <li className={liCss.list__item}>
-                Little to zero controls combined with autonomous work where you
-                set your own pace in a collaborative environment
-              </li>
-            </ul>
-          </div>
-        </div>
+         
       </section>
     </Layout>
   )

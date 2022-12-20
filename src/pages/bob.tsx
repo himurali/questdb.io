@@ -5,8 +5,7 @@ import clsx from "clsx"
 import Layout from "../theme/Layout" 
 import seCss from "../css/section.module.css"
 import style from "../css/cloud/style.module.css"
-import flCss from "../css/cloud/flashy.module.css"
-import { ActionFooter } from "../components/ActionFooter"
+import flCss from "../css/cloud/flashy.module.css" 
 
 import hlCss from "../css/cloud/highlights.module.css"
 import prCss from "../css/property.module.css"
@@ -117,15 +116,7 @@ To explore the potential of Active Mobility Vehicles in the Developing World con
   )
 }
 
-
-
-const Footer = () => {
-  return (
-    <section className={seCss["section--inner"]}>
-      <ActionFooter />
-    </section>
-  )
-}
+ 
 
 const CloudPage = () => {
   const title = "Cloud"
@@ -139,8 +130,7 @@ const CloudPage = () => {
       image="/img/pages/cloud/screens-thumb.png"
     >
       <Top />
-
-      <Footer />
+ 
     </Layout>
   )
 }

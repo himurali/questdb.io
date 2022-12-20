@@ -4,16 +4,14 @@ import { CSSTransition, TransitionGroup } from "react-transition-group"
 
 import Button from "@theme/Button"
 import Chevron from "@theme/Chevron"
-import Layout from "../theme/Layout"
-import Subscribe from "../components/Subscribe"
+import Layout from "../theme/Layout" 
 import useResizeObserver from "@theme/useResizeObserver"
 import caCss from "../css/enterprise/card.module.css"
 import ilCss from "../css/enterprise/illustration.module.css"
 import peCss from "../css/enterprise/performance.module.css"
 import quCss from "../css/enterprise/quote.module.css"
 import prCss from "../css/property.module.css"
-import seCss from "../css/section.module.css"
-import style from "../css/enterprise/style.module.css"
+import seCss from "../css/section.module.css" 
 import _quotes from "../assets/quotes"
 
 
@@ -119,12 +117,7 @@ const Enterprise = () => {
             Understanding the link between health, safety, community with Active Mobility for Urban Areas.
           </p>
 
-          <Subscribe
-            placeholder="Work Email"
-            submitButtonText="Contact Us"
-            provider="enterprise"
-            className={style.subscribe}
-          />
+        
 
           <img
             alt="Artistic view of the console with sub-queries"
