@@ -27,3 +27,10 @@ Cooperation and consensus are at the heart of our model. We are on a journey to 
 A non extractive alternative to the current vacation rental platforms
 WE PRIORITIZE PEOPLE OVER PROFIT.
 We offer the potential for authentic, sustainable and intimate travel experiences while facilitating the development of socially relevant projects within communities worldwide.
+
+Platform Cooperatives
+
+
+Community Freedom 
+
+Cycling  For Everyone
