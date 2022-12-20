@@ -1,13 +1,13 @@
-# Blr heritage
+---
+title: Bengaluru Rides
+sidebar_label: Bengaluru Rides
+description:
+  Bengaluru Rides
+--- 
  
-## Web Console
- 
-## InfluxDB Line Protocol
+## Bengaluru Rides
 
-The InfluxDB Line Protocol (ILP) is a text protocol over TCP or UDP on
-port 9009.
+Cycling enthusiasts got  a chance to learn more about the history of Bengaluru as the Tourism Department, along with NNCF,  organised two theme-based rides on Tuesday September 27 on the eve of World Tourism Day.
 
-It is a one-way protocol to insert data, focusing on simplicity and performance.
- 
-### Examples
- 
+
+The rides are divided into a ‘Heritage’ and a ‘History’ circuit. The organisers will provide 60 participants with cycles and take them on a tour of places of interest around M.G. Road and Basavangudi. 

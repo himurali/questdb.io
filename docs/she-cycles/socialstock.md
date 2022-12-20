@@ -1,36 +1,36 @@
 ---
-title: Lead Ride For Community
+title: Social Stock 
 sidebar_label: Co-Operatives
 description:
   Guide showing how to use QuestDB with Docker. This also covers how to import
   data as well as persistence.
 ---
 
-# Program Flow For Cities
-1. [Handshake](#Handshake)
-2. [Ecosystem Mapping](#ecosystem)
-3. [Round Table](#round-table)
-3. [Program Finalization](#lead-ride-program-finalization)
-4. [Network Activation](#lead-ride-network-activation )
 
 
 
+## Building an investment ecosystem
 
-## Handshake
- Let's change tourism - one booking at a time
-We work to connect conscious travellers with fair hosts to promote stronger, more sustainable and equitable communities all around the world.
+She Cycles intends to enable an ecosystem for investment in Active Mobility for women.
+Impact Investors, CSR Grants, Loans from Banks and Municipalities Investments are the sources of investments. We intend to create an ecosystem platform for everyone to come together to assist women to access finance and operate active mobility spaces.
 
-We are inspired by Fair Trade, Circular Economy and Sustainable Development Goals. Like all the other platforms we ask for a fee for your bookings but unlike other platforms we transfer 50% of the commision to community projects in the host area with the goal to redistribute wealth and create jobs.
+## Enabling Social Lending
+We want to see a social lending market that meets the needs women entrepeuners in urban and rural spaces. Growing enterprises and building resilience to improve people’s lives with women leading.
 
-Cooperation and consensus are at the heart of our model. We are on a journey to become a home for all those who want to participate and grow this model of solidarity and participatory economy: hosts, guests, local business owners, neighbours are all welcome.
+## Blended Finance
 
-A non extractive alternative to the current vacation rental platforms
-WE PRIORITIZE PEOPLE OVER PROFIT.
-We offer the potential for authentic, sustainable and intimate travel experiences while facilitating the development of socially relevant projects within communities worldwide.
-
-Platform Cooperatives
+Our goal is to make social investment accessible and useful to enable Active Mobility for Women.
 
 
-Community Freedom 
+## Platform Cooperatives
 
-Cycling  For Everyone
+Build, scale, and deliver active mobility services for women. We are working on a Architecture and Protocol for "She Cycles" co-operatives.
+
+## An open source economy–built by women, for women
+
+If we want Women to be vibrant tomorrow, we need to invest in the enabling them lead an active lifestyle and contributing to design and architecture of active mobility spaces.
+Hence She Cycles will be an open source platform.
+
+## Lowering barriers to make Active Mobility  more inclusive and diverse
+
+We firmly believe that everyone should be able to cycle and cycle is the future of mobility. Diversity, Inclusion, and Belonging (DI&B) are core to making Active Mobility work. Lowering barriers to accessing Active Mobility is key for promoting sustainability and Active Mobility Success.

@@ -6,92 +6,61 @@ description:
   analytics on time series data.
 ---
 
-QuestDB is a relational column-oriented database designed for time series and
-event data. It uses SQL with extensions for time series to assist with real-time
-analytics. These pages cover core concepts of QuestDB, including setup steps,
-usage guides, and reference documentation for syntax, APIs and configuration.
+
+import TOCInline from '@theme/TOCInline';
+
+<TOCInline toc={toc} />
+
+Over the past 15 years , We've been at the forefront of Active Mobility innovation as a thought leader . We believe that investing in Active Mobility is critical and crucial for developing nations and allows them to achieve green economy, sustainable mobility, influence a green future and drive equity and inclusion. 
 
 ![](https://i.imgur.com/53DBnaj.png)
 
-## Mission 
+## Why does Namma Nimma Cycle Foundation exist? 
 
-Building & Shaping the future with active movement & active mobility
- 
+* To create an extraordinary impact on the world by enabling Active Mobility. Build Active Mobility culture by building communities. 
+* Achieve design and innovation excellence in Active Mobility. 
+* Work with Public and Private Sectors to create a positive environment for Active Mobility. 
+* Build and support movements to advance the transformation of Active Mobility which leads to a more open, more just, and a livable world. 
 
-## Vision
-Create a vibrant active mobility community by connecting and collaborating to create healthy and happy places in cities.
-## What is Lead Ride
+## Goal 
 
-Lead ride is a movement to bring together leaders and decision makers at the city, to immersively ride together and connect to
-cities.
-Lead ride as a movement aims to bring industries and governance and citizens to cycle together, so as to co-create,
-co-operate, and co-design Shared Spaces in Cities & Towns.
+![](https://i.imgur.com/b3gzaiP.png)
 
 
    
-
-## What We do ?
-
-WORLD CYCLE DAY
-The annual World Bicycle Day  on June 3 2022 in multiple
-cities.
-City Wide "Lead Ride" Champions to Plan & Execute  World Cycle Day.
-Branding & Outreach across  the city
-
-BUILD A STRONG NETWORK FOR ACTIVE MOBILITY
-Lead Ride Buddy Network at Companies & Institutions.
-Ecosystem connection and Activation for cultural alignment
-
-
-ACCELERATOR
-
-Active Mobility Living Lab
-Ecosystem connection and Activation for cultural alignment.
-Bicycle Experiences
-Knowledge & Capacity Building
  
-Build Culture
-Active Mobility Culture Building - with literature,
-media, arts, theater and philosophy. 
+## WHAT WE DO? 
 
-## Principles
+### Active Tourism 
+Enable Active Tourism as a way of sustainable tourism and responsible tourism 
+### ABC Bill  -  Atmanirbhar Bharath Cycle Bill 
+Working with the Government for enabling cycling at the National and State Level by creating a systemic approach towards governance transformation and capacity building. 
 
+### Active Mobility Success
+* World Bicycle Day.
+* Awareness Campaigns. 
 
-We are happy to help with any question you may have, particularly to help you
-enable Active Mobility in your neighborhood. Feel free to reach out using the
-following channels:
+###  Active Mobility Innovation 
+* Design and Innovation of AM Vehicles and 
+* Doing research on Manufacturing and
+* Design for Manufacturing Active Mobility 
 
-- [Raise an issue on GitHub]({@githubUrl@}/issues)
-- [Join the Community Slack]({@slackUrl@})
- 
-- or send us an email at [murali@nammacycle.in](mailto:murali@nammacycle.in)
+### Active Mobility Living Lab 
+To enable transformative change towards sustainable urban mobility by a a systemic approach 
 
+### B-Well 
 
+Bicycle Wellness Program for Young People-Rooted in the Theory of Wellbeing
 
-## How We do ?
+## OUR IMPACT
 
-
-Ecosystem Map & Connection Connect
-Identify active mobility actors,
-stakeholders, critical users and
-establish connection.
-Lead Ride Round Table
-Meetup with critical stakeholders and
-ecosystem players for transfromation
-Lead Ride Perform for Success
-Convene
-Celebrate
-Create
-Create a Strong Buddy Network across
-communities, institutions and
-corporate
-Ride together on World Cycle Day and
-achieve unity to enable active mobility
-at scale.
-
-
-
-## Outcomes of Lead Ride
-
-## Research Projects 
-
+### Campaigns
+We have conducted around 500+ Campaigns in the last one decade towards promoting cycling. We have reached at least one million people through our efforts.
+### Cycle Tourism
+Enabled Cycle Tourism in Karnataka for the first time by building the idea of Cycle Trails in Cubbon Park Working to scale this quickly for rural areas.
+### Urban Infra
+We have been instrumental in enabling creation of Active Mobility Infrastructure for Namma Metro @ Byapanahalli. Enabled Bike Parking at Lalbagh and other locations.
+### Plog Run
+We conducted India's first plog run to eliminate plastic from the city. Around 8000 volunteers plogged across 100+ locations, bringing a transformation in thinking. Won the Guinness Book of Records for the same.
+### Nandi Tourism
+Continuously engaged in making Nandi Hills a destination for sustainable tourism. Organized Nandi Habba - 1000+ runners and 300+ cyclists participated in the festival.Nandi Plog run to clean up nandi hills. Nandi Eco Tourism inputs to Karnataka Ecotourism Board are some of the initiatives we have taken at Nandi Hills,

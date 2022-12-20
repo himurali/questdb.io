@@ -1,76 +1,74 @@
 ---
-title: Strategy
-sidebar_label: Strategy
+title:  Strategy
+sidebar_label: BOB Strategy
 description:
-  This document shows how to work with QuestDB as a time series database by
-  generating dummy time series data, insert the data into a table, then querying
-  and cleaning up the example data set.
+  A short guide for getting started For Cities..
 ---
-
-# Program Flow For Corporate
-1. [Design in India](#ecosystem)
-2. [Make in India](#Handshake)
-3. [Innovate in India](#round-table)
  
+import TOCInline from '@theme/TOCInline';
 
-India was one of the leaders in Bicycle Manufacturing , but in the last two decades India has LOST the opportunity to be a world leader in exporting bicycles. China and Taiwan have captured the opportunity and have developed complete ecosystems for making the best cycles. BCDC creates multiple windows to explore initiatives to win in the global market. Post Corona with the push for "Make In India" and the reduction on the dependency of chinese imports world over - there is a great opportunity for India to promote cycles and sustainability.
+<TOCInline toc={toc} />
 
+## Intro
+ India was one of the leaders in Bicycle Manufacturing , but in the last two decades India has LOST the opportunity to be a world leader in exporting bicycles. China and Taiwan have captured the opportunity and have developed complete ecosystems for making the best cycles. 
 
+BOB/BCDC creates multiple windows to explore initiatives to win in the global market. Post Corona with the push for "Make In India" and the reduction on the dependency of chinese imports world over - there is a great opportunity for India to promote cycles and sustainability.
 
-
-![](https://i.imgur.com/KCxUiqP.png)
  
- Create a Robust Ecosystem Framework for enabling designers and
-makers to join hands to create the best products in India.
-● Build and Host a active community of designers and makers on BCDC
-platform
-● Link, Connect and create hub for SME in Active Mobility to be part of the
-transformation
-● Identify Talent and enable startup creation with seed to scale capability
-● Enable Funding through Accelerator program as a Venture led initiative
-to deliver the product to the market.
+## Ecosystem
+1. Create a Robust Ecosystem Framework for enabling designers and Makers to join hands to create the best products in India.
+1. Build and Host a active community of designers and makers on BCDC  platform
+1. Link, Connect and create hub for SME in Active Mobility to be part of the  transformation
+1. Identify Talent and enable startup creation with seed to scale capability
+1. Enable Funding through Accelerator program as a Venture led initiative
+1. to deliver the product to the market.
 
 The Ecosystem combines the best elements of design and manufacturing to
 deliver the reliability, strong quality standards and high performance of
-products with innovation, openness and collaboration with manufacturers and
-researchers.
-COLLABORATION
+products with innovation, openness and collaboration with manufacturers and researchers.
+
+**COLLABORATION**
 •Comprised of different actors across different knowledge and service sectors
-INNOVATION
+
+**INNOVATION**
 •Integrate Designers and Business Managers
 •Innovate product, process and people skilling
-COMPETENCE
+
+**COMPETENCE**
 •Design, Develop and Deliver competence in manufacturing the best in quality
 products
-CO-CREATION
+
+**CO-CREATION**
 •Tie up with other corporate houses to develop inhouse Active Mobility
 Products by enabling startups.
 
-MARKET FOCUS
-Cycle Rickshaw for Last Mile Connectivity in Urban Neighborhoods
-Cargo Bicycles for Retail Businesses
-Delivery Bicycles for Delivery Startups like Swiggy
-Rural Bicycles for Rural Needs.
-Special Bicycles for Indian Women Needs.
-CHALLENGES
-Import from China Lack of Bicycle Adaptation in Indian Middle-Class
-Segment
-Lack of Bicycle Design Culture
-Design Stagnancy in Industry
-Lack of Innovation Ecosystem
-Lack of Knowledge Sharing - Experimenting and Resource Sharing.
-OPPORTUNITIES
-Huge Market of $200Billion+ Globally for Active Mobility Products
-Huge Demand for low emission products due to climate awareness
-Potential to produce 10 lakh green jobs directly and indirectly
-Lack of Innovation Ecosystem
-Lack of Knowledge Sharing - Experimenting and Resource Sharing
-Atma Nirbhar - Self reliant India can be realized quickly for political
-dividends.
-Local Jobs at least direct and indirect jobs of 5 lakh + .
+## Market Focus
+* Cycle Rickshaw for Last Mile Connectivity in Urban Neighborhoods
+* Cargo Bicycles for Retail Businesses
+* Delivery Bicycles for Delivery Startups like Swiggy
+* Rural Bicycles for Rural Needs.
+* Special Bicycles for Indian Women Needs.
+
+## Challenges
+* Import from China Lack of Bicycle Adaptation in Indian Middle-Class
+* Segment
+* Lack of Bicycle Design Culture
+* Design Stagnancy in Industry
+* Lack of Innovation Ecosystem
+* Lack of Knowledge Sharing - Experimenting and Resource Sharing.
+
+## Opportunities
+* Huge Market of $200Billion+ Globally for Active Mobility Products
+* Huge Demand for low emission products due to climate awareness
+* Potential to produce 10 lakh green jobs directly and indirectly
+* Lack of Innovation Ecosystem
+* Lack of Knowledge Sharing - Experimenting and Resource Sharing
+* Atma Nirbhar - Self reliant India can be realized quickly for political
+* dividends.
+* Local Jobs at least direct and indirect jobs of 5 lakh + .
 
 
-3 YEAR GOAL
+## 3 Year Goal
 1. Design and Make Active Mobility Products - 10 Unique Products with 3
 being top 10 products in India which will result in an Inclusive and
 Sustainable Mobility for India

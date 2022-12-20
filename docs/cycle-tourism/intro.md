@@ -1,14 +1,12 @@
 # Intro
 
-You can interact with a QuestDB database by connecting to one of its various
-network endpoints. 
+Cycling tourism refers to recreational visits that involve leisure cycling as the primary reason for the holiday. They can be day trips or overnight stays involving large or small groups of cyclists riding short or long distances. While these tours can include cities, they tend to focus on visits to remote areas around the world.
 
-## HTTP REST API
+Bicycle tourism is comprised of several smaller niches, like:
 
-The HTTP interface that hosts the web console also provides a REST API for
-importing data, exporting data and querying.
+* Mountain biking
+* Road cycling
+* Family cycling
+* Tours and expeditions
 
- 
-
-Find out how to:
- 
+NNCF has pioneered all the above cycle experiences.

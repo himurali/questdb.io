@@ -6,15 +6,11 @@ description:
   QuestDB installed and how to access and secure the instance on Amazon Web
   Services
 ---
+Mapping heritage: A participatory technique for identifying tangible and intangible cultural heritage
 
-DigitalOcean is a platform with software listings from independent vendors that
-run on cloud resources. This guide describes how to launch QuestDB via the
-DigitalOcean marketplace using the official listing. This document also
-describes usage instructions after you have launched the instance, including
-hints for authentication, the available interfaces, and tips for accessing the
-REST API and web console.
+## Pondy Map
 
-## Prerequisites
+Community participation is increasingly considered a key to success in many conservation and development related project. IN association with Janastu we developed the 
+Heritage Mapping Platform for Active Travel. 
 
-The prerequisites for deploying QuestDB on DigitalOcean are as follows:
- 
+The initial platform was used by Intach Pondicherry.
