@@ -45,8 +45,9 @@ module.exports = {
       type: "category",
       items: [
         "bob-final/vision",
-        "bob-final/strategy",
         "bob-final/bcdc",
+        "bob-final/strategy",
+        "bob-final/BOB",
         "bob-final/programflow",
       ],
     },

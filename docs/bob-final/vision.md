@@ -1,13 +1,11 @@
 ---
-title: Lead Ride For Corporate
-sidebar_label: Strategy
+title:  Vision
+sidebar_label: Vision
 description:
-  This document shows how to work with QuestDB as a time series database by
-  generating dummy time series data, insert the data into a table, then querying
-  and cleaning up the example data set.
+  A short guide for getting started For Cities..
 ---
-
-# Program Flow For Corporate
+ 
+# Vision 
 1. [Handshake](#Handshake)
 2. [Ecosystem Mapping](#ecosystem)
 3. [Round Table](#round-table)
@@ -18,18 +16,12 @@ description:
 
 
 ## Handshake
-
-NNCF initiates the conversation with the city leadership and the key stakeholders to make the city as a Lead Ride City.
-
-A Lead Ride City performs the following key roles.
-
-1. Agrees to organize the Lead Ride on World Cycle Day 
-2. Connects and Convenes the Active Mobility Ecosystem players
-3. Commits funding for the Lead Ride 
-4. The outreach and branding campaign  is supported 
-5. Agrees to hold the Lead Ride Round Table along with NNCF leadership 3 times in a year.
-6. Appoints Lead Ride champions in the city to lead the effort of Active Mobility Transformation.
-![](https://i.imgur.com/fkeB3Bg.png)
+Design, Build and Deploy Active Mobility Vehicles for Indian Market
+2. Create an enabling ecosystem for Active Mobility.
+3. Market and encourage Active Mobility Vehicles by creating best user
+experience supported by robust research and development.
+4. Create MarketPlace for Products and Components in Active Mobility
+linking Component Makers and Product Builders and Consumers
 
 ## Ecosystem
 

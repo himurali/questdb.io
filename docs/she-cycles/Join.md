@@ -1,5 +1,9 @@
-
-
+---
+title: Join Us 
+sidebar_label: Join Now
+description:
+  A short guide for getting started For Academia.
+---
 
 Join the movement
 We are a global network of connected local communities that aims to limit the negative impacts of tourism, while harnessing its potential.

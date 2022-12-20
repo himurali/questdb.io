@@ -1,6 +1,6 @@
 ---
 title:  Bharath Open Bike
-sidebar_label: Vision
+sidebar_label: Bharath Open Bike
 description:
   A short guide for getting started For Cities..
 ---

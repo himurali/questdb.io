@@ -11,6 +11,8 @@ event data. It uses SQL with extensions for time series to assist with real-time
 analytics. These pages cover core concepts of QuestDB, including setup steps,
 usage guides, and reference documentation for syntax, APIs and configuration.
 
+![](https://i.imgur.com/53DBnaj.png)
+
 ## Mission 
 
 Building & Shaping the future with active movement & active mobility

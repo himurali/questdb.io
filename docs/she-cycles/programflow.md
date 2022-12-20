@@ -1,6 +1,6 @@
 ---
 title: Lead Ride For Academia
-sidebar_label: For Academia
+sidebar_label: How it Works ?
 description:
   A short guide for getting started For Academia.
 ---

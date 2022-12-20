@@ -1,6 +1,6 @@
 ---
 title: Lead Ride For Community
-sidebar_label: For Community
+sidebar_label: Co-Operatives
 description:
   Guide showing how to use QuestDB with Docker. This also covers how to import
   data as well as persistence.

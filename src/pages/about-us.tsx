@@ -4,8 +4,7 @@ import clsx from "clsx"
 import paCss from "../css/community/page.module.css"
 import seCss from "../css/section.module.css"
 import teCss from "../css/about-us/team.module.css"
-import ubCss from "../css/about-us/used-by.module.css"
-import inCss from "../css/about-us/investors.module.css"
+import ubCss from "../css/about-us/used-by.module.css" 
 import prCss from "../css/about-us/press.module.css"
  
 
@@ -22,9 +21,7 @@ import ProductMetrics from "../components/ProductMetrics"
 
 import ExternalLink from "../assets/img/external-link.svg"
 
-import pressReleases, { PressRelease } from "../assets/press"
-
-import { investorsColumn1, investorsColumn2 } from "../assets/investors"
+import pressReleases, { PressRelease } from "../assets/press" 
 
 type PressItemProps = {
   release: PressRelease
@@ -125,47 +122,7 @@ const UsedBy = () => {
     </section>
   )
 }
-
-const Investors = () => {
-  return (
-    <section
-      className={clsx(seCss["section--inner"], seCss["section--column"])}
-    >
-      <div className={(seCss.section__header, seCss.section__header__left)}>
-        <h2
-          className={clsx(seCss.section__title, seCss["section__title--wide"])}
-        >
-          Partners & Patrons 
-        </h2>
-        <p className={clsx(seCss.section__subtitle)}>
-          We&apos;ve worked with the following and they have supported our work in the past. We are grateful for the following people for enabling the 
-          journey.
-        </p>
-      </div>
-      <div className={inCss.investors}>
-        
-
-        <div className={inCss.investors__col}>
-          {investorsColumn1.map((investor) => (
-            <div className={inCss.investor} key={investor.name}>
-              <h3 className={inCss.investor__name}>{investor.name}</h3>
-              <p className={inCss.investor__position}>{investor.position}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className={inCss.investors__col}>
-          {investorsColumn2.map((investor) => (
-            <div className={inCss.investor} key={investor.name}>
-              <h3 className={inCss.investor__name}>{investor.name}</h3>
-              <p className={inCss.investor__position}>{investor.position}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  )
-}
+ 
 
 const Team = () => {
   return (
@@ -187,15 +144,73 @@ const Team = () => {
               Our team is having 15 years of experience in the field of active mobility.
             </p> 
           </div>
-          <div className={clsx(paCss.half__section, teCss.team__people__photo)}>
-            <img
-              src="/img/pages/about-us/team2.png"
-              alt="QuestDB team"
-              width="522"
-              height="300"
-              className={teCss.team__people__photo__img}
-            />
-          </div>
+          
+         
+            <div className={teCss.team__article__details}>
+              <div>
+                <img
+                  src="/img/pages/about-us/murali.png"
+                  alt="Murali HR photo"                 
+                />
+              </div>
+              <div className={teCss.team__article__text}>
+                <p className={teCss.team__article__author}>Murali HR </p>
+                <p className={teCss.team__article__position}>
+                  CEO 
+                </p>
+              </div>
+            </div> 
+
+            <div className={teCss.team__article__details}>
+              <div>
+                <img
+                  src="/img/pages/about-us/sridhar.png"
+                  alt="Miguel Arregui photo"
+                  width="100"
+                  height="100"
+                />
+              </div>
+              <div className={teCss.team__article__text}>
+                <p className={teCss.team__article__author}>Sridhara Aghalaya</p>
+                <p className={teCss.team__article__position}>
+                  Product Design Head
+                </p>
+              </div>
+            </div>
+
+            <div className={teCss.team__article__details}>
+              <div>
+                <img
+                  src="/img/pages/about-us/manoj.png"
+                  alt="Miguel Arregui photo"
+                  width="100"
+                  height="100"
+                />
+              </div>
+              <div className={teCss.team__article__text}>
+                <p className={teCss.team__article__author}>Manoj</p>
+                <p className={teCss.team__article__position}>
+                 E- Bicycle  Designer
+                </p>
+              </div>
+            </div>
+
+            <div className={teCss.team__article__details}>
+              <div>
+                <img
+                  src="/img/pages/about-us/nanju.png"
+                  alt="Miguel Arregui photo"
+                  width="100"
+                  height="100"
+                />
+              </div>
+              <div className={teCss.team__article__text}>
+                <p className={teCss.team__article__author}>Nanjunda Palacanda</p>
+                <p className={teCss.team__article__position}>
+                  Manufacturing Specialist
+                </p>
+              </div>
+            </div>
         </div>
         <div className={teCss.team__work}>
           <div className={teCss.team__work__text}>
@@ -258,7 +273,6 @@ const AboutUsPage = () => {
     
       <Top />      
       <UsedBy />
-      <Investors />
       <Team />
       <Press />
   </Layout>
