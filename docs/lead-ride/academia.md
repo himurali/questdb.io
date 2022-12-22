@@ -5,10 +5,10 @@ description:
   A short guide for getting started For Academia.
 ---
 
-# Program Flow For Academia
-1. [Handshake](#Handshake)
-2. [Lead Ride Program Stages](#lead-ride-program-stages)
-4. [Ride Together](#world-bicycle-day-ride-together)
+import TOCInline from '@theme/TOCInline';
+
+<TOCInline toc={toc} />
+
 
 
 

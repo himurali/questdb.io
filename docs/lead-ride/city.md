@@ -5,12 +5,9 @@ description:
   A short guide for getting started For Cities..
 ---
  
-# Program Flow For Cities
-1. [Handshake](#Handshake)
-2. [Ecosystem Mapping](#ecosystem)
-3. [Round Table](#round-table)
-3. [Program Finalization](#lead-ride-program-finalization)
-4. [Network Activation](#lead-ride-network-activation )
+import TOCInline from '@theme/TOCInline';
+
+<TOCInline toc={toc} />
 
 
 
