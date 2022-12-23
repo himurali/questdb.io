@@ -2,11 +2,12 @@
 title: Lead Ride For Community
 sidebar_label: For Community
 description:
-  Lead ride for communities
+  This document shows how to enable Lead Ride For Community 
 ---
-
 import TOCInline from '@theme/TOCInline';
+
 <TOCInline toc={toc} />
+
 
 ## Handshake
 

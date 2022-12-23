@@ -75,7 +75,11 @@ Enabling last mile connectivity to enable seamless connectivity to companies.
 Enable  Active Mobility Infastructure inside the company.
 
 
-# How we do ?
+# How we do ? Bring in Culture.
+
+Active Mobility is a matter of culture and not just a system of mobility or an iniatiative to halt climate change.
+
+A six dimensional model of culture 
 
 ##  **Active Mobility Assessment :**
 
