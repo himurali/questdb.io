@@ -26,14 +26,14 @@ Lead Ride Community - is a unique, participatory model of cycling which offers t
 
 ### Philosophy
 
-Amidst the social changes brought on by globalization, local communities cannot live in isolation. Cycle Tourism is one way to bring people of different backgrounds together. Ideally, tourism seems to offer hosts and visitors a unique opportunity to share their different cultures and points-of-view. People are able to share first-hand experiences together and to develop personal relationships which can grow into powerful alliance contributing towards the community wellness and sustainable environment and development.
+Amidst the social changes brought on by globalization, local communities cannot live in isolation. Community Cycling is one way to bring people of different backgrounds together. Ideally, Community Cycling seems to offer hosts and visitors a unique opportunity to share their different cultures and points-of-view. People are able to share first-hand experiences together and to develop personal relationships which can grow into powerful alliance contributing towards the community wellness and sustainable environment and development.
 
 #### Criteria for Community to be part of Lead Ride
 
 - Community potential
   - Community ownership and responsibility for the effort.
-- Market potential of CBT & Marketing
-- Role of local government in supporting CBT
+- Market potential of Community Cycling & Marketing
+- Role of local government in supporting Community Cycling
 - Project personnel and funding
 - Community Skills and Capacity Building
 - Community co-operatives for revenue generation and revenue sharing
