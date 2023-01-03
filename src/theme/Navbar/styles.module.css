@@ -1,197 +1,199 @@
 .ctaButton {
-  margin-left: 10px;
-  font-size: var(--font-size-small);
-  padding: 0 2rem;
+	margin-left: 10px;
+	font-size: var(--font-size-small);
+	padding: 0 2rem;
 }
 
 .getQuestdb {
-  background: #fff;
-  color: #21222C;
+	background: #fff;
+	color: #21222C;
 }
 
 .brand {
-  display: block;
-  height: 50px;
-  width: 75px;
-  min-width: 20px;
-  margin-right: var(--ifm-navbar-item-padding-horizontal);
-  color: transparent;
-  background-image: url("https://res.cloudinary.com/dsmfsfyci/image/upload/v1671185140/nncfwebdocu/NNCycleFoundation_nfe5z2.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+	display: block;
+	height: 50px;
+	width: 75px;
+	min-width: 20px;
+	margin-right: var(--ifm-navbar-item-padding-horizontal);
+	color: transparent;
+	background-image: url("https://res.cloudinary.com/dsmfsfyci/image/upload/v1672749963/nncfwebdocu/2_lmakqk.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
 
 .brand:hover {
-  color: transparent;
+	color: transparent;
 }
 
 
 :global(html[data-theme="light"]) .brand {
-  background-image: url("https://res.cloudinary.com/dsmfsfyci/image/upload/v1671185140/nncfwebdocu/NNCycleFoundation_nfe5z2.png");
+	background-image: url("https://res.cloudinary.com/dsmfsfyci/image/upload/v1672749963/nncfwebdocu/2_lmakqk.png");
 
 }
 
 .inner {
-  margin: 0 auto;
-  padding: 0 var(--theme-navbar-inner-padding);
-  background: var(--theme-navbar-background-color);
+	margin: 0 auto;
+	padding: 0 var(--theme-navbar-inner-padding);
+	background: var(--theme-navbar-background-color);
 }
 
 @media screen and (max-width: 550px) {
-  .inner {
-    padding: 0 calc(var(--theme-navbar-inner-padding) - 1.2rem);
-  }
+	.inner {
+		padding: 0 calc(var(--theme-navbar-inner-padding) - 1.2rem);
+	}
 }
 
 .navbar {
-  --ifm-navbar-padding-vertical: 0;
-  --ifm-navbar-padding-horizontal: 0;
-  --ukraine-yellow: rgba(255, 215, 0, 1);
-  --ukraine-blue: rgba(0, 87, 184, 1);
+	--ifm-navbar-padding-vertical: 0;
+	--ifm-navbar-padding-horizontal: 0;
+	--ukraine-yellow: rgba(255, 215, 0, 1);
+	--ukraine-blue: rgba(0, 87, 184, 1);
 
 }
 
 :global(.navbar__items--right .navbar__item.header-github-link) {
-  display: flex;
-  align-items: center;
-  background: url("/img/navbar/github.svg") 0 center / 20px 20px no-repeat;
-  padding: 0.2rem 0 0.2rem 1.8rem;
-  font-size: 15px;
+	display: flex;
+	align-items: center;
+	background: url("/img/navbar/github.svg") 0 center / 20px 20px no-repeat;
+	padding: 0.2rem 0 0.2rem 1.8rem;
+	font-size: 15px;
 
-  /* needed for mobile, when font-size: 0 */
-  height: 32px;
+	/* needed for mobile, when font-size: 0 */
+	height: 32px;
 }
 
 @media screen and (max-width: 550px) {
-  :global(.navbar__items--right .navbar__item.header-github-link) {
-    font-size: 0;
-    padding: 0.2rem 0 0.2rem 1.25rem;
-  }
+	:global(.navbar__items--right .navbar__item.header-github-link) {
+		font-size: 0;
+		padding: 0.2rem 0 0.2rem 1.25rem;
+	}
 }
 
 @media screen and (max-width: 405px) {
-  :global(.navbar__item.header-github-link) {
-    display: none;
-  }
+	:global(.navbar__item.header-github-link) {
+		display: none;
+	}
 }
 
-:global(html[data-theme="light"] .navbar__item.header-github-link ) {
-  background: url("/img/github.svg") 0 center / 20px 20px no-repeat;
+:global(html[data-theme="light"] .navbar__item.header-github-link) {
+	background: url("/img/github.svg") 0 center / 20px 20px no-repeat;
 }
 
 /* hide unneeded search bar elements. we only need an icon. */
 :global(.DocSearch-Button-Key),
 :global(.DocSearch-Button-Keys),
 :global(.DocSearch-Button-Placeholder) {
-  display: none;
+	display: none;
 }
 
 :global(.navbar__item.navbar__link) {
-  font-size: var(--ifm-font-size-base);
-  padding: 0.2rem 0.6rem;
-  margin: 0 0.6rem;
+	font-size: var(--ifm-font-size-base);
+	padding: 0.2rem 0.6rem;
+	margin: 0 0.6rem;
 }
 
 :global(.navbar__item.dropdown .navbar__link):after {
-  border: 5px solid white;
-  border-width: 0 2px 2px 0;
-  width: 6px;
-  height: 6px;
-  top: 54%;
-  transform: translate(50%, -70%) rotateZ(45deg);
+	border: 5px solid white;
+	border-width: 0 2px 2px 0;
+	width: 6px;
+	height: 6px;
+	top: 54%;
+	transform: translate(50%, -70%) rotateZ(45deg);
 }
 
 :global(html[data-theme="light"] .navbar__item.dropdown .navbar__link):after {
-  border-color: #000;
+	border-color: #000;
 }
 
 :global(.navbar__item.careers-link) {
-  background: #313442;
-  color: #fff;
-  border-radius: 25px;
-  margin-left: 1.2rem;
+	background: #313442;
+	color: #fff;
+	border-radius: 25px;
+	margin-left: 1.2rem;
 }
 
 :global(.dropdown__link) {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 
 :global(html[data-theme="light"] .navbar__link.careers-link) {
-  background: #fff;
-  color: #000;
+	background: #fff;
+	color: #000;
 }
 
 .themeToggleInSidebar {
-  display: none;
-  margin: 0 1rem 0 auto;
+	display: none;
+	margin: 0 1rem 0 auto;
 }
 
 @media(max-width: 480px) {
-  .themeToggleInSidebar {
-    display: block;
-  }
+	.themeToggleInSidebar {
+		display: block;
+	}
 
-  .themeToggleInHeading {
-    display: none;
-  }
+	.themeToggleInHeading {
+		display: none;
+	}
 }
 
 @media (max-width: 750px) {
-  .getQuestdb {
-    margin-left: 0.75rem;
-    padding: 0.5rem;
-    font-size: calc(var(--font-size-small) - 1px);
-  }
+	.getQuestdb {
+		margin-left: 0.75rem;
+		padding: 0.5rem;
+		font-size: calc(var(--font-size-small) - 1px);
+	}
 
-  :global(.DocSearch-Button) {
-    margin: 0 !important;
-  }
+	:global(.DocSearch-Button) {
+		margin: 0 !important;
+	}
 
-  :global(.navbar__brand) {
-    margin: 0;
-  }
+	:global(.navbar__brand) {
+		margin: 0;
+	}
 
-  .benchmarkButton {
-    display: none;
-  }
+	.benchmarkButton {
+		display: none;
+	}
 
-  .themeToggleInHeading {
-    margin-right: 1rem;
-  }
+	.themeToggleInHeading {
+		margin-right: 1rem;
+	}
 }
 
 @media (max-width: 996px) {
-  .benchmarkButton {
-    display: none;
-  }
+	.benchmarkButton {
+		display: none;
+	}
 }
 
 /* prevent navbar right side to climb up on the left side, by shrinking the search bar */
-@media (min-width: 997px) and (max-width: 1027px), (min-width: 1201px) and (max-width: 1300px) {
-  :global(.DocSearch-Button-Keys) {
-    display: none;
-  }
+@media (min-width: 997px) and (max-width: 1027px),
+(min-width: 1201px) and (max-width: 1300px) {
+	:global(.DocSearch-Button-Keys) {
+		display: none;
+	}
 }
 
 @media (min-width: 996px) and (max-width: 1200px) {
-  :global(.navbar__link) {
-    --ifm-navbar-item-padding-horizontal: 0.85rem;
-  }
+	:global(.navbar__link) {
+		--ifm-navbar-item-padding-horizontal: 0.85rem;
+	}
 
-  :global(.navbar__brand) {
-    margin-right: 0.85rem;
-  }
+	:global(.navbar__brand) {
+		margin-right: 0.85rem;
+	}
 
-  :global(.DocSearch-Button) {
-    margin-left: 0.85rem;
-  }
-  .benchmarkButton {
-    display: none;
-  }
+	:global(.DocSearch-Button) {
+		margin-left: 0.85rem;
+	}
+
+	.benchmarkButton {
+		display: none;
+	}
 }
 
 @media (min-width: 1740px) {
-  .inner {
-    max-width: calc(var(--ifm-container-width) + 100px);
-  }
+	.inner {
+		max-width: calc(var(--ifm-container-width) + 100px);
+	}
 }
