@@ -3,9 +3,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl"
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
 import React from "react"
 import customFields from "../../config/customFields"
-
 import Button from "@theme/Button"
-
 import sectionCss from "../../css/section.module.css"
 import footerStyles from "./styles.module.css"
 
@@ -20,8 +18,7 @@ const FooterLink = ({ to, href, label, ...props }: Props) => {
     const linkTo = useBaseUrl(to ?? "")
 
     return (
-        <a
-            className={footerStyles.footer__link}
+        <a className={footerStyles.footer__link}
             {...(href != null
                 ? {
                     href: linkHref,
@@ -46,28 +43,24 @@ const Footer = () => {
 
     return (
         <footer className={clsx(footerStyles.footer, sectionCss.section)}>
-            <div
-                className={clsx(
-                    footerStyles.footer__inner,
-                    sectionCss["section--inner"],
-                )}
+            <div className={clsx(
+                footerStyles.footer__inner,
+                sectionCss["section--inner"],
+            )}
             >
-                <div
-                    className={clsx(
-                        footerStyles.footer__column,
-                        footerStyles["footer__column--left"],
-                    )}
+                <div className={clsx(
+                    footerStyles.footer__column,
+                    footerStyles["footer__column--left"],
+                )}
                 >
                     <img
                         alt="NNCF logo"
                         className={footerStyles.footer__logo}
-
                         src="https://res.cloudinary.com/dsmfsfyci/image/upload/v1671185140/nncfwebdocu/NNCycleFoundation_nfe5z2.png"
                         title="NNCF "
                         width={108}
                     />
                     <p className={footerStyles.footer__tagline}>{siteConfig.tagline}</p>
-
                     <Button
                         className={footerStyles.footer__github}
                         href={customFields.githubUrl}
@@ -102,7 +95,6 @@ const Footer = () => {
                                         {linkItem.title}
                                     </li>
                                 )}
-
                                 {linkItem.items?.map((item) => (
                                     <li
                                         className={footerStyles.footer__item}

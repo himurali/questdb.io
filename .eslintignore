@@ -1,1 +1,4 @@
 src/pages/case-study/*.tsx
+src/theme/BlogListPage/*.tsx
+src/theme/Footer/*.tsx
+src/pages/*.tsx
